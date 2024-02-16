@@ -1,0 +1,26 @@
+$Color0: 020887;
+$Color1: 3C91E6; // bleu claire
+$color2: 9FD356; // jaune vert
+$Color3: FAFFFD; // blanc
+$color4: FA824C; // corail
+
+@import '../main/variables';
+
+// la div qui entoure tout le footer
+.footerContenerMain{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0 0 0 ;
+    flex-direction: row;
+    background-color: rgb(65, 64, 64);
+    color: white;
+    bottom: 0px;
+    width: 118.5rem;
+    margin: 6rem 0rem -0.5rem -0.5rem;
+    height: 2rem;
+}
+
+// La class qui gere tout les link
+.footerLink{
+    color: white;
+}

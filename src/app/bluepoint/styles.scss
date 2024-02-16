@@ -1,0 +1,208 @@
+@import '../components/main/variables';
+
+// Le contner qui englobe toute la page
+.bluepointContenerMain{
+    display: flex;
+    width: 118rem;
+    margin: 10rem 0 0 -0.5rem;
+    flex-direction: column;
+    justify-items: center;
+    font-family: 'Anonymous Pro', monospace;
+}
+
+//Le titre principale
+.bluepointTitleMain{
+    text-align: center;
+    color: $color0;
+    text-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+// le contener qui englobe les cartouches
+.bluepointContenerResume{
+    display: flex;
+    background-color: $color1;
+    opacity: 0.9;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2rem 5rem 10rem 5rem;
+    padding: 2rem 0 ;
+    border-radius: 0.7rem;
+}
+
+//Class generique pour chaque cartouche
+.bluepointCartoucheResume{
+    border: white;
+    background-color: white;
+    width: 25rem;
+    text-align: center;
+    border-radius: 0.7rem;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+// les trois cartouche generique 
+.bluepointCartoucheResume:hover{
+    position: relative;
+    bottom: 4px;
+    right: 2px;
+}
+
+// le titre des chaques cartouche
+.bluepointTitleCartouche{
+color: $color0;
+text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+//class du texte du cartouche
+.bluepointTextCartouche{
+    color: darkslategray;
+    font-size: 1.1rem;
+}
+
+/***************************les articles ********************************************/
+
+//div qui encadre tous les articles
+.bluepointContenerArticles{
+    width: 116.8rem;
+}
+
+// La div qui anime les div partant de la droite
+.bluepointAnimD {
+    opacity: 0;
+    transform: translateX(100rem); /* Animation de translation vers le haut */
+    transition: opacity 0.5s ease, transform 2s ease; /* Animation de transition pour l'opacité et la transformation */
+  }
+
+  // La div qui anime les div partant de la droite
+  .bluepointAnimG {
+    opacity: 0;
+    transform: translateX(-100rem); /* Animation de translation vers le haut */
+    transition: opacity 0.5s ease, transform 2s ease; /* Animation de transition pour l'opacité et la transformation */
+  }
+  
+  //ON fait apparaitre les div
+  .show {
+    opacity: 1;
+    transform: translateY(0); /* Réinitialisation de la translation pour afficher le contenu à sa position normale */
+  }
+
+//div qui gere tous les titres
+.bluepointTitreArticle{
+    display: flex;
+    text-align: center;
+}
+
+//gere le style des articles
+.bluepointArticleMain{
+    display: flex;
+    width: 116.5rem;
+    height: 25rem;
+    flex-direction: column;
+    margin: 0 0 4rem 0;
+    padding: 1rem;
+}
+/***********satisfaction */
+//Gere le fond de la div satisfaction
+.bluepointSatisfactionMain{
+    display: flex;
+    flex-direction: row;
+    background-color: $color4;
+    color: white;
+}
+
+//le contener du titre et de l'img
+.bluepointSatisfactionLeft{
+    width: 70rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+//le titre satisafction
+.bluepointSatisfactionTitle{
+    text-align: center;
+}
+
+// La class qui gere les img
+.bluepointArticleImg{
+    border-radius: 0.7rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    margin: 3rem 0 0 0 ;
+}
+
+// le contener de l'img satisfaction
+.bluepointEtoileBlue{
+    background-image: url(./satisfactionClient.jpg);
+    width: 21rem;
+    height: 12rem;
+}
+
+//La div qui contient le text de l'article
+.bluepointContenertext{
+    width: 70rem;
+    display: flex;
+    align-self: center;
+}
+
+//gere le font de la div personalisation
+.bluepointPersonaMain{
+    display: flex;
+    flex-direction: row-reverse;
+    color: $color0;
+}
+
+// gere la place des div pour la personalisation
+.bluepointPersonaRight{
+    width: 70rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+// le contener de l'img personalisation
+.bluepointPersonaImg{
+    background-image: url(./personalisation.jpg);
+    width: 24rem;
+    height: 12rem;
+}
+
+//Gere le fond de la div SAV
+.bluepointSavMain{
+    display: flex;
+    flex-direction: row;
+    background-color: $color4;
+    color: white;
+}
+
+//le contener de l'img sav
+.bluepointSavImg{
+    background-image: url(./sav.jpg);
+    width: 19rem;
+    height: 12.8rem;
+}
+
+//class generique pour tout les titres d'articles
+.bluepointTitreArticle{
+margin: 2rem auto 1rem auto;
+font-size: 2rem;
+text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+//Contient le texte des article (sous-titre, texte)
+.bluepointContenertext{
+    display: flex;
+    flex-direction: column;
+}
+
+//Class general pour tout le texte dans les articles
+.bluepointArticleText{
+    font-size: 1.2rem;
+    margin: 1rem 0 0 0;
+}
+
+// La toute derniere class qui gere le marging pour ne pas passer sous le footer
+.bluepointSavMain{
+    margin: 0 0 6rem 0;
+}

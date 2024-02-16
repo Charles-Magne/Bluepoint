@@ -1,0 +1,82 @@
+@import '../main/variables';
+
+.headerMain {
+    display: flex;
+    position: fixed;
+    top: 0px;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+    margin: 0 0 0 0;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    z-index: 5;
+    font-family: 'Anonymous Pro', monospace;
+}
+
+.headerListLink {
+    display: flex;
+    justify-content: space-around;
+    width: 50rem;
+    margin: 0 10rem 0 10rem;
+}
+
+// les differants onglets
+.headerLink {
+    display: flex;
+    align-self: center;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: black;
+    height: 4rem;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+//chaque onglet lors du survole 
+.headerLink:hover{
+    //background-color: $color0;
+    //color: $color1;
+    font-size: 1rem;
+    border-bottom: $color0 1px solid;
+}
+
+.headerContenerDevis{
+    display: flex;
+    align-self: center;
+}
+
+// le button pour aller aux contact
+.headerButtonDevis{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: bold;
+    height: 2rem;
+    width: 10rem;
+    font-size: 1rem;
+    border-radius: 0.7rem;
+    background-color: #020887;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 0.4rem 0;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+// lorsque on passe sur le bouton de contact
+.headerButtonDevis:hover{
+    position: relative;
+    top: 1px;
+    left: 1px;
+}
+
+// c'est la class qui est a identifier la page sur laquel on se trouve
+.headerPageActive{
+    font-size: 1.1rem;
+    color: $color0;
+    font-weight: bolder;
+    border-bottom: $color0 1px solid;
+} 

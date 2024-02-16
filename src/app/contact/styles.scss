@@ -1,0 +1,136 @@
+@import '../components/main/variables';
+
+// La div qui englobe tout la page
+.contactContenerMain{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10rem auto 10rem auto;
+    font-family: 'Anonymous Pro', monospace;
+}
+
+// Le contener de tous les form 
+.contactContenerForm{
+    display: flex;
+    flex-direction: column;
+    width: 100rem;
+    padding: 1rem;
+    justify-content: center;
+}
+
+// Le gros titre de la page
+.contacttitleMain{
+    color: $color0;
+    text-align: center;
+    //text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+    margin: 0 0 1rem 0;
+}
+
+// Div qui sert a faire un background
+.contactContenerBackground{
+    display: flex;
+    flex-direction: column;
+    //background-color: $color1;
+    padding: 1rem;
+    width: 50rem;
+    margin: 1rem auto 0 auto;
+    flex-wrap: wrap;
+    border: solid $color0 1px;
+    border-radius: 0.7rem;
+}
+
+// la div qui entoure les deux form nom et prenom
+.contactContenerName{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 0 2rem 0;
+}
+
+// Le titre des label du form
+.formTitle{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.7rem;
+    width: 15rem;
+}
+
+// le span des titres
+.contactTitleLabel{
+    margin: 0 0 0.5rem 0;
+}
+
+//le champs des input
+.contactInputField{
+    padding: 0.2rem 0 0.2rem 0.2rem;
+    border-radius: 0.2rem;
+    border: 1px solid gray;
+}
+
+// la div dans laquelle sont present l'entreprise et l'adresse mail
+.contactContenerCorporate{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 0 2rem 0;
+}
+
+// la div qui gere le menu deroulant 
+.ContactFormProject{
+    margin: 0 0 2rem 3rem;
+    width: 22rem;
+}
+
+//Gere les options du menu deroulant
+.contactOptionMenu{
+    font-family: 'Anonymous Pro', monospace;
+}
+
+//La div specifique au label Message
+.contactLabelMessage{
+    width: 30rem;
+    margin: 0 0 0.5rem 3rem;
+}
+
+//Le contener de l'input du message
+.contactContenerMessage{
+    display: flex;
+    width: 48rem;
+}
+
+.contactMessageInput{
+    margin: 0 auto 0 auto;
+    height: 10rem;
+    width: 40rem;
+    padding: 1rem;
+}
+
+// le contener qui sert a flex le button
+.contactContenerButton{
+    display: flex;
+    justify-content: flex-end;
+}
+
+//Le button qui sert a envoyer les message
+.contactButtonsend{
+    display: flex;
+    margin: 2rem 1rem 1rem 0 ;
+    padding: 0.5rem;
+    width: 5.8rem;
+    height: 2rem;
+    text-align: center;
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 0.2rem;
+    border: 1px solid gray;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    background-color: $color4;
+    color: white;
+}
+
+.contactButtonsend:hover{
+    position: relative;
+    bottom: 2px;
+    right: 2px;
+}

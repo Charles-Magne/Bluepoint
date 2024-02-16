@@ -1,0 +1,192 @@
+@import '_variables';
+
+//************************************** Partie transformation
+
+// La div qui entoure les div d'info
+.AccueilContenerInfo {
+    display: flex;
+    //background-color: red;
+    align-self: center;
+    flex-direction: column;
+    width: 110rem ;
+    margin: 2rem 5rem 0 5rem;
+}
+
+//La div qui encadre le titre et les span sur la droite
+.accueilContenerTransformation {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 4rem 0 0 0;
+    padding: 1rem 0 1rem 0;
+    justify-content: center;
+    border-radius: 0.8rem;
+    //width: 110rem;
+}
+
+//Le contener qui gere le titre et le descriptif de l'activité
+.accueilActivitéContner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color3;
+    margin: 1rem;
+    width: 21rem;
+    //height: 7rem;
+    border-radius: 0.7rem;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 2rem 3rem;
+    border: 1px solid $color4;
+}
+
+// gestion du hover pour les activité
+.accueilActivitéContner:hover{
+    position: relative;
+    bottom: 2px;
+    right: 2px;
+}
+
+//Le titre transformation numérique
+.accueilTitleTransformation {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    width: 40rem;
+    color: $color0;
+    font-size: 2.2rem;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+//Le contener des activité
+.accueilContenerActivité {
+    display: flex;
+    flex-wrap: wrap;
+    color: $color3;
+    justify-content: space-around;
+    align-items: center;
+}
+
+//Contener generique des img
+.acceuilContenerImg { //acceuilContenerImg 
+
+    display: flex;
+    width: 18rem;
+    height: 12rem;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 0.7rem;
+    margin: 1rem;
+}
+
+//Contener de l'img site-web
+.acceuilImgSiteweb {
+    background-image: url('./site-web.jpg');
+}
+
+//Contener de l'img app-web
+.acceuilImgAppweb {
+    background-image: url('./application_web.jpg');
+}
+
+//Contener de l'img app-mobile
+.acceuilImgAppmobile {
+    background-image: url('./application-mobile.jpg');
+}
+
+//Contener de l'img formation
+.acceuilImgFormation {
+    background-image: url('./formation.jpg');
+}
+
+
+//Contener de l'img Automatisation
+.acceuilImgAutomatisation {
+    background-image: url('./automatisation.jpg');
+}
+
+//Contener de l'img site vitrine
+.acceuilImgSitevitrine {
+    background-image: url('./site_vitrine.jpg');
+}
+
+//Contener de l'img site e-commerce
+.acceuilImgSiteecommerce {
+    background-image: url('./site_e-commerce.jpg');
+}
+
+//Contener de l'img site front-end
+.acceuilImgFrontend {
+    background-image: url('./front_end.jpg');
+}
+
+//Contener de l'img site back-end
+.acceuilImgBackend {
+    background-image: url('./back_end.jpg');
+}
+
+//Contener de l'img site responsive
+.acceuilImgResponsive {
+    background-image: url('./responsive.jpg');
+}
+
+//Contener de l'img Javascript
+.acceuilImgJavascript {
+    background-image: url('./JavaScript.png');
+}
+
+//Contener de l'img Typescript
+.acceuilImgTypescript {
+    background-image: url('./Typescript.png');
+}
+//Contener de l'img React
+.acceuilImgReact {
+    background-image: url('./react.js.png');
+}
+//Contener de l'img Next
+.acceuilImgNext {
+    background-image: url('./next-js.png');
+}
+//Contener de l'img Node
+.acceuilImgNode {
+    background-image: url('./Node.js.png');
+}
+
+
+
+.acceuilTitreDescription{
+    background-color: $color4;
+    border-radius: 0 0   0.7rem 0.7rem;
+    padding: 0 0 1rem 0;
+}
+
+//le titre des activités class commune
+.acceuilActivitéDetail {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: white;
+    margin: 1rem 0 1rem 0;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+// texte descriptif de l'activité
+.acceuilActivitéDescription {
+    //text-align: center;
+    margin: 0 1rem 0 1rem;
+    color: white;
+}
+
+//Le contener qui gere le titre et le descriptif du deuxieme rasemblement d'article
+.accueilActivitéTech {
+    flex-direction: row-reverse;
+}
+
+//une div qui sert a separer le footer du reste de la page
+.acceuilmargingfooter{
+    margin: 4rem;
+
+}

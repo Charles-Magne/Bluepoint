@@ -1,0 +1,17 @@
+@import '../components/main/variables';
+
+//La div qui englobe toute la page
+.donnéesMainContener{
+    display: flex;
+    margin: 15rem 0 29rem 0 ;
+    justify-content: center;
+}
+
+//le span avec le texte
+.donnéesSpanMain{
+    display: flex;
+    width: 100rem;
+    font-size: 2rem;
+color: $color0;
+text-align: center;
+}
