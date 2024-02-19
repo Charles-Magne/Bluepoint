@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "buildVercel":"vercel-build"  },
+    "vercel-build":"next build"  },
   "dependencies": {
     "@reduxjs/toolkit": "^2.1.0",
     "@types/redux-thunk": "^2.1.0",
