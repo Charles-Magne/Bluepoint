@@ -49,27 +49,24 @@ const Header: React.FC = () => {
 
     // Obtenir le chemin de la page actuelle
 
-    // export const selectUser = (state: RootState) => state.user;
-
-
     // Supprimer la classe 'headerPageActive' de tous les éléments de la barre de navigation
     Object.values(pageSelectors).forEach(selector => {
         const element = document.querySelector(selector);
         // Vérifier si l'élément existe avant de lui retirer la classe
         element?.classList.remove('headerPageActive');
         
-        
     });
-
-   
 
     // Ajouter la classe 'headerPageActive' à l'élément correspondant au chemin de page actuel
     const currentSelector = pageSelectors[currentPage as keyof typeof pageSelectors];
+
     //const currentSelector = pageSelectors[currentPage];
     const currentElement = document.querySelector(currentSelector);
+
     // Vérifier si l'élément existe avant de lui ajouter la classe
     currentElement?.classList.add('headerPageActive');
-    console.log('on active un clic');
+    console.log('page scelector =>', pageSelectors, "currentpage", currentPage);
+
   }, [currentPage]);
 
   return (

@@ -13,14 +13,13 @@
 //Le titre principale
 .bluepointTitleMain{
     text-align: center;
-    color: $color0;
     text-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 // le contener qui englobe les cartouches
 .bluepointContenerResume{
     display: flex;
-    background-color: $color1;
+    background-color: $color1T;
     opacity: 0.9;
     flex-direction: row;
     justify-content: space-around;
@@ -31,7 +30,7 @@
 
 //Class generique pour chaque cartouche
 .bluepointCartoucheResume{
-    border: white;
+    //border:3px $color0 solid;
     background-color: white;
     width: 25rem;
     text-align: center;
@@ -49,7 +48,6 @@
 
 // le titre des chaques cartouche
 .bluepointTitleCartouche{
-color: $color0;
 text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 
@@ -73,7 +71,7 @@ text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
     transition: opacity 0.5s ease, transform 2s ease; /* Animation de transition pour l'opacité et la transformation */
   }
 
-  // La div qui anime les div partant de la droite
+  // La div qui anime les div partant de la gauche
   .bluepointAnimG {
     opacity: 0;
     transform: translateX(-100rem); /* Animation de translation vers le haut */
@@ -106,7 +104,7 @@ text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 .bluepointSatisfactionMain{
     display: flex;
     flex-direction: row;
-    background-color: $color4;
+    background: linear-gradient(to bottom, $color4, $color45);
     color: white;
 }
 
@@ -172,7 +170,7 @@ text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 .bluepointSavMain{
     display: flex;
     flex-direction: row;
-    background-color: $color4;
+    background: linear-gradient(to bottom, $color4, $color45);
     color: white;
 }
 

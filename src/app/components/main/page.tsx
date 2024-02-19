@@ -89,10 +89,9 @@ export default function Main() {
             <div className="accueilActivitéContner accueilActivitéTech">
               <div className="acceuilContenerImg acceuilImgSitevitrine"></div>
               <div className="acceuilTitreDescription">
-                <span className="acceuilActivitéDetail">Site vitrine</span>
+                <span className="acceuilActivitéDetail">Language</span>
                 <p className="acceuilActivitéDescription">
-                  Un site qui vous permet de promouvoir votre image de marque
-                  sur le web.
+                  C'est une maniére d'ecrire du code. Les languages repondent tous à un besoin specifique.
                 </p>
               </div>
             </div>
@@ -100,10 +99,9 @@ export default function Main() {
             <div className="accueilActivitéContner accueilActivitéTech">
               <div className="acceuilContenerImg acceuilImgSiteecommerce"></div>
               <div className="acceuilTitreDescription">
-                <span className="acceuilActivitéDetail">Site e-commerce</span>
+                <span className="acceuilActivitéDetail">Framework</span>
                 <p className="acceuilActivitéDescription">
-                  Le site va toujours permettre de vendre vos produits de
-                  maniére pertinante et securisé.
+                  Plus complexe qu'un language, il permet de produire un code de meilleur qualité.
                 </p>
               </div>
             </div>
@@ -133,7 +131,7 @@ export default function Main() {
             <div className="accueilActivitéContner accueilActivitéTech">
               <div className="acceuilContenerImg acceuilImgResponsive"></div>
               <div className="acceuilTitreDescription">
-                <span className="acceuilActivitéDetail ">Le responsive</span>
+                <span className="acceuilActivitéDetail ">Responsive</span>
                 <p className="acceuilActivitéDescription">
                   Un site responsive est un site qui s&apos;adapte automatiquement a
                   la taille de votre ecran.

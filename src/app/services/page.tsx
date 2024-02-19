@@ -55,9 +55,9 @@ const isInViewport = (elem: HTMLDivElement) => {
         <div className="serviceContenerResume">
           {/* Creation de site */}
           <div className="serviceContenerSite serviceCartoucheResume">
-            <Image alt="Logo_code" width={100} src={code} />
+            <Image alt="Logo_code" width={70} src={code} />
             <h2 className="serviceSiteTitre serviceCartoucheTitle">
-              Création et mise à jour de vos sites / Applications Web
+              Création / mise à jour de vos sites/Applications Web
             </h2>
             <span className="serviceSiteDescript serviceCartouchedescript">
               Un programme sur mesure pour realiser le site dont vous révez.
@@ -65,7 +65,7 @@ const isInViewport = (elem: HTMLDivElement) => {
           </div>
           {/* Creation d'automatisation */}
           <div className="serviceContenerAuto serviceCartoucheResume">
-            <Image alt="Logo_Automatisation" width={100} src={auto} />
+            <Image alt="Logo_Automatisation" width={70} src={auto} />
             <h2 className="serviceAutoTitre serviceCartoucheTitle">
               Automatisation de vos process
             </h2>
@@ -76,7 +76,7 @@ const isInViewport = (elem: HTMLDivElement) => {
           </div>
           {/* Creation de Formations */}
           <div className="serviceContenerForm serviceCartoucheResume">
-            <Image alt="Logo_Formation" width={100} src={formation} />
+            <Image alt="Logo_Formation" width={70} src={formation} />
             <h2 className="serviceFormTitre serviceCartoucheTitle">
               Formation sur les outils webs
             </h2>

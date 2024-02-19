@@ -54,7 +54,7 @@
     justify-content: center;
     align-self: center;
     width: 40rem;
-    color: $color0;
+    //color: $color0;
     font-size: 2.2rem;
     text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
@@ -157,7 +157,8 @@
 
 
 .acceuilTitreDescription{
-    background-color: $color4;
+    background: linear-gradient(to bottom, $color4, $color45);
+    //background: repeating-radial-gradient(circle, $color45, $color4);
     border-radius: 0 0   0.7rem 0.7rem;
     padding: 0 0 1rem 0;
 }
