@@ -6,9 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "vercel-build": "prisma generate && prisma migrate deploy && next build"
-  },
+    "lint": "next lint"  },
   "dependencies": {
     "@reduxjs/toolkit": "^2.1.0",
     "@types/redux-thunk": "^2.1.0",
