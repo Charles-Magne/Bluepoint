@@ -85,23 +85,23 @@ export default function Main() {
         <div className="accueilContenerTransformation">
           <h2 className="accueilTitleTransformation">Quelques termes techniques</h2>
           <div className="accueilContenerActivité">
-            {/**************La div Site vitrine ***********/}
+            {/**************La div Site Language ***********/}
             <div className="accueilActivitéContner accueilActivitéTech">
               <div className="acceuilContenerImg acceuilImgSitevitrine"></div>
               <div className="acceuilTitreDescription">
                 <span className="acceuilActivitéDetail">Language</span>
                 <p className="acceuilActivitéDescription">
-                  C'est une maniére d'ecrire du code. Les languages repondent tous à un besoin specifique.
+                  C&apos;est une maniére d&apos;ecrire du code. Les languages repondent tous à un besoin specifique.
                 </p>
               </div>
             </div>
-            {/****************La div site e-commerce ************/}
+            {/****************La div site Framework ************/}
             <div className="accueilActivitéContner accueilActivitéTech">
               <div className="acceuilContenerImg acceuilImgSiteecommerce"></div>
               <div className="acceuilTitreDescription">
                 <span className="acceuilActivitéDetail">Framework</span>
                 <p className="acceuilActivitéDescription">
-                  Plus complexe qu'un language, il permet de produire un code de meilleur qualité.
+                  Plus complexe qu&apos;un language, il permet de produire un code de meilleur qualité.
                 </p>
               </div>
             </div>
