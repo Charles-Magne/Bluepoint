@@ -5,6 +5,8 @@ import Main from "./components/main/page";
 import Footer from "./components/footer/page";
 import "./styles.scss";
 import { useRef } from "react";
+import Image from "next/image";
+import ville from "./components/main/Bezier.jpg";
 
 export default function Home() {
 
@@ -18,7 +20,7 @@ export default function Home() {
 
   return (
     <main>
-      <Header />
+      <Header/>
       <div className="accueilContenerMain">
         <h2 className="acceuilTitreMain">
           Bluepoint, votre agence de{" "}
@@ -27,7 +29,13 @@ export default function Home() {
           </strong>{" "}
           basé au coeur de l&apos;Occitanie.
         </h2>
-        <div className="acceuilContenerBezier"></div>
+        <Image  priority={true}
+              className="acceuilContenerBezier"
+              width="auto"
+              height="auto"
+              /*fill={true}*/
+              src={ville}
+              alt="ImgOccitanie"></Image>
         <div className="acceuilContenerArrow">
           <div onClick={clicArrowDown} className="acceuilPngArrow"></div>
         </div>

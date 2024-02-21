@@ -1,4 +1,6 @@
 @import '../main/variables';
+@import '../main/reset';
+
 
 .headerMain {
     display: flex;
@@ -6,12 +8,18 @@
     top: 0px;
     flex-direction: row;
     justify-content: center;
-    width: 100%;
+    width: 100vw;
     background-color: white;
-    margin: 0 0 0 -8px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     z-index: 5;
     font-family: 'Anonymous Pro', monospace;
+}
+
+// L'img logo dans le header
+.headerLogoMain{
+width: 15rem;
+height: auto;
+background-color: red;
 }
 
 .headerListLink {
@@ -80,3 +88,42 @@
     font-weight: bolder;
     border-bottom: $color0 1px solid;
 } 
+
+// Le responsive 
+
+
+@media screen and (max-width: 1550px) {
+    .headerLogoMain{
+        width: 10rem;
+    }
+
+    .headerListLink {
+        width: 40rem;
+        margin: 0 5rem 0 5rem;
+    }
+
+}
+
+@media screen and (max-width: 1160px) {
+    .headerListLink {
+        width: 30rem;
+        margin: 0 2rem 0 2rem;
+    }
+
+    .headerLink {
+        display: flex;
+        align-self: center;
+        font-size: 0.8rem;
+        text-decoration: none;
+        color: black;
+        height: 4rem;
+        align-items: center;
+        padding: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .headerMain {
+        display: none;
+    }
+}

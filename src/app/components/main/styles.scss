@@ -1,4 +1,5 @@
 @import '_variables';
+@import '_reset.scss';
 
 //************************************** Partie transformation
 
@@ -8,7 +9,7 @@
     //background-color: red;
     align-self: center;
     flex-direction: column;
-    width: 110rem ;
+    //width: 100% ;
     margin: 2rem 5rem 0 5rem;
 }
 
@@ -41,7 +42,7 @@
 }
 
 // gestion du hover pour les activité
-.accueilActivitéContner:hover{
+.accueilActivitéContner:hover {
     position: relative;
     bottom: 2px;
     right: 2px;
@@ -69,7 +70,8 @@
 }
 
 //Contener generique des img
-.acceuilContenerImg { //acceuilContenerImg 
+.acceuilContenerImg {
+    //acceuilContenerImg 
 
     display: flex;
     width: 18rem;
@@ -81,85 +83,11 @@
     margin: 1rem;
 }
 
-//Contener de l'img site-web
-.acceuilImgSiteweb {
-    background-image: url('./site-web.jpg');
-}
 
-//Contener de l'img app-web
-.acceuilImgAppweb {
-    background-image: url('./application_web.jpg');
-}
-
-//Contener de l'img app-mobile
-.acceuilImgAppmobile {
-    background-image: url('./application-mobile.jpg');
-}
-
-//Contener de l'img formation
-.acceuilImgFormation {
-    background-image: url('./formation.jpg');
-}
-
-
-//Contener de l'img Automatisation
-.acceuilImgAutomatisation {
-    background-image: url('./automatisation.jpg');
-}
-
-//Contener de l'img site vitrine
-.acceuilImgSitevitrine {
-    background-image: url('./site_vitrine.jpg');
-}
-
-//Contener de l'img site e-commerce
-.acceuilImgSiteecommerce {
-    background-image: url('./site_e-commerce.jpg');
-}
-
-//Contener de l'img site front-end
-.acceuilImgFrontend {
-    background-image: url('./front_end.jpg');
-}
-
-//Contener de l'img site back-end
-.acceuilImgBackend {
-    background-image: url('./back_end.jpg');
-}
-
-//Contener de l'img site responsive
-.acceuilImgResponsive {
-    background-image: url('./responsive.jpg');
-}
-
-//Contener de l'img Javascript
-.acceuilImgJavascript {
-    background-image: url('./JavaScript.png');
-}
-
-//Contener de l'img Typescript
-.acceuilImgTypescript {
-    background-image: url('./Typescript.png');
-}
-//Contener de l'img React
-.acceuilImgReact {
-    background-image: url('./react.js.png');
-}
-//Contener de l'img Next
-.acceuilImgNext {
-    background-image: url('./next-js.png');
-}
-//Contener de l'img Node
-.acceuilImgNode {
-    background-image: url('./Node.js.png');
-}
-
-
-
-.acceuilTitreDescription{
+.acceuilTitreDescription {
     background: linear-gradient(to bottom, $color4, $color45);
     //background: repeating-radial-gradient(circle, $color45, $color4);
-    border-radius: 0 0   0.7rem 0.7rem;
+    border-radius: 0 0 0.7rem 0.7rem;
     padding: 0 0 1rem 0;
 }
 
@@ -187,7 +115,48 @@
 }
 
 //une div qui sert a separer le footer du reste de la page
-.acceuilmargingfooter{
+.acceuilmargingfooter {
     margin: 4rem;
+}
+
+
+/////////////////////////////////// Le responsive
+
+@media screen and (max-width: 700px) {
+    .accueilTitleTransformation {
+        width: 30rem;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .accueilTitleTransformation {
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .accueilTitleTransformation {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    //Le contener qui gere le titre et le descriptif de l'activité
+    .accueilActivitéContner {
+        margin: 1rem;
+        width: 15rem;
+        height: auto;
+        border-radius: 0.7rem;
+        text-align: center;
+        flex-wrap: wrap;
+        margin: 2rem 3rem;
+        border: 1px solid $color4;
+    }
+
+    .acceuilContenerImg {
+        width: 10rem;
+        height: auto;
+    }
 
 }

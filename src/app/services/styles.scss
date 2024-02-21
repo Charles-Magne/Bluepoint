@@ -20,6 +20,8 @@
 // La div qui englobe les trois cartouches
 .serviceContenerResume{
     display: flex;
+    height: 20rem;
+    width: 90vw;
     flex-direction: row;
     background-color: $color1T;
     justify-content: space-around;
@@ -30,6 +32,10 @@
 
 // Un cartouche sur les trois points
 .serviceCartoucheResume{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     border: white;
     width: 25rem;
     text-align: center;
@@ -48,7 +54,7 @@
 
 //Le titre d'un cartouche
 .serviceCartoucheTitle{
-    
+    font-size: 1.3rem;
     text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 
@@ -92,6 +98,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
 }
 
 //class generique pour tout les titres d'articles

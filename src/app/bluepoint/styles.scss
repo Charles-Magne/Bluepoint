@@ -1,9 +1,11 @@
 @import '../components/main/variables';
+@import '../components/main/reset';
+
 
 // Le contner qui englobe toute la page
 .bluepointContenerMain{
     display: flex;
-    width: 118rem;
+    width: 100vw;
     margin: 10rem 0 0 -0.5rem;
     flex-direction: column;
     justify-items: center;
@@ -26,6 +28,7 @@
     margin: 2rem 5rem 10rem 5rem;
     padding: 2rem 0 ;
     border-radius: 0.7rem;
+    width: 90w;
 }
 
 //Class generique pour chaque cartouche
@@ -61,7 +64,7 @@ text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 
 //div qui encadre tous les articles
 .bluepointContenerArticles{
-    width: 116.8rem;
+    width: 100vw;
 }
 
 // La div qui anime les div partant de la droite
@@ -84,16 +87,10 @@ text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
     transform: translateY(0); /* Réinitialisation de la translation pour afficher le contenu à sa position normale */
   }
 
-//div qui gere tous les titres
-.bluepointTitreArticle{
-    display: flex;
-    text-align: center;
-}
-
 //gere le style des articles
 .bluepointArticleMain{
     display: flex;
-    width: 116.5rem;
+    width: 100vw;
     height: 25rem;
     flex-direction: column;
     margin: 0 0 4rem 0;
@@ -137,11 +134,12 @@ text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
     height: 12rem;
 }
 
-//La div qui contient le text de l'article
+//Contient le texte des article (sous-titre, texte)
 .bluepointContenertext{
     width: 70rem;
     display: flex;
     align-self: center;
+    flex-direction: column;
 }
 
 //gere le font de la div personalisation
@@ -183,15 +181,11 @@ text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 
 //class generique pour tout les titres d'articles
 .bluepointTitreArticle{
+    display: flex;
+    text-align: center;
 margin: 2rem auto 1rem auto;
 font-size: 2rem;
 text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
-}
-
-//Contient le texte des article (sous-titre, texte)
-.bluepointContenertext{
-    display: flex;
-    flex-direction: column;
 }
 
 //Class general pour tout le texte dans les articles
@@ -203,4 +197,151 @@ text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 // La toute derniere class qui gere le marging pour ne pas passer sous le footer
 .bluepointSavMain{
     margin: 0 0 6rem 0;
+}
+
+
+
+//////////////////////////////////////////////////////////////
+/// Le responsive
+/// //////////////////////////////////////////////////////////////
+
+@media screen and (max-width: 1450px) {
+
+    .bluepointCartoucheResume{
+    width: 20rem;
+    padding: 1rem;
+    }
+
+
+//gere le style des articles
+.bluepointArticleMain{
+    display: flex;
+    width: 100vw;
+    height: 30rem;
+    margin: 0 0 4rem 0;
+    padding: 1rem;
+}
+
+//Contient le texte des article (sous-titre, texte)
+.bluepointContenertext{
+    font-size: 1.2rem;
+}
+
+}
+
+@media screen and (max-width: 1150px) {
+
+    .bluepointCartoucheResume{
+        display: flex;
+        flex-direction: column;
+    width: 15rem;
+    height: 17rem;
+    padding: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    }
+
+    // le contener qui englobe les cartouches
+.bluepointContenerResume{
+    margin: 2rem auto 7rem auto;
+    padding: 2rem 0 ;
+    border-radius: 0.7rem;
+    width: 90vw;
+}
+
+//Contient le texte des article (sous-titre, texte)
+.bluepointContenertext{
+    font-size: 1.4rem;
+}
+
+//Class general pour tout le texte dans les articles
+.bluepointArticleText{
+    font-size: 1.2rem;
+    margin: 2rem 0 0 0;
+}
+}
+
+@media screen and (max-width: 900px) {
+
+        // le contener qui englobe les cartouches
+.bluepointContenerResume{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto 7rem auto;
+    padding: 2rem 0 ;
+    border-radius: 0.7rem;
+    width: 60vw;
+    height: 70rem;
+}
+
+    .bluepointCartoucheResume{
+        display: flex;
+        flex-direction: column;
+    width: 15rem;
+    //height: 17rem;
+    padding: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    }
+
+//gere le style des articles
+.bluepointArticleMain{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    margin: 0 0 4rem 0;
+    padding: 1rem;
+}
+
+// gere la place des div pour la personalisation
+.bluepointPersonaRight{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+
+    //class generique pour tout les titres d'articles
+.bluepointTitreArticle{
+    display: flex;
+    width: 80vw;
+font-size: 2rem;
+}
+
+//le contener du titre et de l'img
+.bluepointSatisfactionLeft{
+    width: 40rem;
+    margin: 0 auto ;
+}
+
+//Contient le texte des article (sous-titre, texte)
+.bluepointContenertext{
+    font-size: 1.4rem;
+    width: 90vw;
+    text-align: center;
+}
+
+}
+
+@media screen and (max-width: 700px) {
+    .bluepointSatisfactionLeft{
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+// le contener qui englobe les cartouches
+.bluepointContenerResume{
+    width: 90vw;
+    margin: 2rem auto 5rem auto;
+}
+
+}
+
+@media screen and (max-width: 400px) {
+    .bluepointArticleImg{
+        width: 15rem;
+    }
 }

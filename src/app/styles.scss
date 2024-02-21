@@ -1,10 +1,18 @@
-@import './components/main/variables';
+@import "./components/main/variables";
+@import "./components/main/reset";
 
 // La div qui entoure tout
+/*body{
+    background-color: red;
+    width: 10%;
+}*/
+
+//La div qui contient toute la page
 .accueilContenerMain {
     display: flex;
+    width: 100vw;
     flex-direction: column;
-    font-family: 'Anonymous Pro', monospace;
+    font-family: "Anonymous Pro", monospace;
 }
 
 //Le titre principal de la page
@@ -17,17 +25,16 @@
     left: 7rem;
     font-size: 3rem;
     z-index: -1;
-    font-family: 'Anonymous Pro', monospace;
+    font-family: "Anonymous Pro", monospace;
     color: $color3;
     background-color: rgba(0, 0, 0, 0.2);
     /* Couleur noire semi-transparente */
     padding: 0.5rem;
     border-radius: 0.7rem;
-    //text-shadow: 2px 4px 3px rgba(0,0,0,0.3); 
+    //text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
     //text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
     /*text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);*/
-    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
-        0px 8px 13px rgba(0, 0, 0, 0.1),
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
         0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
@@ -40,13 +47,12 @@
 //La div qui englobe l'img Bezier
 .acceuilContenerBezier {
     display: flex;
-    background-image: url('./components/main/Bezier.jpg');
-    width: 101%;
+    //background-image: url('./components/main/Bezier.jpg');
+    width: 100%;
     //height: 60rem;
     height: 100vh;
     overflow: hidden;
-    margin: 0 0 0 -1rem;
-    z-index: -3;
+    z-index: -2;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -58,7 +64,7 @@
     width: 5rem;
     height: 5rem;
     position: absolute;
-    top: 45rem;
+    top: 87vh;
     left: 50%;
     right: 50%;
     border-radius: 3rem;
@@ -66,9 +72,9 @@
     cursor: pointer;
 }
 
-.acceuilContenerArrow:hover{
+.acceuilContenerArrow:hover {
     position: absolute;
-    top: 44.6rem;
+    top: 86vh;
 }
 
 //La div qui encadre l'icone fleche
@@ -76,11 +82,67 @@
     display: flex;
     align-self: center;
     margin: 0 auto;
-    background-image: url('./components/main/arrow');
+    background-image: url("./components/main/arrow");
     width: 3.2rem;
     height: 3.5rem;
     background-repeat: no-repeat;
     background-size: contain;
     cursor: pointer;
+}
+
+/////////////////////////////////////
+///////////////////// Responsive///////////////////////////
+////////////////////////////////
+
+@media screen and (max-width: 1870px) {
+
+    .acceuilContenerArrow {
+        position: relative;
+        top: -6rem;
+        left: 50%;
+        right: 50%;
+    }
+
+    .acceuilContenerArrow:hover {
+        position: relative;
+        top: -7rem;
+    }
+}
+
+@media screen and (max-width: 950px) {
+
+    //Le titre principal de la page
+    .acceuilTitreMain {
+        width: 30rem;
+        left: 7rem;
+        font-size: 2rem;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+}
+
+@media screen and (max-width: 620px) {
+
+    //Le titre principal de la page
+    .acceuilTitreMain {
+        left: 2rem;
+    }
+}
+
+@media screen and (max-width: 530px) {
+
+    //Le titre principal de la page
+    .acceuilTitreMain {
+        width: 25rem;
+        font-size: 1.5rem;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    //Le titre principal de la page
+    .acceuilTitreMain {
+        width: 15rem;
+    }
 }
 

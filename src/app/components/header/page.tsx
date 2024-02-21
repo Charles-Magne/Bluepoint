@@ -74,7 +74,7 @@ const Header: React.FC = () => {
       <div className="headerMain">
         <div  className="headerContenerLogo">
           <Link href="/" >
-          <Image width={220} priority={true} src={Logo} alt="logoBluepoint" />
+          <Image className="headerLogoMain"  sizes="(max-width: 3000px) 15vw, (max-width: 2000px) 10vw 33vw, (max-width: 1520px) 2vw" priority={true} src={Logo} alt="logoBluepoint" />
           </Link>
         </div>
         <div className="headerListLink">

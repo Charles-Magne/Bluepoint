@@ -5,6 +5,22 @@ import "./styles.scss";
 import { Provider } from "react-redux";
 import Image from "next/image";
 import Logo from "./bluepoint_logo.png";
+import siteWeb from "./site-web.jpg";
+import appWeb from "./application_web.jpg";
+import appMobile from "./application-mobile.jpg";
+import Formation from "./formation.jpg";
+import automatisation from "./automatisation.jpg";
+import siteVitrine from "./site_vitrine.jpg";
+import eCommerce from "./site_e-commerce.jpg";
+import frontEnd from "./front_end.jpg";
+import backEnd from "./back_end.jpg";
+import responsive from "./responsive.jpg";
+import javascript from "./JavaScript.png";
+import typescript from "./Typescript.png";
+import react from "./react.js.png";
+import next from "./next-js.png";
+import node from "./Node.js.png";
+
 
 export default function Main() {
   return (
@@ -19,7 +35,13 @@ export default function Main() {
           <div className="accueilContenerActivité">
             {/**************La div Site web ***********/}
             <div className="accueilActivitéContner">
-              <div className="acceuilContenerImg acceuilImgSiteweb"></div>
+              <Image  priority={true}
+              className="acceuilContenerImg acceuilImgSiteweb"
+              width="auto"
+              height="auto"
+              /*fill={true}*/
+              src={siteWeb}
+              alt="ImgSiteWeb"></Image>
               <div className="acceuilTitreDescription">
                 <span className="acceuilActivitéDetail">Site web</span>
                 {/*Nous créeons bien plus que des sites web. Nous créeons votre
@@ -32,7 +54,13 @@ export default function Main() {
             </div>
             {/****************La div Application web ************/}
             <div className="accueilActivitéContner">
-              <div className="acceuilContenerImg acceuilImgAppweb"></div>
+              <Image  priority={true}
+              className="acceuilContenerImg acceuilImgAppweb"
+              width="auto"
+              height="auto"
+              /*fill={true}*/
+              src={appWeb}
+              alt="ImgSiteWeb"></Image>
               <div className="acceuilTitreDescription">
                 <span className="acceuilActivitéDetail">Application web</span>
                 <p className="acceuilActivitéDescription">
@@ -43,7 +71,13 @@ export default function Main() {
             </div>
             {/**************La div Application Mobile ************/}
             <div className="accueilActivitéContner">
-              <div className="acceuilContenerImg acceuilImgAppmobile"></div>
+              <Image  priority={true}
+              className="acceuilContenerImg acceuilImgAppmobile"
+              width="auto"
+              height="auto"
+              /*fill={true}*/
+              src={appMobile}
+              alt="ImgSiteWeb"></Image>
               <div className="acceuilTitreDescription">
                 <span className="acceuilActivitéDetail">
                   Application mobile
@@ -56,7 +90,12 @@ export default function Main() {
             </div>
             {/**************La div Formation ******************/}
             <div className="accueilActivitéContner">
-              <div className="acceuilContenerImg acceuilImgFormation"></div>
+              <Image  priority={true}
+              className="acceuilContenerImg acceuilImgFormation"
+              width="auto"
+              height="auto"
+              src={Formation}
+              alt="ImgSiteWeb"></Image>
               <div className="acceuilTitreDescription">
                 <span className="acceuilActivitéDetail">Formation</span>
                 <p className="acceuilActivitéDescription">
@@ -67,7 +106,13 @@ export default function Main() {
             </div>
             {/************************La div Application Automatisation **************/}
             <div className="accueilActivitéContner">
-              <div className="acceuilContenerImg acceuilImgAutomatisation"></div>
+              <Image  priority={true}
+              className="acceuilContenerImg acceuilImgAutomatisation"
+              width="auto"
+              height="auto"
+              /*fill={true}*/
+              src={automatisation}
+              alt="ImgSiteWeb"></Image>
               <div className="acceuilTitreDescription">
                 <span className="acceuilActivitéDetail ">Automatisation</span>
                 <p className="acceuilActivitéDescription">
@@ -87,7 +132,13 @@ export default function Main() {
           <div className="accueilContenerActivité">
             {/**************La div Site Language ***********/}
             <div className="accueilActivitéContner accueilActivitéTech">
-              <div className="acceuilContenerImg acceuilImgSitevitrine"></div>
+              <Image  priority={true}
+              className="acceuilContenerImg acceuilImgSitevitrine"
+              width="auto"
+              height="auto"
+              /*fill={true}*/
+              src={siteVitrine}
+              alt="ImgSiteWeb"></Image>
               <div className="acceuilTitreDescription">
                 <span className="acceuilActivitéDetail">Language</span>
                 <p className="acceuilActivitéDescription">
@@ -97,7 +148,13 @@ export default function Main() {
             </div>
             {/****************La div site Framework ************/}
             <div className="accueilActivitéContner accueilActivitéTech">
-              <div className="acceuilContenerImg acceuilImgSiteecommerce"></div>
+              <Image  priority={true}
+              className="acceuilContenerImg acceuilImgSiteecommerce"
+              width="auto"
+              height="auto"
+              /*fill={true}*/
+              src={eCommerce}
+              alt="ImgSiteWeb"></Image>
               <div className="acceuilTitreDescription">
                 <span className="acceuilActivitéDetail">Framework</span>
                 <p className="acceuilActivitéDescription">
@@ -107,7 +164,13 @@ export default function Main() {
             </div>
             {/**************La div front end ************/}
             <div className="accueilActivitéContner accueilActivitéTech">
-              <div className="acceuilContenerImg acceuilImgFrontend"></div>
+              <Image  priority={true}
+              className="acceuilContenerImg acceuilImgFrontend"
+              width="auto"
+              height="auto"
+              /*fill={true}*/
+              src={frontEnd}
+              alt="ImgSiteWeb"></Image>
               <div className="acceuilTitreDescription">
                 <span className="acceuilActivitéDetail">Front end</span>
                 <p className="acceuilActivitéDescription">
@@ -118,7 +181,13 @@ export default function Main() {
             </div>
             {/**************La div Back end ******************/}
             <div className="accueilActivitéContner accueilActivitéTech">
-              <div className="acceuilContenerImg acceuilImgBackend"></div>
+              <Image  priority={true}
+              className="acceuilContenerImg acceuilImgBackend"
+              width="auto"
+              height="auto"
+              /*fill={true}*/
+              src={backEnd}
+              alt="ImgSiteWeb"></Image>
               <div className="acceuilTitreDescription">
                 <span className="acceuilActivitéDetail">Back end</span>
                 <p className="acceuilActivitéDescription">
@@ -129,7 +198,13 @@ export default function Main() {
             </div>
             {/************************La div responsive **************/}
             <div className="accueilActivitéContner accueilActivitéTech">
-              <div className="acceuilContenerImg acceuilImgResponsive"></div>
+              <Image  priority={true}
+              className="acceuilContenerImg acceuilImgResponsive"
+              width="auto"
+              height="auto"
+              /*fill={true}*/
+              src={responsive}
+              alt="ImgSiteWeb"></Image>
               <div className="acceuilTitreDescription">
                 <span className="acceuilActivitéDetail ">Responsive</span>
                 <p className="acceuilActivitéDescription">
@@ -147,7 +222,13 @@ export default function Main() {
           <div className="accueilContenerActivité">
             {/**************JavaScript ***********/}
             <div className="accueilActivitéContner accueilActivitéTech">
-              <div className="acceuilContenerImg acceuilImgJavascript"></div>
+              <Image  priority={true}
+              className="acceuilContenerImg acceuilImgJavascript"
+              width="auto"
+              height="auto"
+              /*fill={true}*/
+              src={javascript}
+              alt="ImgSiteWeb"></Image>
               <div className="acceuilTitreDescription">
                 <span className="acceuilActivitéDetail">JavaScript</span>
                 <p className="acceuilActivitéDescription">
@@ -157,7 +238,13 @@ export default function Main() {
             </div>
              {/**************Typescript ******************/}
              <div className="accueilActivitéContner accueilActivitéTech">
-              <div className="acceuilContenerImg acceuilImgTypescript"></div>
+              <Image  priority={true}
+              className="acceuilContenerImg acceuilImgTypescript"
+              width="auto"
+              height="auto"
+              /*fill={true}*/
+              src={typescript}
+              alt="ImgSiteWeb"></Image>
               <div className="acceuilTitreDescription">
                 <span className="acceuilActivitéDetail">Typescript</span>
                 <p className="acceuilActivitéDescription">
@@ -167,7 +254,13 @@ export default function Main() {
             </div>
             {/****************React.js ************/}
             <div className="accueilActivitéContner accueilActivitéTech">
-              <div className="acceuilContenerImg acceuilImgReact"></div>
+              <Image  priority={true}
+              className="acceuilContenerImg acceuilImgReact"
+              width="auto"
+              height="auto"
+              /*fill={true}*/
+              src={react}
+              alt="ImgSiteWeb"></Image>
               <div className="acceuilTitreDescription">
                 <span className="acceuilActivitéDetail">React.js</span>
                 <p className="acceuilActivitéDescription">
@@ -177,7 +270,13 @@ export default function Main() {
             </div>
             {/**************Next.js ************/}
             <div className="accueilActivitéContner accueilActivitéTech">
-              <div className="acceuilContenerImg acceuilImgNext"></div>
+              <Image  priority={true}
+              className="acceuilContenerImg acceuilImgNext"
+              width="auto"
+              height="auto"
+              /*fill={true}*/
+              src={next}
+              alt="ImgSiteWeb"></Image>
               <div className="acceuilTitreDescription">
                 <span className="acceuilActivitéDetail">Next.js</span>
                 <p className="acceuilActivitéDescription">
@@ -188,7 +287,13 @@ export default function Main() {
            
             {/************************Node.js **************/}
             <div className="accueilActivitéContner accueilActivitéTech">
-              <div className="acceuilContenerImg acceuilImgNode"></div>
+              <Image  priority={true}
+              className="acceuilContenerImg acceuilImgNode"
+              width="auto"
+              height="auto"
+              /*fill={true}*/
+              src={node}
+              alt="ImgSiteWeb"></Image>
               <div className="acceuilTitreDescription">
                 <span className="acceuilActivitéDetail ">Node.js</span>
                 <p className="acceuilActivitéDescription">
