@@ -1,7 +1,7 @@
 @import '../components/main/variables';
 
 // le contener principale
-.serviceContenerMain{
+.serviceContenerMain {
     display: flex;
     width: 99.2vw;
     margin: 10rem 0 0 -0.5rem;
@@ -11,14 +11,14 @@
 }
 
 // Le titre principal
-.serviceTitleMain{
+.serviceTitleMain {
     text-align: center;
     //color: $color0;
     text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 
 // La div qui englobe les trois cartouches
-.serviceContenerResume{
+.serviceContenerResume {
     display: flex;
     height: 20rem;
     width: 90vw;
@@ -26,12 +26,12 @@
     background-color: $color1T;
     justify-content: space-around;
     margin: 2rem 5rem 10rem 5rem;
-    padding: 2rem 0 ;
+    padding: 2rem 0;
     border-radius: 0.7rem;
 }
 
 // Un cartouche sur les trois points
-.serviceCartoucheResume{
+.serviceCartoucheResume {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -46,54 +46,54 @@
 }
 
 // les trois cartouche generique 
-.serviceCartoucheResume:hover{
+.serviceCartoucheResume:hover {
     position: relative;
     bottom: 4px;
     right: 2px;
 }
 
 //Le titre d'un cartouche
-.serviceCartoucheTitle{
+.serviceCartoucheTitle {
     font-size: 1.3rem;
     text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 
 // descriptif du cartouche
-.serviceCartouchedescript{
+.serviceCartouchedescript {
     color: darkslategray;
     font-size: 1.2rem;
 }
 
 // la div relative aux formations
-.serviceFormMain{
+.serviceFormMain {
     margin: 0 0 6rem 0;
 }
 
 // *************************** Les trois articles
 
 //la div relative a tout les articles
-.serviceContenerArticles{
+.serviceContenerArticles {
     //width: 100vw;
     width: 100%;
 }
 
 // la class generique pour tous les articles
-.serviceArticleMain{
+.serviceArticleMain {
     display: flex;
     flex-direction: row;
     padding: 1rem;
     height: 28rem;
-    background-color:white;
+    background-color: white;
 }
 
 // La div qui englobe le premier article
-.serviceSiteMain{
+.serviceSiteMain {
     background: linear-gradient(to bottom, $color4, $color45);
     color: white;
 }
 
 // La div qui gere le flex du titre et de l'img
-.serviceTitleImg{
+.serviceTitleImg {
     width: 70rem;
     display: flex;
     flex-direction: column;
@@ -102,15 +102,15 @@
 }
 
 //class generique pour tout les titres d'articles
-.serviceTitreArticle{
-text-align: center;
-padding: 0 1.3rem;
-text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
-font-size: 2rem;
+.serviceTitreArticle {
+    text-align: center;
+    padding: 0 1.3rem;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+    font-size: 2rem;
 }
 
 // Le contener de l'img site
-.serviceImgSite{
+.serviceImgSite {
     display: flex;
     background-image: url('./site.jpg');
     width: 22rem;
@@ -121,7 +121,7 @@ font-size: 2rem;
 }
 
 // Le contener de l'img Automatisation
-.serviceImgAuto{
+.serviceImgAuto {
     background-image: url('./automatisation1.jpeg');
     width: 25rem;
     height: 15rem;
@@ -131,7 +131,7 @@ font-size: 2rem;
 }
 
 // Le contener de l'img Formation
-.serviceImgForm{
+.serviceImgForm {
     background-image: url('./formation.jpeg');
     width: 25rem;
     height: 15rem;
@@ -141,44 +141,237 @@ font-size: 2rem;
 }
 
 //Contient le texte des articles (sous-titre, texte)
-.serviceContenertext{
+.serviceContenertext {
     display: flex;
+    height: 100%;
     flex-direction: column;
     align-self: center;
+    justify-content: space-between;
 }
 
 //Class general pour tout le texte dans les articles
-.serviceArticleText{
+.serviceArticleText {
     font-size: 1.2rem;
     margin: 1rem 0 0 0;
 }
 
 //Le contener sur l'automatisation
-.serviceAutoMain{
+.serviceAutoMain {
     display: flex;
     flex-direction: row-reverse;
     color: $color0;
 }
 
 //contener sur la formation 
-.serviceFormMain{
+.serviceFormMain {
     background: linear-gradient(to bottom, $color4, $color45);
     color: white;
 }
 
 .animatedD {
     opacity: 0;
-    transform: translateX(100rem); /* Animation de translation vers le haut */
-    transition: opacity 0.5s ease, transform 2s ease; /* Animation de transition pour l'opacité et la transformation */
-  }
+    transform: translateX(100rem);
+    /* Animation de translation vers le haut */
+    transition: opacity 0.5s ease, transform 2s ease;
+    /* Animation de transition pour l'opacité et la transformation */
+}
 
-  .animatedG {
+.animatedG {
     opacity: 0;
-    transform: translateX(-100rem); /* Animation de translation vers le haut */
-    transition: opacity 0.5s ease, transform 2s ease; /* Animation de transition pour l'opacité et la transformation */
-  }
-  
-  .show {
+    transform: translateX(-100rem);
+    /* Animation de translation vers le haut */
+    transition: opacity 0.5s ease, transform 2s ease;
+    /* Animation de transition pour l'opacité et la transformation */
+}
+
+.show {
     opacity: 1;
-    transform: translateY(0); /* Réinitialisation de la translation pour afficher le contenu à sa position normale */
-  }
+    transform: translateY(0);
+    /* Réinitialisation de la translation pour afficher le contenu à sa position normale */
+}
+
+/////////////////////////////////////////////////////////////
+/// Le responsive
+/// //////////////////////////////////////////////////////////////
+
+@media screen and (max-width: 1450px) {
+
+    // Un cartouche sur les trois points
+    .serviceCartoucheResume {
+        width: 20rem;
+        padding: 1rem;
+    }
+
+
+    //gere le style des articles
+    .serviceArticleMain {
+        display: flex;
+        width: 100vw;
+        height: 30rem;
+        margin: 0 0 4rem 0;
+        padding: 1rem;
+    }
+
+    //Contient le texte des article (sous-titre, texte)
+    .serviceContenertext {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media screen and (max-width: 1150px) {
+
+    // le contener qui englobe les cartouches
+    .serviceContenerResume {
+        margin: 2rem auto 7rem auto;
+        padding: 2rem 0;
+        border-radius: 0.7rem;
+        width: 90vw;
+    }
+
+    // Un cartouche sur les trois points
+    .serviceCartoucheResume {
+        display: flex;
+        flex-direction: column;
+        width: 15rem;
+        height: 17rem;
+        padding: 1rem;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    // la class generique pour tous les articles
+    .serviceArticleMain {
+        display: flex;
+        flex-direction: row;
+        padding: 1rem;
+        height: auto;
+        background-color: white;
+    }
+
+    .animatedG {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    //Contient le texte des articles (sous-titre, texte)
+    .serviceContenertext {
+        font-size: 1.4rem;
+        margin: 1rem;
+    }
+
+    //Class general pour tout le texte dans les articles
+    .bluepointArticleText {
+        font-size: 1.2rem;
+        margin: 2rem 0 0 0;
+    }
+
+    // gere le titre de l'article automatisation
+    .serviceAutoTitle{
+margin: 0 0 2rem 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    // le contener qui englobe les cartouches
+    .serviceContenerResume {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 2rem auto 7rem auto;
+        padding: 2rem 0;
+        border-radius: 0.7rem;
+        width: 60vw;
+        height: 70rem;
+    }
+
+    // Un cartouche sur les trois points
+    .serviceCartoucheResume {
+        display: flex;
+        flex-direction: column;
+        width: 15rem;
+        //height: 17rem;
+        padding: 1rem;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    // la class generique pour tous les articles
+    .serviceArticleMain {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: auto;
+        margin: 0 0 4rem 0;
+        padding: 1rem;
+    }
+
+    // La div qui gere le flex du titre et de l'img
+    .serviceTitleImg {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    // gere le titre de l'automatisation
+    .serviceAutoTitle{
+        margin: 0;
+            }
+
+    //class generique pour tout les titres d'articles
+    .serviceTitreArticle {
+        display: flex;
+        width: 80vw;
+        font-size: 2rem;
+        justify-content: center;
+        margin: 0 0 2rem 0;
+    }
+
+    //Contient le texte des article (sous-titre, texte)
+    .serviceContenertext {
+        font-size: 1.4rem;
+        width: 90vw;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .serviceTitleImg {
+        width: 80vw;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    // le contener qui englobe les cartouches
+    .serviceContenerResume {
+        width: 90vw;
+        margin: 2rem auto 5rem auto;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    // l'img du site
+    .serviceImgSite {
+        width: 15rem;
+        height: 10rem;
+    }
+
+    // l'img d'automatisation
+    .serviceImgAuto{
+        width: 15rem;
+        height: 7rem;
+    }
+
+    // l'img de formation
+    .serviceImgForm {
+        width: 15rem;
+        height: 7rem;
+    }
+}

@@ -100,7 +100,7 @@ const isInViewport = (elem: HTMLDivElement) => {
               Bluepoint développe des sites Web vitrines pour mettre en valeur votre activité, des plateformes e-commerce pour la vente de vos produits, ainsi que des applications Web et mobiles.
               </span>
               <span className="serviceSiteArticle serviceArticleText">
-              En utilisant des technologies de pointe telles que React.js (utilisée par Facebook), Next.js (adoptée par TikTok et Twitch) et Node.js (préférée par Netflix et Amazon), nous assurons des solutions performantes et évolutives.
+              En utilisant des technologies de pointe telles que React.js (utilisée par Facebook), <strong>Next.js</strong> (adoptée par TikTok et Twitch) et Node.js (préférée par Netflix et Amazon), nous assurons des solutions performantes et évolutives.
               </span>
               <span className="serviceSiteArticle serviceArticleText">
               Selon votre niveau de familiarité avec ces technologies et l&apos;état d&apos;avancement de votre projet, nous intervenons à toutes les étapes de sa création :
