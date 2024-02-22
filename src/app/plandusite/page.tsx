@@ -9,26 +9,26 @@ const Plandusite = () => {
       <Header />
       <div className="planMainContener">
         <h1 className="plandusiteTitreMain">
-          Vous etes perdu ? suivez le plan
+          Vous êtes perdu ? Suivez le plan
         </h1>
-        <ul>
+        <ul className="plandusiteListePage">
           <a href="/">
-            <li>Acceuil</li>
+            <li className="plandusiteLiAcceuil plandusiteLiLien" >Acceuil</li>
           </a>
           <a href="/bluepoint">
-            <li>Bluepoint</li>
+            <li className="plandusiteLiBluepoint plandusiteLiLien" >Bluepoint</li>
           </a>
           <a href="/services">
-            <li>Services</li>
+            <li className="plandusiteLiServices plandusiteLiLien" >Services</li>
           </a>
           <a href="/realisation">
-            <li>Realisation</li>
+            <li className="plandusiteLiRealisation plandusiteLiLien" >Realisation</li>
           </a>
           <a href="/contact">
-            <li>Contact</li>
+            <li className="plandusiteLiContact plandusiteLiLien" >Contact</li>
           </a>
           <a href="/donneesdusite">
-            <li>Données du site</li>
+            <li className="plandusiteLiDonnées plandusiteLiLien" >Données du site</li>
           </a>
         </ul>
       </div>
