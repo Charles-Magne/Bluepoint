@@ -2,7 +2,7 @@
 @import '../components/main/reset';
 
 // La div qui englobe tout la page
-.contactContenerMain{
+.contactContenerMain {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -11,7 +11,7 @@
 }
 
 // Le contener de tous les form 
-.contactContenerForm{
+.contactContenerForm {
     display: flex;
     flex-direction: column;
     width: 100rem;
@@ -20,7 +20,7 @@
 }
 
 // Le gros titre de la page
-.contacttitleMain{
+.contacttitleMain {
     color: $color0;
     text-align: center;
     //text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
@@ -28,7 +28,7 @@
 }
 
 // Div qui sert a faire un background
-.contactContenerBackground{
+.contactContenerBackground {
     display: flex;
     flex-direction: column;
     //background-color: $color1;
@@ -41,7 +41,7 @@
 }
 
 // la div qui entoure les deux form nom et prenom
-.contactContenerName{
+.contactContenerName {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -49,7 +49,7 @@
 }
 
 // Le titre des label du form
-.formTitle{
+.formTitle {
     display: flex;
     flex-direction: column;
     font-size: 0.7rem;
@@ -57,19 +57,19 @@
 }
 
 // le span des titres
-.contactTitleLabel{
+.contactTitleLabel {
     margin: 0 0 0.5rem 0;
 }
 
 //le champs des input
-.contactInputField{
+.contactInputField {
     padding: 0.2rem 0 0.2rem 0.2rem;
     border-radius: 0.2rem;
     border: 1px solid gray;
 }
 
 // la div dans laquelle sont present l'entreprise et l'adresse mail
-.contactContenerCorporate{
+.contactContenerCorporate {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -77,29 +77,30 @@
 }
 
 // la div qui gere le menu deroulant 
-.ContactFormProject{
+.ContactFormProject {
     margin: 0 0 2rem 3rem;
     width: 22rem;
 }
 
 //Gere les options du menu deroulant
-.contactOptionMenu{
+.contactOptionMenu {
     font-family: 'Anonymous Pro', monospace;
 }
 
 //La div specifique au label Message
-.contactLabelMessage{
+.contactLabelMessage {
     width: 30rem;
     margin: 0 0 0.5rem 3rem;
 }
 
 //Le contener de l'input du message
-.contactContenerMessage{
+.contactContenerMessage {
     display: flex;
     width: 48rem;
 }
 
-.contactMessageInput{
+// La class du input area la ou l'on tape le texte
+.contactMessageInput {
     margin: 0 auto 0 auto;
     height: 10rem;
     width: 40rem;
@@ -107,15 +108,15 @@
 }
 
 // le contener qui sert a flex le button
-.contactContenerButton{
+.contactContenerButton {
     display: flex;
     justify-content: flex-end;
 }
 
-//Le button qui sert a envoyer les message
-.contactButtonsend{
+//Le button qui sert a envoyer les messages
+.contactButtonsend {
     display: flex;
-    margin: 2rem 1rem 1rem 0 ;
+    margin: 2rem 1rem 1rem 0;
     padding: 0.5rem;
     width: 5.8rem;
     height: 2rem;
@@ -130,8 +131,180 @@
     color: white;
 }
 
-.contactButtonsend:hover{
+.contactButtonsend:hover {
     position: relative;
     bottom: 2px;
     right: 2px;
 }
+
+@media screen and (max-width: 1000px) {
+
+    .contacttitleMain {
+        margin: 0 auto;
+        width: 70vw;
+    }
+
+    .contactContenerBackground {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem 3rem;
+    }
+
+    // la div qui entoure les deux form nom et prenom
+    .contactContenerName {
+        flex-direction: column;
+        width: 30vw;
+        height: 10rem;
+    }
+
+    // la div dans laquelle sont present l'entreprise et l'adresse mail
+    .contactContenerCorporate {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0 0 2rem 0;
+        width: 30vw;
+    }
+
+    // la div qui gere le menu deroulant 
+    .ContactFormProject {
+        margin: 0 0 2rem 0;
+        width: 20rem;
+    }
+
+    //Le contener de l'input du message
+    .contactContenerMessage {
+        display: flex;
+        width: 40rem;
+        margin: 0;
+    }
+
+    //La div specifique au label Message
+    .contactLabelMessage {
+        width: 30rem;
+        margin: 0 0 0.5rem 0;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+
+    .contactContenerBackground {
+        width: 60vw;
+        justify-content: center;
+    }
+
+    // la div qui entoure les deux form nom et prenom
+    .contactContenerName {
+        flex-direction: column;
+        width: 15rem;
+        height: 10rem;
+    }
+
+    // la div dans laquelle sont present l'entreprise et l'adresse mail
+    .contactContenerCorporate {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0 0 2rem 0;
+        width: 15rem;
+        height: 10rem;
+    }
+
+    .contactLabelMessage{
+        width: 10rem;
+    }
+    //Le contener de l'input du message
+    .contactContenerMessage {
+        display: flex;
+        width: 25rem;
+        margin: 0;
+    }
+
+    // La class du input area la ou l'on tape le texte
+    .contactMessageInput {
+        margin: 0 auto 0 auto;
+        height: 10rem;
+        width: 25rem;
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+//Le contener de l'input du message
+.contactContenerMessage {
+    width: 20rem;
+}
+
+// La class du input area la ou l'on tape le texte
+.contactMessageInput {
+    height: 10rem;
+    width: 20rem;
+}
+}
+
+@media screen and (max-width: 550px) { 
+
+// Div qui sert a faire un background
+.contactContenerBackground {
+    width: 90vw;
+    margin: 1rem auto 0 auto;
+    flex-wrap: wrap;
+    border: solid $color0 1px;
+    border-radius: 0.7rem;
+}
+
+//Le contener de l'input du message
+.contactContenerMessage {
+    width: 25rem;
+}
+
+// La class du input area la ou l'on tape le texte
+.contactMessageInput {
+    margin: 0 auto 0 auto;
+    height: 10rem;
+    width: 25rem;
+    padding: 1rem;
+}
+}
+
+@media screen and (max-width: 460px) { 
+    
+    //Le contener de l'input du message
+    .contactContenerMessage {
+        width: 20rem;
+    }
+    
+    // La class du input area la ou l'on tape le texte
+    .contactMessageInput {
+        margin: 0 auto 0 auto;
+        height: 10rem;
+        width: 20rem;
+        padding: 1rem;
+    }
+    }
+
+    @media screen and (max-width: 370px) { 
+
+            // la div qui gere le menu deroulant 
+    .ContactFormProject {
+        margin: 0 0 2rem 0;
+        width: 15rem;
+    }
+    
+        //Le contener de l'input du message
+        .contactContenerMessage {
+            width: 15rem;
+        }
+        
+        // La class du input area la ou l'on tape le texte
+        .contactMessageInput {
+            margin: 0 auto 0 auto;
+            height: 10rem;
+            width: 15rem;
+            padding: 1rem;
+        }
+        }
