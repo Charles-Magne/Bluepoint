@@ -14,7 +14,6 @@ export default function Home() {
   const mainComposant = useRef<HTMLDivElement>(null);
 
   const clicArrowDown = () => {
-    console.log('ici ca clic', mainComposant);
     mainComposant.current?.scrollIntoView({ behavior:'smooth'});
   };
 
@@ -31,8 +30,8 @@ export default function Home() {
         </h2>
         <Image  priority={true}
               className="acceuilContenerBezier"
-              width="auto"
-              height="auto"
+              width={700}
+              height={700}
               /*fill={true}*/
               src={ville}
               alt="ImgOccitanie"></Image>
