@@ -16,10 +16,14 @@
 }
 
 // L'img logo dans le header
-.headerLogoMain{
-width: 15rem;
-height: auto;
-background-color: red;
+.headerLogoMain {
+    width: 15rem;
+    height: auto;
+}
+
+// le petit logo
+.headerLogoSmall {
+    display: none;
 }
 
 .headerListLink {
@@ -39,23 +43,24 @@ background-color: red;
     height: 4rem;
     align-items: center;
     padding: 0 1rem;
+    text-align: center;
 }
 
 //chaque onglet lors du survole 
-.headerLink:hover{
+.headerLink:hover {
     //background-color: $color0;
     //color: $color1;
     font-size: 1rem;
     border-bottom: $color0 1px solid;
 }
 
-.headerContenerDevis{
+.headerContenerDevis {
     display: flex;
     align-self: center;
 }
 
 // le button pour aller aux contact
-.headerButtonDevis{
+.headerButtonDevis {
     display: flex;
     align-items: center;
     text-align: center;
@@ -75,25 +80,51 @@ background-color: red;
 }
 
 // lorsque on passe sur le bouton de contact
-.headerButtonDevis:hover{
+.headerButtonDevis:hover {
     position: relative;
     top: 1px;
     left: 1px;
 }
 
 // c'est la class qui est a identifier la page sur laquel on se trouve
-.headerPageActive{
+.headerPageActive {
     font-size: 1.1rem;
     color: $color0;
     font-weight: bolder;
     border-bottom: $color0 1px solid;
-} 
+}
 
+////////////////////////////////////////////////////////
+/// le header small
+
+// Le contener du deuxieme header
+.headerSecondeContener {
+    display: none;
+}
+
+// le contener de l'icone burger
+.headerContenerIcone {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    margin: 0 1rem;
+    height: 1.5rem;
+}
+
+// L'icone from scratch
+.headericonediv {
+    width: 1.7rem;
+    height: 0.3rem;
+    border-bottom: 3px solid $color0;
+}
+
+////////////////////////////////////////////////////////////////////////////////
 // Le responsive 
 
 
 @media screen and (max-width: 1550px) {
-    .headerLogoMain{
+    .headerLogoMain {
         width: 10rem;
     }
 
@@ -123,7 +154,64 @@ background-color: red;
 }
 
 @media screen and (max-width: 900px) {
-    .headerMain {
+    /*.headerMain {
         display: none;
+    }
+
+    .headerSecondeContener{
+        display: flex;
+    }*/
+
+    // le petit logo
+    .headerLogoSmall {
+        display: flex;
+        width: 8rem;
+        height: auto;
+    }
+
+    // L'img logo dans le header
+    .headerLogoMain {
+        display: none;
+    }
+
+    // le button pour aller aux contact
+    .headerButtonDevis {
+        height: 2rem;
+        width: 6rem;
+        font-size: 1rem;
+        padding: 0.4rem 0;
+    }
+}
+
+@media screen and (max-width: 810px) {
+
+    .headerListLink {
+        display: flex;
+        justify-content: space-around;
+        width: 25rem;
+        margin: 0 1rem 0 1rem;
+    }
+    
+    // les differants onglets
+    .headerLink {
+        display: flex;
+        align-self: center;
+        font-size: 0.8rem;
+        text-decoration: none;
+        color: black;
+        height: 4rem;
+        align-items: center;
+        padding: 0 0.5rem;
+    }
+}
+
+@media screen and (max-width: 680px) {
+
+       // le button pour aller aux contact
+       .headerButtonDevis {
+        height: 1.2rem;
+        width: 4rem;
+        font-size: 0.7rem;
+        padding: 0.4rem 0;
     }
 }

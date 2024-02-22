@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation';
 import "./styles.scss";
 import Image from 'next/image';
 import Logo from "./bluepoint_logo.png";
+import LogoSmall from "./Blue Point Small.png";
 import { Action } from "redux";
 import { checkRouteHeader } from '../../../store/actions';
 import { selectPage } from '../../../store/reducer/pageReducer'; 
@@ -75,6 +76,7 @@ const Header: React.FC = () => {
         <div  className="headerContenerLogo">
           <Link href="/" >
           <Image className="headerLogoMain"  sizes="(max-width: 3000px) 15vw, (max-width: 2000px) 10vw 33vw, (max-width: 1520px) 2vw" priority={true} src={Logo} alt="logoBluepoint" />
+          <Image className="headerLogoSmall"  sizes="(max-width: 900px) 5vw" priority={true} src={LogoSmall} alt="logoBluepoint" />
           </Link>
         </div>
         <div className="headerListLink">
@@ -94,6 +96,14 @@ const Header: React.FC = () => {
         <div className="headerContenerDevis" >
           <a className="headerButtonDevis" href="/contact" >Contact</a>
         </div>
+      </div>
+      <div className="headerSecondeContener" >
+        <div className="headerContenerIcone">
+          <div className="headericonediv"></div>
+          <div className="headericonediv"></div>
+          <div className="headericonediv"></div>
+        </div>
+         
       </div>
     </div>
   );
