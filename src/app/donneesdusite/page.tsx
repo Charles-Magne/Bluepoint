@@ -9,7 +9,14 @@ const Donneesdusite = () => {
     <div>
       <Header />
       <div className="donnéesMainContener" >
-      <span className="donnéesSpanMain" >Chez bluePoint, on aime les Tielles, les petits patés de Pézenas, les huites de l&apos;Sétange de Thau et les grisettes de Montpellier, mais pas les cookies. Alors rassurez vous, on ne collecte aucunes données.  </span>
+        <h1 className='donnéeTitreMain' >Données du site</h1>
+      <span className="donnéesSpanMain" >Chez bluePoint, on aime : 
+      <ul className='donnéeContenerListe'>
+        <li>- Les Tielles,</li>
+        <li>- Les petits patés de Pézenas,</li>
+        <li>- Les huites de l&apos;étange de Thau</li>
+        <li>- Les grisettes de Montpellier,</li>
+        </ul>   mais pas les cookies. Alors rassurez vous, on ne collecte aucunes données.  </span>
       </div>
       <Footer />
     </div>

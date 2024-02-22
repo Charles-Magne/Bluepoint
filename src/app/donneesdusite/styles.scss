@@ -2,17 +2,70 @@
 @import '../components/main/reset';
 
 //La div qui englobe toute la page
-.donnéesMainContener{
+.donnéesMainContener {
+    margin: 10rem 2rem 27.6rem 2rem;
+    font-family: 'Anonymous Pro', monospace;
+}
+
+// le titre de la page
+.donnéeTitreMain {
     display: flex;
-    margin: 15rem 0 29rem 0 ;
     justify-content: center;
+    width: 100vw;
+    color: $color0;
+    font-size: 2rem;
+    margin: 0 0 8rem 0;
 }
 
 //le span avec le texte
-.donnéesSpanMain{
-    display: flex;
+.donnéesSpanMain {
     width: 100rem;
     font-size: 2rem;
-color: $color0;
-text-align: center;
+    color: $color0;
+    margin: 0 0 0 2rem;
+}
+
+//Le ul de la liste
+.donnéeContenerListe {
+    margin: 1rem 0 1rem 1rem;
+}
+
+@media screen and (max-width: 670px) {
+
+    //le span avec le texte
+    .donnéesSpanMain {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    //le span avec le texte
+    .donnéesSpanMain {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 370px) {
+
+    // le titre de la page
+    .donnéeTitreMain {
+        width: 80vw;
+    }
+
+    //La div qui englobe toute la page
+    .donnéesMainContener {
+        margin: 10rem 1rem 27.6rem 1rem;
+        font-family: 'Anonymous Pro', monospace;
+    }
+
+
+}
+
+@media screen and (max-width: 320px) {
+
+    //le span avec le texte
+    .donnéesSpanMain {
+        font-size: 1rem;
+    }
 }
