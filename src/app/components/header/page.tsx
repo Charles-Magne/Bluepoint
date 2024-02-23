@@ -65,13 +65,13 @@ const Header: React.FC = () => {
 
     //j'ai un objet dans lequel j'ai toutes les routes
     // j'ai une variable dans laquelle j'ai le nom de la route.
-    console.log('check de pageSelector', pageSelectors, currentPage.page);
+    //console.log('check de pageSelector', pageSelectors, currentPage.page);
 
     // Fonction pour ajouter une classe de style à la classe de pageSelector correspondante
 function addStyleClassToCurrentPage(currentPage: string, pageSelectors: PageSelectors) {
     // Vérifier si la page actuelle est une clé valide dans pageSelectors
     if (currentPage in pageSelectors) {
-        const pageSelector = pageSelectors[currentPage];
+        const pageSelector = pageSelectors[pageSelectors[selector as keyof PageSelectors]];
         const element = document.querySelector(pageSelector);
         // Vérifier si l'élément existe avant de lui ajouter la classe de style
         if (element) {
