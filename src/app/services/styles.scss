@@ -13,7 +13,8 @@
 // Le titre principal
 .serviceTitleMain {
     text-align: center;
-    //color: $color0;
+    color: $color0;
+    font-size: 1.3rem;
     text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 
@@ -56,6 +57,7 @@
 .serviceCartoucheTitle {
     font-size: 1.3rem;
     text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+    color: $color0;
 }
 
 // descriptif du cartouche
@@ -68,6 +70,32 @@
 .serviceFormMain {
     margin: 0 0 6rem 0;
 }
+
+.serviceContenerScroll{
+display: flex;
+justify-content: center;
+width: 100vw;
+}
+
+// L'animation de l'icone
+@keyframes animationIconeScroll{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-1rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+// l'icone qui indique aux utilisateurs de scroll
+.serviceIconeScroll{
+    display: flex;
+    animation: animationIconeScroll 1.2s infinite;
+}
+
 
 // *************************** Les trois articles
 

@@ -16,6 +16,8 @@
 .bluepointTitleMain{
     text-align: center;
     text-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    color: $color0;
+    font-size: 1.3rem;
 }
 
 // le contener qui englobe les cartouches
@@ -29,18 +31,24 @@
     padding: 2rem 0 ;
     border-radius: 0.7rem;
     width: 90w;
+    height: 20rem;
+
 }
 
 //Class generique pour chaque cartouche
 .bluepointCartoucheResume{
-    //border:3px $color0 solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     background-color: white;
     width: 25rem;
-    text-align: center;
+    //text-align: center;
     border-radius: 0.7rem;
     padding: 1rem;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
+
 
 // les trois cartouche generique 
 .bluepointCartoucheResume:hover{
@@ -52,6 +60,8 @@
 // le titre des chaques cartouche
 .bluepointTitleCartouche{
 text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+color: $color0;
+font-size: 1.3rem;
 }
 
 //class du texte du cartouche
@@ -59,6 +69,33 @@ text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
     color: darkslategray;
     font-size: 1.1rem;
 }
+
+// le contener de l'icone scroll
+.bluepointContenerScroll{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+
+// L'animation de l'icone
+@keyframes animationIconeScroll{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-1rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+// l'icone qui indique aux utilisateurs de scroll
+.bluepointIconeScroll{
+    display: flex;
+    animation: animationIconeScroll 1.2s infinite;
+}
+                         
 
 /***************************les articles ********************************************/
 

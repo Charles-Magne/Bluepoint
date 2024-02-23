@@ -4,12 +4,13 @@ import "./styles.scss";
 import Image from "next/image";
 import Header from "../components/header/page";
 import Footer from "../components/footer/page";
-import code from "./code-informatique.png";
+import code from "./code-informatiqueBlue.png";
 import codePhoto from "./site.jpg";
-import formation from "./education.png";
+import formation from "./educationBlue.png";
 import FormPhoto from "./formation.jpeg";
-import auto from "./automatisation.png";
+import auto from "./automatisationBlue.png";
 import autoPhoto from "./images.jpeg";
+import scroll from "./scroll.png";
 
 const Services: React.FC = () => {
 
@@ -85,6 +86,9 @@ const isInViewport = (elem: HTMLDivElement) => {
               dans votre activité.
             </span>
           </div>
+        </div>
+        <div className="serviceContenerScroll">
+          <Image className="serviceIconeScroll" alt="logo_scroll" width={100} src={scroll} />
         </div>
         <div className="serviceContenerArticles">
           {/* detail de creation de site */}

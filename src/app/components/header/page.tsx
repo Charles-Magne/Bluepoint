@@ -11,6 +11,8 @@ import { Action } from "redux";
 import { checkRouteHeader } from '../../../store/actions';
 import { selectPage } from '../../../store/reducer/pageReducer'; 
 import Link from "next/link";
+import { log } from "console";
+import { current } from "@reduxjs/toolkit";
 
 
 
@@ -31,8 +33,20 @@ const Header: React.FC = () => {
   // On check le state pour savoir sur quelle page on est et on adapte le scss en fonction
  useEffect (() => {
 
+  interface currentPage {
+    page: string;
+  }
+
+  interface PageSelectors {
+    "/": string,
+    "/bluepoint": string,
+    "/services": string,
+    "/realisation": string,
+};
+
+
     // Un objet qui mappe les chemins de page avec les class correspondants
-    const pageSelectors = {
+    const pageSelectors: PageSelectors = {
         "/": ".headerLinkacceuil",
         "/bluepoint": ".headerLinkbluepoint",
         "/services": ".headerLinkservices",
@@ -40,33 +54,31 @@ const Header: React.FC = () => {
     };
 
 
-
-    interface pageSelectors {
-      "/": string,
-      "/bluepoint": string,
-      "/services": string,
-      "/realisation": string,
-  };
-
     // Obtenir le chemin de la page actuelle
 
     // Supprimer la classe 'headerPageActive' de tous les éléments de la barre de navigation
     Object.values(pageSelectors).forEach(selector => {
-        const element = document.querySelector(selector);
+        const element = document.querySelector(pageSelectors[selector as keyof PageSelectors]);
         // Vérifier si l'élément existe avant de lui retirer la classe
         element?.classList.remove('headerPageActive');
-        
     });
 
-    // Ajouter la classe 'headerPageActive' à l'élément correspondant au chemin de page actuel
-    const currentSelector = pageSelectors[currentPage as keyof typeof pageSelectors];
+    //j'ai un objet dans lequel j'ai toutes les routes
+    // j'ai une variable dans laquelle j'ai le nom de la route.
+    console.log('check de pageSelector', pageSelectors, currentPage.page);
 
-    //const currentSelector = pageSelectors[currentPage];
-    const currentElement = document.querySelector(currentSelector);
-
-    // Vérifier si l'élément existe avant de lui ajouter la classe
-    currentElement?.classList.add('headerPageActive');
-    console.log('page scelector =>', pageSelectors, "currentpage", currentPage);
+    // Fonction pour ajouter une classe de style à la classe de pageSelector correspondante
+function addStyleClassToCurrentPage(currentPage: string, pageSelectors: PageSelectors) {
+    // Vérifier si la page actuelle est une clé valide dans pageSelectors
+    if (currentPage in pageSelectors) {
+        const pageSelector = pageSelectors[currentPage];
+        const element = document.querySelector(pageSelector);
+        // Vérifier si l'élément existe avant de lui ajouter la classe de style
+        if (element) {
+            element.classList.add("style-class");
+        }
+    }
+}
 
   }, [currentPage]);
 
