@@ -27,7 +27,7 @@ const Header: React.FC = () => {
   const goodRoute = usePathname();
  const currentPage = useSelector(selectPage);
 
-console.log('le bonne route', currentPage.page);
+//console.log('le bonne route', currentPage.page);
 
   // Le use Effect qui nous sert a mettre à jour le state lorsqu'on change de page
   useEffect (() => {
