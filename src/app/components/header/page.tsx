@@ -19,9 +19,15 @@ import { current } from "@reduxjs/toolkit";
 
 const Header: React.FC = () => {
 
+  type currentPage = {
+    page: string;
+  }
+
   const dispatch = useDispatch();
   const goodRoute = usePathname();
-  const currentPage = useSelector(selectPage);
+ const currentPage = useSelector(selectPage);
+
+console.log('le bonne route', currentPage.page);
 
   // Le use Effect qui nous sert a mettre à jour le state lorsqu'on change de page
   useEffect (() => {
@@ -33,9 +39,10 @@ const Header: React.FC = () => {
   // On check le state pour savoir sur quelle page on est et on adapte le scss en fonction
  useEffect (() => {
 
-  interface currentPage {
-    page: string;
-  }
+/*  const currentPage: currentPage = { page: "/services" };
+const pageValue = currentPage.page; // Accéder à la valeur de la propriété page
+console.log(pageValue); // Cela affichera "/services"*/
+
 
   interface PageSelectors {
     "/": string,
@@ -53,7 +60,7 @@ const Header: React.FC = () => {
         "/realisation": ".headerLinkrealisation",
     };
 
-
+console.log('la bonne page', currentPage);
     // Obtenir le chemin de la page actuelle
 
     // Supprimer la classe 'headerPageActive' de tous les éléments de la barre de navigation
@@ -65,13 +72,14 @@ const Header: React.FC = () => {
 
     //j'ai un objet dans lequel j'ai toutes les routes
     // j'ai une variable dans laquelle j'ai le nom de la route.
-    //console.log('check de pageSelector', pageSelectors, currentPage.page);
+    console.log('check de pageSelector', pageSelectors['/']);
 
     // Fonction pour ajouter une classe de style à la classe de pageSelector correspondante
 function addStyleClassToCurrentPage(currentPage: string, pageSelectors: PageSelectors) {
     // Vérifier si la page actuelle est une clé valide dans pageSelectors
     if (currentPage in pageSelectors) {
-        const pageSelector = pageSelectors[pageSelectors[selector as keyof PageSelectors]];
+        const pageSelector = pageSelectors[currentPage as keyof PageSelectors];
+        console.log('la pageSelector', pageSelector);
         const element = document.querySelector(pageSelector);
         // Vérifier si l'élément existe avant de lui ajouter la classe de style
         if (element) {
