@@ -3,8 +3,10 @@
 
 //La div qui englobe toute la page
 .donnéesMainContener {
+
     margin: 10rem 2rem 27.6rem 2rem;
     font-family: 'Anonymous Pro', monospace;
+    
 }
 
 // le titre de la page
@@ -17,9 +19,14 @@
     margin: 0 0 8rem 0;
 }
 
+.donnéeContenerTexe{
+    display: flex;
+    justify-content: center;
+    width: 70rem;
+}
+
 //le span avec le texte
 .donnéesSpanMain {
-    width: 100rem;
     font-size: 2rem;
     color: $color0;
     margin: 0 0 0 2rem;
