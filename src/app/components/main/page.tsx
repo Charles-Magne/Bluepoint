@@ -126,17 +126,17 @@ export default function Main() {
         </div>
 
         {/*********************************** */}
-        {/* Partie sur mesure */}
-        <div className="accueilContenerTransformation">
+        {/* Partie sur mesure */}  
+        {/* <div className="accueilContenerTransformation">
           <h2 className="accueilTitleTransformation">Quelques termes techniques</h2>
           <div className="accueilContenerActivité">
-            {/**************La div Site Language ***********/}
+            {//**************La div Site Language ***********}
             <div className="accueilActivitéContner accueilActivitéTech">
               <Image  priority={true}
               className="acceuilContenerImg acceuilImgSitevitrine"
               width={700}
               height={700}
-              /*fill={true}*/
+              {//}fill={true}
               src={siteVitrine}
               alt="ImgSiteWeb"></Image>
               <div className="acceuilTitreDescription">
@@ -146,13 +146,13 @@ export default function Main() {
                 </p>
               </div>
             </div>
-            {/****************La div site Framework ************/}
+            {//****************La div site Framework ************}
             <div className="accueilActivitéContner accueilActivitéTech">
               <Image  priority={true}
               className="acceuilContenerImg acceuilImgSiteecommerce"
               width={700}
               height={700}
-              /*fill={true}*/
+              {//fill={true}}
               src={eCommerce}
               alt="ImgSiteWeb"></Image>
               <div className="acceuilTitreDescription">
@@ -162,13 +162,13 @@ export default function Main() {
                 </p>
               </div>
             </div>
-            {/**************La div front end ************/}
+            {//**************La div front end ************}
             <div className="accueilActivitéContner accueilActivitéTech">
               <Image  priority={true}
               className="acceuilContenerImg acceuilImgFrontend"
               width={700}
               height={700}
-              /*fill={true}*/
+              //fill={true
               src={frontEnd}
               alt="ImgSiteWeb"></Image>
               <div className="acceuilTitreDescription">
@@ -179,13 +179,13 @@ export default function Main() {
                 </p>
               </div>
             </div>
-            {/**************La div Back end ******************/}
+            {//**************La div Back end ******************}
             <div className="accueilActivitéContner accueilActivitéTech">
               <Image  priority={true}
               className="acceuilContenerImg acceuilImgBackend"
               width={700}
               height={700}
-              /*fill={true}*/
+              //fill={true}
               src={backEnd}
               alt="ImgSiteWeb"></Image>
               <div className="acceuilTitreDescription">
@@ -196,13 +196,13 @@ export default function Main() {
                 </p>
               </div>
             </div>
-            {/************************La div responsive **************/}
+            {//************************La div responsive **************}
             <div className="accueilActivitéContner accueilActivitéTech">
               <Image  priority={true}
               className="acceuilContenerImg acceuilImgResponsive"
               width={700}
               height={700}
-              /*fill={true}*/
+              //fill={true}
               src={responsive}
               alt="ImgSiteWeb"></Image>
               <div className="acceuilTitreDescription">
@@ -214,7 +214,7 @@ export default function Main() {
               </div>
             </div>
           </div>
-        </div>
+        </div>*/}
 {/*********************************** */}
          {/* Partie sur mesure */}
          <div className="accueilContenerTransformation">
