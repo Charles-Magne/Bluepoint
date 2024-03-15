@@ -30,7 +30,7 @@ export default function Home() {
         </h2>
         <Image  priority={true}
               className="acceuilContenerBezier"
-              width={1900}
+              width={1600}
               src={ville}
               alt="ImgOccitanie"></Image>
         <div className="acceuilContenerArrow">

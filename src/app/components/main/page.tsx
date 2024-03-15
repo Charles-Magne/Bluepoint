@@ -224,8 +224,8 @@ export default function Main() {
             <div className="accueilActivitéContner accueilActivitéTech">
               <Image  priority={true}
               className="acceuilContenerImg acceuilImgJavascript"
-              width={700}
-              height={700}
+              width={750}
+              height={750}
               /*fill={true}*/
               src={javascript}
               alt="ImgSiteWeb"></Image>

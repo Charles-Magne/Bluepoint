@@ -7,6 +7,7 @@ import "./styles.scss";
 import Image from 'next/image';
 import Logo from "./bluepoint_logo.png";
 import LogoSmall from "./Blue Point Small.png";
+import LogoSend from "./enveloppe.png";
 import { Action } from "redux";
 import { checkRouteHeader } from '../../../store/actions';
 import { selectPage } from '../../../store/reducer/pageReducer'; 
@@ -114,7 +115,10 @@ function addStyleClassToCurrentPage(currentPage: string, pageSelectors: PageSele
           </a>
         </div>
         <div className="headerContenerDevis" >
-          <a className="headerButtonDevis" href="/contact" >Contact</a>
+          <a className="headerButtonA" href="/contact" >
+            <div className="headerButtonDevis" >Contact</div>
+          <Image className="HeaderIconeLetter" sizes="(max-width: 1rem) 1vw" src={LogoSend} alt="iconeSend" />
+          </a>
         </div>
       </div>
       <div className="headerSecondeContener" >

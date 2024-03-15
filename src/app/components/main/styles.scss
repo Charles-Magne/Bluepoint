@@ -1,162 +1,170 @@
-@import '_variables';
-@import '_reset.scss';
+@import "_variables";
+@import "_reset.scss";
 
 //************************************** Partie transformation
 
 // La div qui entoure les div d'info
 .AccueilContenerInfo {
-    display: flex;
-    //background-color: red;
-    align-self: center;
-    flex-direction: column;
-    //width: 100% ;
-    margin: 2rem 5rem 0 5rem;
+  display: flex;
+  //background-color: red;
+  align-self: center;
+  flex-direction: column;
+  //width: 100% ;
+  margin: 2rem 5rem 0 5rem;
 }
 
 //La div qui encadre le titre et les span sur la droite
 .accueilContenerTransformation {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    margin: 4rem 0 0 0;
-    padding: 1rem 0 1rem 0;
-    justify-content: center;
-    border-radius: 0.8rem;
-    //width: 110rem;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin: 4rem 0 0 0;
+  padding: 1rem 0 1rem 0;
+  justify-content: center;
+  border-radius: 0.8rem;
+  //width: 110rem;
 }
 
 //Le contener qui gere le titre et le descriptif de l'activité
 .accueilActivitéContner {
+  display: flex;
+  flex-direction: column;
+  //align-items:center;
+  background-color: $color3;
+  margin: 1rem;
+  width: 21rem;
+  border-radius: 0.7rem;
+  text-align: center;
+  flex-wrap: wrap;
+  margin: 2rem 3rem;
+  border: 1px solid $color4;
+}
+
+// gestion du hover pour les activité
+.accueilActivitéContner:hover {
+  position: relative;
+  bottom: 2px;
+  right: 2px;
+}
+
+//Le titre transformation numérique
+.accueilTitleTransformation {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-self: center;
+  width: 40rem;
+  //color: $color0;
+  font-size: 2.2rem;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+//Le contener des activité
+.accueilContenerActivité {
+  display: flex;
+  flex-wrap: wrap;
+  color: $color3;
+  justify-content: space-around;
+  align-items: center;
+}
+
+//Contener generique des img
+.acceuilContenerImg {
+  display: flex;
+  width: 19rem;
+  height: auto;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 0.7rem;
+  margin: 1rem;
+}
+
+.acceuilTitreDescription {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: $color3;
+  background: linear-gradient(to bottom, $color1, $color15);
+  //background: repeating-radial-gradient(circle, $color45, $color4);
+  border-radius: 0 0 0.7rem 0.7rem;
+  padding: 0 0 1rem 0;
+ flex-direction: column;
+}
+
+//le titre des activités class commune
+.acceuilActivitéDetail {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: white;
+  margin: 1rem 0 1rem 0;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+// texte descriptif de l'activité
+.acceuilActivitéDescription {
+    display: flex;
+  text-align: center;
+  margin: 0 1rem 0 1rem;
+  color: white;
+}
+
+//Le contener qui gere le titre et le descriptif du deuxieme rasemblement d'article
+.accueilActivitéTech {
+  flex-direction: row-reverse;
+  width: 25rem;
+  height: 30rem;
+  justify-content: center;
+}
+
+//une div qui sert a separer le footer du reste de la page
+.acceuilmargingfooter {
+  margin: 4rem;
+}
+
+/////////////////////////////////// Le responsive
+
+@media screen and (max-width: 700px) {
+  .accueilTitleTransformation {
+    width: 30rem;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .accueilTitleTransformation {
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .accueilTitleTransformation {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  //Le contener qui gere le titre et le descriptif de l'activité
+  .accueilActivitéContner {
     margin: 1rem;
-    width: 21rem;
-    //height: 7rem;
+    width: 15rem;
+    height: auto;
     border-radius: 0.7rem;
     text-align: center;
     flex-wrap: wrap;
     margin: 2rem 3rem;
     border: 1px solid $color4;
+  }
+
+  .acceuilContenerImg {
+    width: 10rem;
+    height: auto;
+  }
 }
 
-// gestion du hover pour les activité
-.accueilActivitéContner:hover {
-    position: relative;
-    bottom: 2px;
-    right: 2px;
-}
-
-//Le titre transformation numérique
-.accueilTitleTransformation {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-self: center;
-    width: 40rem;
-    //color: $color0;
-    font-size: 2.2rem;
-    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
-}
-
-//Le contener des activité
-.accueilContenerActivité {
-    display: flex;
-    flex-wrap: wrap;
-    color: $color3;
-    justify-content: space-around;
-    align-items: center;
-}
-
-//Contener generique des img
-.acceuilContenerImg {
-    //acceuilContenerImg 
-
-    display: flex;
-    width: 18rem;
-    height: 12rem;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    border-radius: 0.7rem;
-    margin: 1rem;
-}
+@media screen and (max-width: 330px) {
 
 
-.acceuilTitreDescription {
-    background: linear-gradient(to bottom, $color1, $color15);
-    //background: repeating-radial-gradient(circle, $color45, $color4);
-    border-radius: 0 0 0.7rem 0.7rem;
-    padding: 0 0 1rem 0;
-}
-
-//le titre des activités class commune
-.acceuilActivitéDetail {
-    display: flex;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 1.3rem;
-    color: white;
-    margin: 1rem 0 1rem 0;
-    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
-}
-
-// texte descriptif de l'activité
-.acceuilActivitéDescription {
-    //text-align: center;
-    margin: 0 1rem 0 1rem;
-    color: white;
-}
-
-//Le contener qui gere le titre et le descriptif du deuxieme rasemblement d'article
-.accueilActivitéTech {
-    flex-direction: row-reverse;
-}
-
-//une div qui sert a separer le footer du reste de la page
-.acceuilmargingfooter {
-    margin: 4rem;
-}
-
-
-/////////////////////////////////// Le responsive
-
-@media screen and (max-width: 700px) {
-    .accueilTitleTransformation {
-        width: 30rem;
-    }
-}
-
-@media screen and (max-width: 520px) {
-    .accueilTitleTransformation {
-        width: 20rem;
-    }
-}
-
-@media screen and (max-width: 520px) {
-    .accueilTitleTransformation {
-        font-size: 1.3rem;
-    }
-}
-
-@media screen and (max-width: 400px) {
-
-    //Le contener qui gere le titre et le descriptif de l'activité
-    .accueilActivitéContner {
-        margin: 1rem;
-        width: 15rem;
-        height: auto;
-        border-radius: 0.7rem;
-        text-align: center;
-        flex-wrap: wrap;
-        margin: 2rem 3rem;
-        border: 1px solid $color4;
-    }
-
-    .acceuilContenerImg {
-        width: 10rem;
-        height: auto;
-    }
-
+  .accueilTitleTransformation {
+    width: 10rem;
+  }
 }

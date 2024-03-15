@@ -119,6 +119,11 @@
     border-bottom: 3px solid $color0;
 }
 
+// l'icone de la lettre
+.HeaderIconeLetter{
+    display: none;
+}
+
 ////////////////////////////////////////////////////////////////////////////////
 // Le responsive 
 
@@ -262,4 +267,35 @@
         .headerButtonDevis{
             font-size: 0.5rem;
         }
+
+        .headerButtonDevis{
+            display: none;
+        }
+
+        // l'icone de la lettre
+        .HeaderIconeLetter{
+        display: flex;
+        width: 1rem;
+        height: auto;
+}
+}
+
+
+@media screen and (max-width: 330px) {
+
+    .headerLink{
+        font-size: 0.4rem;
+    }
+
+    .headerListLink{
+        margin: 0;
+    }
+    
+    // Les liens du link
+    .headerButtonDevis{
+        font-size: 0.4rem;
+    }
+
+
+
 }
