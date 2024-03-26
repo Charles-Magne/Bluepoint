@@ -79,7 +79,7 @@ const Bluepoint = () => {
           {/*SAV*/}
           <div className="bluepointcartoucheSav bluepointCartoucheResume">
             <Image className="bluepointImgCartoucheGenrique" alt="logo_SAV" width={1254} height={836} src={Sav} />
-            <h2 className="bluepointTitleCartouche">Nous vous accompagnons apres la fin de la mission.
+            <h2 className="bluepointTitleCartouche">Nous vous accompagnons après la fin de la mission.
 </h2>
             <span className="bluepointTextCartouche">
               Nous vous accompagnons apres la fin de la mission.
@@ -159,7 +159,7 @@ const Bluepoint = () => {
           <div className="bluepointSavMain bluepointAnimD bluepointArticleMain">
             <div className="bluepointSatisfactionLeft">
               <h3 className="bluepointSavTitle bluepointTitreArticle">
-                Nous vous accompagnons apres la fin de la mission.
+                Nous vous accompagnons aprés la fin de la mission.
               </h3>
               <div className="bluepointSavImg bluepointArticleImg" />
             </div>

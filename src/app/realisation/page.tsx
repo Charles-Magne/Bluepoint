@@ -32,7 +32,7 @@ const Réalisation = () => {
             <div className="realisationTextContener">
               <h2 className="realisationTitleSite">Cinétoile24</h2>
               <span className="realisationTextSite">
-                Ce site à etait creer pour une association de cinéma. Il a pour
+                Ce site a été créé pour une association de cinéma. Il a pour
                 but de mettre en avant les festivals et les évenements organisés
                 par l&apos;association
               </span>
@@ -58,8 +58,8 @@ const Réalisation = () => {
             <div className="realisationTextContener">
             <h2 className="realisationTitleSite">PierreFeuillearnaque</h2>
             <span className="realisationTextSite">
-              Ce site est un projet personnel. C&apos;est un jeu de sociéte dans le
-              méme esprit que le loup garou, mais avec les régles du chifoumi.{" "}
+              Ce site est un projet personnel. C&apos;est un jeu de société dans le
+              même esprit que le loup garou, mais avec les règles du chifoumi.{" "}
             </span>
             </div>
           </div>

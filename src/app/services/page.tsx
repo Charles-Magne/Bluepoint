@@ -62,7 +62,7 @@ const isInViewport = (elem: HTMLDivElement) => {
           <div className="serviceContenerSite serviceCartoucheResume">
             <Image className="serviceImgGenerique serviceImgCreation" alt="Logo_code" width={750} height={500} src={SiteCreation} />
             <h2 className="serviceSiteTitre serviceCartoucheTitle">
-              Création de votre sites Web
+              Création de votre site Web
             </h2>
             <span className="serviceSiteDescript serviceCartouchedescript">
               Un programme sur mesure pour realiser le site dont vous révez.
@@ -72,7 +72,7 @@ const isInViewport = (elem: HTMLDivElement) => {
           <div className="serviceContenerAuto serviceCartoucheResume">
             <Image  className="serviceImgGenerique" alt="Logo_Automatisation" width={610} height={397} src={autoMatisation} />
             <h2 className="serviceAutoTitre serviceCartoucheTitle">
-              Automatisation de vos process
+              Automatisation de vos processus
             </h2>
             <span className="serviceAutoDescript serviceCartouchedescript">
               Liberez vous du temps et de la charge mental grace aux
@@ -99,7 +99,7 @@ const isInViewport = (elem: HTMLDivElement) => {
           <div className="serviceSiteMain animatedD serviceArticleMain">
             <div className="serviceSiteContener serviceTitleImg" >
             <h3 className="serviceSiteTitle serviceTitreArticle">
-              Création et mise à jour de vos sites / Applications Web
+              Création et mise à jour de vos sites et applications Web
             </h3>
             <div className="serviceImgSite">
               <Image className="serviceImgCreationArticle" alt="ImgSite" width={750} height={500} src={SiteCreation}/>
@@ -172,20 +172,20 @@ const isInViewport = (elem: HTMLDivElement) => {
             <div className="serviceContenertext">
               <span className="serviceFormArticle serviceArticleText">
                 Le spectre des outils numérique est si vaste qu&apos;il existe
-                toujours un outil pertinant pour vous aider dans votre activité.
+                toujours un outil pertinent pour vous aider dans votre activité.
               </span>
               <span className="serviceFormArticle serviceArticleText">
-                Bluepoint vous propose de vous aidez a decouvrir les nouveaux
-                outils web qui répondent le mieux a vos besoins.
+                Bluepoint vous propose de vous aider à decouvrir les nouveaux
+                outils web qui répondent le mieux à vos besoins.
               </span>
               <span className="serviceFormArticle serviceArticleText">
-                De plus, il est rare que l&apos;on exploite un outil a 100% de ses
+                De plus, il est rare que l&apos;on exploite un outil à 100% de ses
                 capacités; l&apos;on se contente souvent de ses fonctions de base,
-                sans chercher a en savoir plus par manque de temps. Or nous vous aidons a reveler le plein potentiel de vos outils.
+                sans chercher à en savoir plus par manque de temps. Or nous vous aidons à revéler le plein potentiel de vos outils.
               </span>
               <span className="serviceFormArticle serviceArticleText">
-                Bluepoint peut donc intervenir sur un trés large panel d&apos;outils
-                et vous aidez a l&apos;exploiter a son plein potentiel.
+                Bluepoint peut donc intervenir sur un très large panel d&apos;outils
+                et vous aider a les exploiter à leurs plein potentiel.
               </span>
             </div>
           </div>

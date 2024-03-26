@@ -14,12 +14,12 @@ const Donneesdusite = () => {
             Chez bluePoint, on aime :
             <ul className="donnéeContenerListe">
               <li>- Les Tielles,</li>
-              <li>- Les petits patés de Pézenas,</li>
-              <li>- Les huitres de l&apos;étange de Thau</li>
+              <li>- Les petits pâtés de Pézenas,</li>
+              <li>- Les huîtres de l&apos;étange de Thau</li>
               <li>- Les grisettes de Montpellier,</li>
             </ul>{" "}
-            mais pas les cookies. Alors rassurez vous, on ne collecte aucunes
-            données.{" "}
+            mais pas les cookies. Alors rassurez-vous, on ne collecte aucune
+            donnée.{" "}
           </span>
         </div>
       </div>

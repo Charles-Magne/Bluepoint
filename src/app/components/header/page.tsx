@@ -102,7 +102,7 @@ function addStyleClassToCurrentPage(currentPage: string, pageSelectors: PageSele
         </div>
         <div className="headerListLink">
           <a className="headerLink headerLinkacceuil" href="/">
-            Acceuil
+            Accueil
           </a>
           <a className="headerLink headerLinkbluepoint" href="/bluepoint">
             BluePoint

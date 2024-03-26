@@ -26,7 +26,7 @@ export default function Home() {
           <strong className="accueilTitleStrong">
             développement numérique
           </strong>{" "}
-          basé au coeur de l&apos;Occitanie.
+          basée au coeur de l&apos;Occitanie.
         </h2>
         <Image  priority={true}
               className="acceuilContenerBezier"

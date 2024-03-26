@@ -47,7 +47,7 @@ export default function Main() {
                 {/*Nous créeons bien plus que des sites web. Nous créeons votre
                   site web. */}
                 <p className="acceuilActivitéDescription">
-                  Nous créeons bien plus que des sites web. Nous créeons votre
+                  Nous créons bien plus que des sites web. Nous créons votre
                   site web.
                 </p>
               </div>
@@ -65,7 +65,7 @@ export default function Main() {
                 <span className="acceuilActivitéDetail">Application web</span>
                 <p className="acceuilActivitéDescription">
                   Une application web est un site web optimisé pour les
-                  tablettes et les portables, encapscule dans une application.
+                  tablettes et les portables, encapsculé dans une application.
                 </p>
               </div>
             </div>
@@ -84,7 +84,7 @@ export default function Main() {
                 </span>
                 <p className="acceuilActivitéDescription">
                   Un outil optimisé pour les mobiles et les tablettes. Le code
-                  s&apos;integre parfaitement à la logique mobile.
+                  s&apos;intègre parfaitement à la logique mobile.
                 </p>
               </div>
             </div>
@@ -99,8 +99,8 @@ export default function Main() {
               <div className="acceuilTitreDescription">
                 <span className="acceuilActivitéDetail">Formation</span>
                 <p className="acceuilActivitéDescription">
-                  Nos formations portent principalements sur les outils web
-                  innovants qui vous facilite la vie.
+                  Nos formations portent principalement sur des outils web
+                  innovants qui vous faciliteront la vie.
                 </p>
               </div>
             </div>
@@ -116,9 +116,9 @@ export default function Main() {
               <div className="acceuilTitreDescription">
                 <span className="acceuilActivitéDetail ">Automatisation</span>
                 <p className="acceuilActivitéDescription">
-                  Si vous etes amenez a faire des taches repetitives, nous
-                  pouvons vous aidez a mettre en place des automatisations grace
-                  a certains outils web et au code.
+                  Si vous êtes amené à faire des tâches répétitives, nous
+                  pouvons vous aider à mettre en place des automatisations grâce
+                  à certains outils web et au code.
                 </p>
               </div>
             </div>
@@ -248,7 +248,7 @@ export default function Main() {
               <div className="acceuilTitreDescription">
                 <span className="acceuilActivitéDetail">Typescript</span>
                 <p className="acceuilActivitéDescription">
-                  Typescript est une autre façon de creer du code. le language integre des tests.
+                  Typescript est une autre façon de créer du code. Le language intègre des tests.
                 </p>
               </div>
             </div>
@@ -264,7 +264,7 @@ export default function Main() {
               <div className="acceuilTitreDescription">
                 <span className="acceuilActivitéDetail">React.js</span>
                 <p className="acceuilActivitéDescription">
-                  Un framework front-end securisé qui peremt de creer un code fiable et evolutif.
+                  Un framework front-end sécurisé qui permet de créer un code fiable et évolutif.
                 </p>
               </div>
             </div>
@@ -280,7 +280,7 @@ export default function Main() {
               <div className="acceuilTitreDescription">
                 <span className="acceuilActivitéDetail">Next.js</span>
                 <p className="acceuilActivitéDescription">
-                  Next reutilse la logique react en optimisant la façon de creer son code.
+                  Next réutilse la logique de React en optimisant la façon de créer son code.
                 </p>
               </div>
             </div>
