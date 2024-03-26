@@ -2,9 +2,10 @@
 import React, { useEffect } from "react";
 import "./styles.scss";
 import Image from "next/image";
-import Satisfaction from "./etoilesTrue.png";
-import Sav from "./aidez-moiTrue.png";
-import Personalisation from "./reglageTrue.png";
+//import Satisfaction from "./etoilesTrue.png";
+import Satisfaction from "./satisfactionClient.jpg";
+import Sav from "./sav.jpg";
+import Personalisation from "./personalisation.jpg";
 import Header from "../components/header/page";
 import Footer from "../components/footer/page";
 import scroll from "./scroll.png";
@@ -56,28 +57,30 @@ const Bluepoint = () => {
         <div className="bluepointContenerResume">
           {/*Satisfaction*/}
           <div className="bluepointcartoucheSatisfaction bluepointCartoucheResume">
-            <Image alt="logo_Qualité" width={100} src={Satisfaction} />
-            <h2 className="bluepointTitleCartouche">Satisfaction</h2>
+            <Image className="bluepointImgCartoucheGenrique" alt="logo_Qualité" width={1000} height={570} src={Satisfaction} />
+            <h2 className="bluepointTitleCartouche">Votre satisfaction est notre priorité</h2>
             <span className="bluepointTextCartouche">
               Votre satisfaction est notre priorité.
             </span>
           </div>
           {/*Personalisation*/}
           <div className="bluepointcartouchePerson bluepointCartoucheResume">
-              <Image
+              <Image className="bluepointImgCartoucheGenrique"
                 alt="logo_Personalisation"
-                width={100}
+                width={7356} height={3678}
                 src={Personalisation}
               />
-            <h2 className="bluepointTitleCartouche">Personalisation</h2>
+            <h2 className="bluepointTitleCartouche">Vous etes unique et vos projets le sont tout autant
+</h2>
             <span className="bluepointTextCartouche">
               Vous etes unique et vos projets le sont tout autant.
             </span>
           </div>
           {/*SAV*/}
           <div className="bluepointcartoucheSav bluepointCartoucheResume">
-            <Image alt="logo_SAV" width={100} src={Sav} />
-            <h2 className="bluepointTitleCartouche">S.A.V</h2>
+            <Image className="bluepointImgCartoucheGenrique" alt="logo_SAV" width={1254} height={836} src={Sav} />
+            <h2 className="bluepointTitleCartouche">Nous vous accompagnons apres la fin de la mission.
+</h2>
             <span className="bluepointTextCartouche">
               Nous vous accompagnons apres la fin de la mission.
             </span>

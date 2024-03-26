@@ -21,7 +21,7 @@
 // La div qui englobe les trois cartouches
 .serviceContenerResume {
     display: flex;
-    height: 20rem;
+    height: 24rem;
     width: 90vw;
     flex-direction: row;
     background-color: $color1T;
@@ -39,6 +39,7 @@
     align-items: center;
     border: white;
     width: 25rem;
+    height: auto;
     text-align: center;
     background-color: white;
     border-radius: 0.7rem;
@@ -53,17 +54,32 @@
     right: 2px;
 }
 
+// L'img du cartouche
+.serviceImgGenerique{
+    width: 100%;
+    height: 87%;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+
 //Le titre d'un cartouche
 .serviceCartoucheTitle {
+    width: 100%;
+    height: 2.2rem;
     font-size: 1.3rem;
     text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
-    color: $color0;
+    color: white;
+    //color: black;
+    background-color: $color1T;
+    padding-top: 0.2rem;
 }
 
 // descriptif du cartouche
 .serviceCartouchedescript {
     color: darkslategray;
     font-size: 1.2rem;
+    display: none;
+   
 }
 
 // la div relative aux formations
@@ -140,12 +156,17 @@ width: 100vw;
 // Le contener de l'img site
 .serviceImgSite {
     display: flex;
-    background-image: url('./site.jpg');
     width: 22rem;
     height: 15rem;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 0.7rem;
+}
+
+// L'img creation de site
+.serviceImgCreationArticle{
+    width: 100%;
+    height: auto;
 }
 
 // Le contener de l'img Automatisation

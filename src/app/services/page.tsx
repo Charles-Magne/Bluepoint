@@ -5,14 +5,18 @@ import Image from "next/image";
 import Header from "../components/header/page";
 import Footer from "../components/footer/page";
 import code from "./code-informatiqueBlue.png";
-import codePhoto from "./site.jpg";
+import SiteCreation from "./site.jpg";
+//import SiteCreation from "https://drive.google.com/file/d/1r7SjDoUiYQ4PK6OZZIu5hI-4lxFIFw_G/uc?export=view"; https://drive.google.com/file/d/1r7SjDoUiYQ4PK6OZZIu5hI-4lxFIFw_G/view?usp=sharing
 import formation from "./educationBlue.png";
 import FormPhoto from "./formation.jpeg";
 import auto from "./automatisationBlue.png";
+import autoMatisation from "./automatisation1.jpeg";
 import autoPhoto from "./images.jpeg";
 import scroll from "./scroll.png";
 
 const Services: React.FC = () => {
+
+  //const SiteCreation = "https://drive.google.com/file/d/1r7SjDoUiYQ4PK6OZZIu5hI-4lxFIFw_G/view";
 
 
   useEffect(() => {
@@ -56,9 +60,9 @@ const isInViewport = (elem: HTMLDivElement) => {
         <div className="serviceContenerResume">
           {/* Creation de site */}
           <div className="serviceContenerSite serviceCartoucheResume">
-            <Image alt="Logo_code" width={70} src={code} />
+            <Image className="serviceImgGenerique serviceImgCreation" alt="Logo_code" width={750} height={500} src={SiteCreation} />
             <h2 className="serviceSiteTitre serviceCartoucheTitle">
-              Création / mise à jour de vos sites/Applications Web
+              Création de votre sites Web
             </h2>
             <span className="serviceSiteDescript serviceCartouchedescript">
               Un programme sur mesure pour realiser le site dont vous révez.
@@ -66,7 +70,7 @@ const isInViewport = (elem: HTMLDivElement) => {
           </div>
           {/* Creation d'automatisation */}
           <div className="serviceContenerAuto serviceCartoucheResume">
-            <Image alt="Logo_Automatisation" width={70} src={auto} />
+            <Image  className="serviceImgGenerique" alt="Logo_Automatisation" width={610} height={397} src={autoMatisation} />
             <h2 className="serviceAutoTitre serviceCartoucheTitle">
               Automatisation de vos process
             </h2>
@@ -77,7 +81,7 @@ const isInViewport = (elem: HTMLDivElement) => {
           </div>
           {/* Creation de Formations */}
           <div className="serviceContenerForm serviceCartoucheResume">
-            <Image alt="Logo_Formation" width={70} src={formation} />
+            <Image  className="serviceImgGenerique" alt="Logo_Formation" width={1200} height={779} src={FormPhoto} />
             <h2 className="serviceFormTitre serviceCartoucheTitle">
               Formation sur les outils webs
             </h2>
@@ -97,7 +101,9 @@ const isInViewport = (elem: HTMLDivElement) => {
             <h3 className="serviceSiteTitle serviceTitreArticle">
               Création et mise à jour de vos sites / Applications Web
             </h3>
-            <div className="serviceImgSite"></div>
+            <div className="serviceImgSite">
+              <Image className="serviceImgCreationArticle" alt="ImgSite" width={750} height={500} src={SiteCreation}/>
+            </div>
             </div>
             <div className="serviceContenertext">
               <span className="serviceSiteSubtitle serviceArticleText">
