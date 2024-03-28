@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Inter } from 'next/font/google';
 import  StoreProvider  from '../store/StoreProvider';
-import logo from './favicon.ico';
+//import logo from './favicon.ico';
+import logo from './Blue Point favicon transp.ico';
 
 const inter = Inter({ subsets: ['latin'] })
 
