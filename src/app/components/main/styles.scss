@@ -10,7 +10,7 @@
   align-self: center;
   flex-direction: column;
   //width: 100% ;
-  margin: 2rem 5rem 0 5rem;
+  margin: 2rem 0 0 0;
 }
 
 //La div qui encadre le titre et les span sur la droite
@@ -57,6 +57,98 @@
   //color: $color0;
   font-size: 2.2rem;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  margin: 0 0 1rem 0;
+}
+
+// Le conteneur qui englobe toute les tech
+.accueilContenerStack{
+  display: flex;
+  flex-direction: column;
+}
+
+// le contenaire de 12 premieres tech
+.accueilContenairewrapperTech{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow-x: auto;
+  width: 160%;
+  margin: 1.8rem 0 0 0;
+}
+
+//La div qui defile vers la droite
+.accueilContenairewrapperTechToLeft{
+  animation: scroll 30S linear infinite;
+}
+
+// Le hover qui stop l'anime vers la droite ou la gauche
+.accueilContenairewrapperTechToLeft:hover, .accueilContenairewrapperTechToRight:hover{
+  animation-play-state: paused;
+}
+
+//L'animation vers la droite
+@keyframes scroll {
+  0% {
+    transform: translatex(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+//La div qui par vers la gauche
+.accueilContenairewrapperTechToRight{
+  animation: scrollInvers 30S linear infinite;
+}
+
+//L'animation vers la gauche
+@keyframes scrollInvers {
+  0% {
+    transform: translatex(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+// la div qui englobe chaque technos
+.accueilActivitéTech{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+ height: 5rem;
+ width: 20rem;
+ border: solid 1px black;
+ border-radius: 2rem;
+ padding: 0.4rem;
+ margin: 0 1rem;
+}
+
+// img de la techno
+.acceuilContenerImgTech{
+  display: flex ;
+  margin: 0.5rem auto;
+height: 2.5rem;
+width: auto;
+}
+
+// Le texte des techs
+.acceuilActivitéDetailTech{
+  position: absolute;
+  background-color: grey;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.6rem;
+  top: 0.5rem;
+  left: 0.5rem;
+  opacity: 0;
+  font-size: 0.8rem;
+  transition: opacity 0.3s ease-in-out;
+
+}
+
+.accueilActivitéTech:hover .acceuilActivitéDetailTech{
+  opacity: 1;
 }
 
 //Le contener des activité
@@ -106,14 +198,6 @@
   text-align: center;
   margin: 0 1rem 0 1rem;
   color: gray;
-}
-
-//Le contener qui gere le titre et le descriptif du deuxieme rasemblement d'article
-.accueilActivitéTech {
-  flex-direction: row-reverse;
-  width: 25rem;
-  height: 30rem;
-  justify-content: center;
 }
 
 //une div qui sert a separer le footer du reste de la page

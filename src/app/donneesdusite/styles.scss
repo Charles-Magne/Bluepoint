@@ -3,10 +3,8 @@
 
 //La div qui englobe toute la page
 .donnéesMainContener {
-
-    margin: 10rem 2rem 27.6rem 2rem;
-    font-family: 'Anonymous Pro', monospace;
-    
+    margin: 9rem 2rem 2rem 2rem;
+    font-family: 'Anonymous Pro', monospace; 
 }
 
 // le titre de la page
@@ -16,13 +14,20 @@
     width: 100vw;
     color: $color0;
     font-size: 2rem;
-    margin: 0 0 8rem 0;
+    margin: 0 0 3rem 0;
+}
+
+
+.donnéeContenaireMain{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .donnéeContenerTexe{
     display: flex;
     justify-content: center;
-    width: 70rem;
+    width: 40rem;
 }
 
 //le span avec le texte
@@ -36,6 +41,27 @@
 .donnéeContenerListe {
     margin: 1rem 0 1rem 1rem;
 }
+
+// Tout les li que l'on cache
+.donnéeContenerListe li {
+    display: none;
+  }
+  
+  // On affiche la premiere li
+  .donnéeContenerListe li:first-child {
+    display: flex;
+  }
+
+  //Les differants li
+  .donnéesLiSpecialité{
+    width: 30rem;
+  }
+
+.donnéeImgTielle{
+height: 34.5rem;
+width: auto;
+}
+
 
 @media screen and (max-width: 670px) {
 

@@ -21,7 +21,7 @@
 // La div qui englobe les trois cartouches
 .serviceContenerResume {
     display: flex;
-    height: 24rem;
+    height: 25rem;
     width: 90vw;
     flex-direction: row;
     background-color: $color1T;
@@ -35,7 +35,7 @@
 .serviceCartoucheResume {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    //justify-content: space-between;
     align-items: center;
     border: white;
     width: 25rem;
@@ -65,13 +65,13 @@
 //Le titre d'un cartouche
 .serviceCartoucheTitle {
     width: 100%;
-    height: 2.2rem;
+    height: 3.5rem;
     font-size: 1.3rem;
     text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
     color: white;
     //color: black;
     background-color: $color1T;
-    padding-top: 0.2rem;
+    padding: 0.5rem;
 }
 
 // descriptif du cartouche

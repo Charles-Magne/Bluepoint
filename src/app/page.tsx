@@ -6,7 +6,6 @@ import Footer from "./components/footer/page";
 import "./styles.scss";
 import { useRef } from "react";
 import Image from "next/image";
-import ville from "./components/main/Bezier.jpg";
 
 export default function Home() {
 
@@ -31,7 +30,8 @@ export default function Home() {
         <Image  priority={true}
               className="acceuilContenerBezier"
               width={1600}
-              src={ville}
+              height={900}
+              src={"https://drive.google.com/uc?id=10xJF2rs0YX2CbkyBTQ1DHwWVTPVMHzx9"}
               alt="ImgOccitanie"></Image>
         <div className="acceuilContenerArrow">
           <div onClick={clicArrowDown} className="acceuilPngArrow"></div>
