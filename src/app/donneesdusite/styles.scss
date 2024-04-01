@@ -42,25 +42,31 @@
     margin: 1rem 0 1rem 1rem;
 }
 
-// Tout les li que l'on cache
-.donnéeContenerListe li {
-    display: none;
-  }
   
   // On affiche la premiere li
   .donnéeContenerListe li:first-child {
     display: flex;
   }
 
-  //Les differants li
+  //la classe commun pour les Specialités
   .donnéesLiSpecialité{
     width: 30rem;
   }
 
-.donnéeImgTielle{
+  //La div sert a contenir les img
+  .donnéeContenerImg{
+    display: flex;
+    width: 65vw;
+    justify-content: center;
+  }
+
+  //La class global des img
+.donnéeImgSpecialité{
 height: 34.5rem;
 width: auto;
+border-radius: 2rem;
 }
+
 
 
 @media screen and (max-width: 670px) {
