@@ -129,8 +129,8 @@ const Donneesdusite = () => {
              <Image
               className="donnéeImgHuitre donnéeImgSpecialité"
               priority={true}
-              width={1000}
-              height={500}
+              width={500}
+              height={250}
               src={"https://drive.google.com/uc?id=1aUA1Us13dUTuWsDm9V8OoV_SIfLWZaoH"}
               alt="Img Specialisté"
             />

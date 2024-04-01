@@ -1,110 +1,142 @@
-@import '../components/main/variables';
-@import '../components/main/reset';
+@import "../components/main/variables";
+@import "../components/main/reset";
 
 //La div qui englobe toute la page
 .donnéesMainContener {
-    margin: 9rem 2rem 2rem 2rem;
-    font-family: 'Anonymous Pro', monospace; 
+  margin: 9rem 2rem 2rem 2rem;
+  font-family: "Anonymous Pro", monospace;
 }
 
 // le titre de la page
 .donnéeTitreMain {
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    color: $color0;
-    font-size: 2rem;
-    margin: 0 0 3rem 0;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  color: $color0;
+  font-size: 2rem;
+  margin: 0 0 3rem 0;
 }
 
-
-.donnéeContenaireMain{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.donnéeContenaireMain {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.donnéeContenerTexe{
-    display: flex;
-    justify-content: center;
-    width: 40rem;
+.donnéeContenerTexe {
+  display: flex;
+  justify-content: center;
+  width: 40rem;
+  margin: 0 0 1rem 0;
 }
 
 //le span avec le texte
 .donnéesSpanMain {
-    font-size: 2rem;
-    color: $color0;
-    margin: 0 0 0 2rem;
+  font-size: 2rem;
+  color: $color0;
+  margin: 0 0 0 2rem;
 }
 
 //Le ul de la liste
 .donnéeContenerListe {
-    margin: 1rem 0 1rem 1rem;
+  margin: 1rem 0 1rem 1rem;
 }
 
-  
-  // On affiche la premiere li
-  .donnéeContenerListe li:first-child {
-    display: flex;
-  }
-
-  //la classe commun pour les Specialités
-  .donnéesLiSpecialité{
-    width: 30rem;
-  }
-
-  //La div sert a contenir les img
-  .donnéeContenerImg{
-    display: flex;
-    width: 65vw;
-    justify-content: center;
-  }
-
-  //La class global des img
-.donnéeImgSpecialité{
-height: 34.5rem;
-width: auto;
-border-radius: 2rem;
+// On affiche la premiere li
+.donnéeContenerListe li:first-child {
+  display: flex;
 }
 
+//la classe commun pour les Specialités
+.donnéesLiSpecialité {
+  width: 30rem;
+}
 
+//La div sert a contenir les img
+.donnéeContenerImg {
+  display: flex;
+  width: 65vw;
+  justify-content: center;
+}
+
+//La class global des img
+.donnéeImgSpecialité {
+  height: 34.5rem;
+  width: auto;
+  border-radius: 2rem;
+}
+
+@media screen and (max-width: 1650px) {
+  .donnéeContenerImg {
+    width: 45vw;
+  }
+  .donnéeImgSpecialité {
+    height: 20rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .donnéeContenerTexe {
+    width: 27rem;
+  }
+  .donnéeContenerImg {
+    width: 40vw;
+  }
+
+  .donnéeImgSpecialité {
+    height: 15rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .donnéeContenerTexe {
+    width: 20rem;
+  }
+  .donnéesSpanMain {
+    width: 20rem;
+    font-size: 1rem;  }
+}
+
+@media screen and (max-width: 850px) {
+  .donnéeContenaireMain {
+    flex-direction: column;
+    align-items: center;
+  }
+  .donnéesSpanMain{
+    margin-left: 0;
+  }
+}
 
 @media screen and (max-width: 670px) {
-
-    //le span avec le texte
-    .donnéesSpanMain {
-        font-size: 1.5rem;
-    }
+  //le span avec le texte
+  .donnéesSpanMain {
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 450px) {
-
-    //le span avec le texte
-    .donnéesSpanMain {
-        font-size: 1.2rem;
-    }
+  //le span avec le texte
+  .donnéesSpanMain {
+    font-size: 1.2rem;
+  }
 }
 
 @media screen and (max-width: 370px) {
+  // le titre de la page
+  .donnéeTitreMain {
+    width: 80vw;
+  }
 
-    // le titre de la page
-    .donnéeTitreMain {
-        width: 80vw;
-    }
-
-    //La div qui englobe toute la page
-    .donnéesMainContener {
-        margin: 10rem 1rem 27.6rem 1rem;
-        font-family: 'Anonymous Pro', monospace;
-    }
-
-
+  //La div qui englobe toute la page
+  .donnéesMainContener {
+    margin: 10rem 1rem 27.6rem 1rem;
+    font-family: "Anonymous Pro", monospace;
+  }
 }
 
 @media screen and (max-width: 320px) {
-
-    //le span avec le texte
-    .donnéesSpanMain {
-        font-size: 1rem;
-    }
+  //le span avec le texte
+  .donnéesSpanMain {
+    font-size: 1rem;
+  }
 }
