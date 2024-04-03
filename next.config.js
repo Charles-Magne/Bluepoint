@@ -1,11 +1,7 @@
-const withSitemap = require('next-sitemap');
+/** @type {import('next').NextConfig} */
 
-module.exports = withSitemap({
-  sitemap: {
-    path: 'public/sitemap.xml',
-    generate: true,
-    siteUrl: 'https://www.bluepoint.ovh',
-  },
+
+const nextConfig = {
   images: {
     remotePatterns: [
       {
@@ -14,4 +10,6 @@ module.exports = withSitemap({
       },
     ],
   },
-});
+}
+
+module.exports = nextConfig
