@@ -1,0 +1,32 @@
+import { parse } from 'url';
+import { SitemapStream, streamToPromise } from 'sitemap';
+import { Readable } from 'stream';
+
+export async function getServerSideProps({ res }) {
+  const urlSet = new Set();
+
+  // Ajoutez ici les URL de vos pages à inclure dans le sitemap
+  urlSet.add('/');
+  urlSet.add('/bluepoint');
+  urlSet.add('/services');
+  urlSet.add('/realisation');
+  urlSet.add('/contact');
+  urlSet.add('/plandusite');
+  urlSet.add('/donneesdusite');
+
+  const sitemapStream = new SitemapStream({ hostname: 'https://www.bluepoint.ovh' });
+
+  const xml = await streamToPromise(
+    Readable.from(Array.from(urlSet).map((url) => ({ url }))).pipe(sitemapStream)
+  ).then((data) => data.toString());
+
+  res.setHeader('Content-Type', 'application/xml');
+  res.write(xml);
+  res.end();
+
+  return { props: {} };
+}
+
+default function Sitemap() {
+  return null;
+}

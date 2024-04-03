@@ -2,6 +2,9 @@
 const nextConfig = {};
 
 //module.exports = nextConfig
+const withSitemap = require('next-sitemap')({
+  siteUrl: 'https://www.bluepoint.ovh',
+});
 
 module.exports = {
   images: {
