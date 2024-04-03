@@ -6,7 +6,7 @@ const withSitemap = require('next-sitemap')({
   siteUrl: 'https://www.bluepoint.ovh',
 });
 
-module.exports = {
+module.exports = withSitemap ({
   images: {
     remotePatterns: [
       {
@@ -15,4 +15,4 @@ module.exports = {
       },
     ],
   },
-};
+});
