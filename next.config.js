@@ -1,8 +1,16 @@
+
 module.exports = async (phase, { defaultConfig }) => {
-  const withSitemap = (await import('next-sitemap')).default;
+  const withSitemap = require('@next/bundle-analyzer-plugin').withBundleAnalyzer({
+    enabled: process.env.ANALYZE === 'true',
+  })
+
 
   return withSitemap({
-    siteUrl: 'https://www.bluepoint.ovh',
+    sitemap: {
+      path: 'public/sitemap.xml',
+      generate: true,
+      siteUrl: 'https://www.bluepoint.ovh',
+    },
     ...defaultConfig,
     images: {
       remotePatterns: [
@@ -12,8 +20,6 @@ module.exports = async (phase, { defaultConfig }) => {
         },
       ],
     },
-  }, [
-    // Ajoutez ici les configurations de routes pour votre sitemap
-  ]);
+  });
 };
 
