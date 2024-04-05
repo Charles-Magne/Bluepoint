@@ -6,11 +6,89 @@
 .bluepointContenerMain{
     display: flex;
     width: 100vw;
-    margin: 10rem 0 0 -0.5rem;
+    margin: 5rem 0 0 0rem;
     flex-direction: column;
     justify-items: center;
     font-family: 'Anonymous Pro', monospace;
 }
+
+//Le titre principal de la page
+.acceuilTitreMain {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 50rem;
+    top: 21rem;
+    left: 7rem;
+    font-size: 3rem;
+    z-index: -1;
+    font-family: "Anonymous Pro", monospace;
+    color: $color3;
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Couleur noire semi-transparente */
+    padding: 0.5rem;
+    border-radius: 0.7rem;
+    //text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    //text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+    /*text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);*/
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+      0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+//Les deux mots qui sont en gras
+.accueilTitleStrong {
+    display: flex;
+    color: $color4;
+  }
+
+//La div qui englobe l'img Bezier
+.acceuilContenerBezier {
+    display: flex;
+    //background-image: url('./components/main/Bezier.jpg');
+    width: 100%;
+    //height: 60rem;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -2;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  // Le contener qui gere le fond de la div dans laquel on place la fleche
+.acceuilContenerArrow {
+    display: flex;
+    background-color: $color4;
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    top: 87vh;
+    left: 50%;
+    right: 50%;
+    border-radius: 3rem;
+    z-index: 4;
+    cursor: pointer;
+  }
+  
+  .acceuilContenerArrow:hover {
+    position: absolute;
+    top: 86vh;
+  }
+  
+  //La div qui encadre l'icone fleche
+  .acceuilPngArrow {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin: 0 auto;
+    color: white;
+    font-size: 3rem;
+    background-image: url("../components/main/arrow");
+    width: 3.2rem;
+    height: 3.5rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+  }
 
 //Le titre principale
 .bluepointTitleMain{
@@ -311,6 +389,16 @@ text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 
 @media screen and (max-width: 900px) {
 
+      //Le titre principal de la page
+  .acceuilTitreMain {
+    top: 10rem;
+    left: 4rem;
+    width: 22rem;
+    left: 7rem;
+    font-size: 1.2rem;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
         // le contener qui englobe les cartouches
 .bluepointContenerResume{
     display: flex;
@@ -377,6 +465,13 @@ font-size: 2rem;
     .bluepointSatisfactionLeft{
         width: 80vw;
     }
+
+      //Le titre principal de la page
+  .acceuilTitreMain {
+    left: 2rem;
+    top: 5rem;
+    width: 17rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -386,10 +481,29 @@ font-size: 2rem;
     margin: 2rem auto 5rem auto;
 }
 
+//Le titre principal de la page
+.acceuilTitreMain {
+    font-size: 0.8rem;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
 }
 
 @media screen and (max-width: 400px) {
     .bluepointArticleImg{
         width: 15rem;
     }
+
+      //Le titre principal de la page
+  .acceuilTitreMain {
+    width: 15rem;
+  }
+}
+
+@media screen and (max-width: 290px) {
+    .acceuilTitreMain {
+        left: 0.5rem;
+        font-size: 0.7rem;
+        width: 12rem;
+      }
 }

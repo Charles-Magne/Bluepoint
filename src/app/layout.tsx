@@ -7,6 +7,7 @@ import { Inter } from 'next/font/google';
 import  StoreProvider  from '../store/StoreProvider';
 //import logo from './favicon.ico';
 import logo from './Blue Point favicon transp.ico';
+import Script from 'next/script'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -31,9 +32,28 @@ export default function RootLayout({
       <title>Bluepoint, votre agence de développement numérique basée au coeur de l&apos;Occitanie.</title>
       </Head>
       
+      {/* Google Tag Manager */}
+    {/*} <Script
+        strategy="afterInteractive"
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+      />
+     {/* <Script id="gtag-init" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${GA_TRACKING_ID}');
+        `}
+      </Script>
+        {/* End Google Tag Manager */}
+      
       <html lang="en">
       < StoreProvider >
       <body className={inter.className}>
+      {/*<!-- Google Tag Manager (noscript) --> */}
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5QNHQJRD"
+              height="0" width="0" style={{display:'none',visibility:'hidden'}}></iframe></noscript>
+{/*<!-- End Google Tag Manager (noscript) -->*/}
         {children}
       </body>
       </ StoreProvider >

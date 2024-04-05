@@ -5,9 +5,57 @@
 .accueilContenerMain {
   display: flex;
   width: 100vw;
-  margin-top: 5rem;
+  margin-top: 5.9rem;
   flex-direction: column;
   font-family: "Anonymous Pro", monospace;
+}
+
+//La div en couleur juste sous le header
+.accueilContenerColor{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+width: 100vw;
+height: auto;
+}
+
+// la phrase d'accueil 
+.accueiPhrasePersona{
+  display: flex;
+  justify-content: center;
+  margin: 8rem 0 6rem 0;
+font-size: 2rem;
+width: 100vw;
+color: $color0;
+font-weight: 700;
+}
+
+// le contener des exemples de sites
+.accueilContenerImgSite{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 180vw;
+  animation: scroll 30s linear infinite;
+}
+
+// l'animation qui scroll les img de site
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-50%);
+  }
+}
+
+
+// la classe commune aux img de site exemple
+.accueilImgCarouselle{
+  height: 28rem;
+  width: auto;
+  border: 1px solid black;
+  border-radius: 0.5rem;
 }
 
 //Le titre principal de la page
