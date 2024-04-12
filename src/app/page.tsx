@@ -21,7 +21,9 @@ export default function Home() {
       <Header/>
       <div className="accueilContenerMain">
         <div className="accueilContenerColor" >
-        <div className="accueiPhrasePersona" >Vous êtes à un clic de votre site personalisé, performant et responsive.</div>
+<div className="accueiltitreContener">
+        <h1 className="accueiPhrasePersona" >Vous êtes à un clic de votre site <span className="accueiPhrasePersonaColor">Personnalisé,</span><span className="accueiPhrasePersonaColor"> Performant et</span> <span className="accueiPhrasePersonaColor"> Responsive.</span> </h1>
+        </div>
         <div className="accueilContenerImgSite">
       <Image className="accueilImgChaussure accueilImgCarouselle" src={"https://drive.google.com/uc?id=1by3PzxpMqAotJgW-aWCHoNv8wo4dB1u1"} width={1437} height={883} alt="ImageSiteChaussure"></Image>
       <Image className="accueilImgSushi accueilImgCarouselle" src={"https://drive.google.com/uc?id=1MH5Bp2P92v1e7DsBpKvjIV4LnPrn6PYv"} width={1902} height={937} alt="ImageSiteSushi"></Image>
