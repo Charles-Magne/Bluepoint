@@ -13,7 +13,7 @@ export default function Main() {
         {/* Partie Transformation */}
         <div className="accueilContenerTransformation">
           <h2 className="accueilTitleTransformation">
-            Nous vous accompagnons dans votre transformation numérique
+            Nos Services
           </h2>
           <div className="accueilContenerActivité">
             {/**************La div Site web ***********/}
@@ -128,8 +128,8 @@ export default function Main() {
           </div>
         </div>
         {/* Partie sur mesure */}
-        <div className="accueilContenerTransformation">
-          <h2 className="accueilTitleTransformation">Notre stack technique</h2>
+        <div className="accueilContenersStackTeck">
+          <h2 className="accueilTitleStackTeck">Notre stack technique</h2>
           <div className="accueilContenerStack">
             <div className="accueilContenairewrapperTech accueilContenairewrapperTechToLeft">
               {/**************HTML ***********/}

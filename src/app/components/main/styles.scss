@@ -17,11 +17,10 @@
 .accueilContenerTransformation {
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background: linear-gradient(135deg, rgb(90, 95, 153) , rgb(51, 55, 100) , rgba(22, 24, 46), rgb(16, 18, 34)); 
   margin: 4rem 0 0 0;
   padding: 1rem 0 1rem 0;
   justify-content: center;
-  border-radius: 0.8rem;
   //width: 110rem;
 }
 
@@ -30,7 +29,6 @@
   display: flex;
   flex-direction: column;
   //align-items:center;
-  background-color: $color3;
   margin: 1rem;
   width: 21rem;
   border-radius: 0.7rem;
@@ -38,6 +36,7 @@
   flex-wrap: wrap;
   margin: 2rem 3rem;
   border: 1px solid $color4;
+  box-shadow: 2px 2px 20px $color1;
 }
 
 // gestion du hover pour les activité
@@ -54,10 +53,37 @@
   justify-content: center;
   align-self: center;
   width: 40rem;
-  //color: $color0;
+  color: white;
   font-size: 2.2rem;
-  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  //text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
   margin: 0 0 1rem 0;
+  font-weight: 520;
+}
+// -----------------------La stack technique
+
+// La div qui encadre la stack technique
+.accueilContenersStackTeck{
+  display: flex;
+  flex-direction: column;
+  //background: linear-gradient(135deg, rgb(90, 95, 153) , rgb(51, 55, 100) , rgba(22, 24, 46), rgb(16, 18, 34)); 
+  margin: 4rem 0 0 0;
+  padding: 1rem 0 1rem 0;
+  justify-content: center;
+  //width: 110rem;
+}
+
+//Le titre Stack Technique
+.accueilTitleStackTeck {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-self: center;
+  width: 40rem;
+  font-size: 2.2rem;
+  color: $color0;
+  //text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  margin: 0 0 1rem 0;
+  font-weight: 520;
 }
 
 // Le conteneur qui englobe toute les tech
@@ -174,8 +200,6 @@ width: auto;
 
 .acceuilTitreDescription {
     display: flex;
-  //background: linear-gradient(to bottom, $color1, $color15);
-  //background: repeating-radial-gradient(circle, $color45, $color4);
   border-radius: 0 0 0.7rem 0.7rem;
   padding: 0 0 1rem 0;
  flex-direction: column;
@@ -187,7 +211,7 @@ width: auto;
   justify-content: center;
   font-weight: bold;
   font-size: 1.3rem;
-  color: black;
+  color: white;
   margin: 1rem 0 1rem 0;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
@@ -197,7 +221,7 @@ width: auto;
     display: flex;
   text-align: center;
   margin: 0 1rem 0 1rem;
-  color: gray;
+  color: rgb(223, 223, 223);
 }
 
 //une div qui sert a separer le footer du reste de la page
