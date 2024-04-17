@@ -32,11 +32,33 @@ const Header: React.FC = () => {
   // Le use Effect qui nous sert a mettre à jour le state lorsqu'on change de page
   useEffect (() => {
 
+    const accueiltRoute = document.querySelector('.headerLinkacceuil');
+    const bluepointRoute = document.querySelector('.headerLinkbluepoint');
+    const serviceRoute = document.querySelector('.headerLinkservices');
+
 // On verifie si on est sur la page contact
 if (goodRoute == '/contact') {
 // Si on est sur la page contact On modifie le style
 const buttonContact = document.querySelector('.headerButtonDevis');
 buttonContact?.classList.add('ButtonContactNonColor');
+}
+
+if (goodRoute == '/') {
+  accueiltRoute?.classList.add('headerLinkSelct');
+bluepointRoute?.classList.remove('headerLinkSelct');
+serviceRoute?.classList.remove('headerLinkSelct');
+}
+
+if (goodRoute == '/bluepoint') {
+  accueiltRoute?.classList.remove('headerLinkSelct');
+bluepointRoute?.classList.add('headerLinkSelct');
+serviceRoute?.classList.remove('headerLinkSelct');
+}
+
+if (goodRoute == '/services') {
+  accueiltRoute?.classList.remove('headerLinkSelct');
+bluepointRoute?.classList.remove('headerLinkSelct');
+serviceRoute?.classList.add('headerLinkSelct');
 }
 
 

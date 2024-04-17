@@ -12,7 +12,7 @@ $color45:#ca4b10;
 $color5: rgba(22, 24, 46);
 
 
-::-webkit-scrollbar {
+/*::-webkit-scrollbar {
     width: 10px;
     height: 90%;
   }
@@ -22,13 +22,13 @@ $color5: rgba(22, 24, 46);
   }
   
   ::-webkit-scrollbar-thumb {
-    background: $color4;
+    background: $color0;
     border-radius: 0.3rem;
   }
   
-  ::-webkit-scrollbar-thumb:hover {
+  /*::-webkit-scrollbar-thumb:hover {
     background: $color4
-  }
+  }*/
 
   body{
     overflow-x: hidden;

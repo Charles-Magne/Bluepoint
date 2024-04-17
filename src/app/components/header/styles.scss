@@ -54,6 +54,12 @@
     border-bottom: $color0 1px solid;
 }
 
+//Le header quand il est selectionner
+.headerLinkSelct{
+border-bottom: 1px solid $color0;
+font-size: 1rem;
+}
+
 .headerContenerDevis {
     display: flex;
     align-self: center;
