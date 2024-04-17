@@ -79,6 +79,13 @@
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
+.ButtonContactNonColor{
+    background-color: white;
+    color: black;
+    box-shadow: none;
+    font-weight: 200;
+}
+
 // lorsque on passe sur le bouton de contact
 .headerButtonDevis:hover {
     position: relative;

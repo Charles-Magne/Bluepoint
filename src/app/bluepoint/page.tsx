@@ -9,6 +9,8 @@ import Personalisation from "./personalisation.jpg";
 import Header from "../components/header/page";
 import Footer from "../components/footer/page";
 import scroll from "./scroll.png";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShieldHalved } from '@fortawesome/free-solid-svg-icons';
 
 const Bluepoint = () => {
   useEffect(() => {
@@ -80,6 +82,7 @@ const Bluepoint = () => {
         <h1 className="bluepointTitleMain">Nos engagements pour vous</h1>
         <div className="bluepointContenerResume">
           {/*Satisfaction*/}
+          {/*<FontAwesomeIcon icon={faShieldHalved} />*/}
           <div className="bluepointcartoucheSatisfaction bluepointCartoucheResume">
             <Image className="bluepointImgCartoucheGenrique" alt="logo_Qualité" width={1000} height={570} src={Satisfaction} />
             <h2 className="bluepointTitleCartouche">Votre satisfaction est notre priorité</h2>

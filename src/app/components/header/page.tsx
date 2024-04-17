@@ -10,10 +10,11 @@ import LogoSmall from "./Blue Point Small.png";
 import LogoSend from "./enveloppe.png";
 import { Action } from "redux";
 import { checkRouteHeader } from '../../../store/actions';
-import { selectPage } from '../../../store/reducer/pageReducer'; 
+import { PageState, selectPage } from '../../../store/reducer/pageReducer'; 
 import Link from "next/link";
 import { log } from "console";
 import { current } from "@reduxjs/toolkit";
+import { pages } from "next/dist/build/templates/app-page";
 
 
 
@@ -23,15 +24,22 @@ const Header: React.FC = () => {
   type currentPage = {
     page: string;
   }
-
   const dispatch = useDispatch();
   const goodRoute = usePathname();
  const currentPage = useSelector(selectPage);
 
-//console.log('le bonne route', currentPage.page);
 
   // Le use Effect qui nous sert a mettre à jour le state lorsqu'on change de page
   useEffect (() => {
+
+// On verifie si on est sur la page contact
+if (goodRoute == '/contact') {
+// Si on est sur la page contact On modifie le style
+const buttonContact = document.querySelector('.headerButtonDevis');
+buttonContact?.classList.add('ButtonContactNonColor');
+}
+
+
     // On fait un dispatch avec le nom de la page
     dispatch<Action>(checkRouteHeader(goodRoute));
   }, [dispatch, goodRoute]);
@@ -39,6 +47,9 @@ const Header: React.FC = () => {
 
   // On check le state pour savoir sur quelle page on est et on adapte le scss en fonction
  useEffect (() => {
+
+  
+  
 
 /*  const currentPage: currentPage = { page: "/services" };
 const pageValue = currentPage.page; // Accéder à la valeur de la propriété page
@@ -88,7 +99,6 @@ function addStyleClassToCurrentPage(currentPage: string, pageSelectors: PageSele
         }
     }
 }
-
   }, [currentPage]);
 
   return (
@@ -116,7 +126,7 @@ function addStyleClassToCurrentPage(currentPage: string, pageSelectors: PageSele
         </div>
         <div className="headerContenerDevis" >
           <a className="headerButtonA" href="/contact" >
-            <div className="headerButtonDevis" >Contact</div>
+            <div className="headerButtonDevis" >Contact</div> 
           <Image className="HeaderIconeLetter" sizes="(max-width: 1rem) 1vw" src={LogoSend} alt="iconeSend" />
           </a>
         </div>

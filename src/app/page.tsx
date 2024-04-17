@@ -7,6 +7,7 @@ import "./styles.scss";
 import { useRef } from "react";
 import Image from "next/image";
 
+
 export default function Home() {
 
   // On fait referance à element cible sur le quel il faut arriver

@@ -19,7 +19,7 @@
   flex-direction: column;
   background: linear-gradient(135deg, rgb(90, 95, 153) , rgb(51, 55, 100) , rgba(22, 24, 46), rgb(16, 18, 34)); 
   margin: 4rem 0 0 0;
-  padding: 1rem 0 1rem 0;
+  padding: 3rem 0 3rem 0;
   justify-content: center;
   //width: 110rem;
 }
@@ -35,8 +35,13 @@
   text-align: center;
   flex-wrap: wrap;
   margin: 2rem 3rem;
-  border: 1px solid $color4;
+  border: 1px solid $color0;
+}
+
+//Lorsqu on hover une div on lui applique une box shadow
+.accueilActivitéContnerFocus {
   box-shadow: 2px 2px 20px $color1;
+  border: 1px solid $color1;
 }
 
 // gestion du hover pour les activité
@@ -59,6 +64,13 @@
   margin: 0 0 1rem 0;
   font-weight: 520;
 }
+
+//Le userefqui entoure la div sur les services
+.accueilUseRefStandard{
+  display: none;
+  justify-content: center;
+}
+
 // -----------------------La stack technique
 
 // La div qui encadre la stack technique
@@ -83,7 +95,7 @@
   color: $color0;
   //text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
   margin: 0 0 1rem 0;
-  font-weight: 520;
+  font-weight: 600;
 }
 
 // Le conteneur qui englobe toute les tech

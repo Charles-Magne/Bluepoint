@@ -1,11 +1,66 @@
-import React, { useRef } from "react";
+"use client";
+
+import React, { useRef, useEffect } from "react";
 import Header from "../header/page";
 import Footer from "../footer/page";
 import "./styles.scss";
 import { Provider } from "react-redux";
 import Image from "next/image";
+import DetailService from '../detailService';
+import DetailFormation from '../detailFormation';
+import DetailAuto from '../detailAuto';
 
 export default function Main() {
+//les useRef qui encapsule les componements
+  const ServiceComponent = useRef<HTMLDivElement>(null);
+  const FormationComponent = useRef<HTMLDivElement>(null);
+  const AutomatisationComponent = useRef<HTMLDivElement>(null);
+
+
+   useEffect(() => {
+// on defini les divs
+const DivDevWeb = document.querySelector('.accueilActivitéContnerDevWeb') as HTMLDivElement | null;
+const DivForma = document.querySelector('.accueilActivitéContnerForm') as HTMLDivElement | null;
+const DivAuto = document.querySelector('.accueilActivitéContnerAuto')as HTMLDivElement | null;
+
+//Quand on survole une div on applique un box sahdow et on affiche la div[i]
+DivDevWeb?.addEventListener('mouseover', () => {
+  if (ServiceComponent.current && FormationComponent.current && AutomatisationComponent.current && DivForma && DivAuto) {
+    ServiceComponent.current.style.display = "flex";
+    FormationComponent.current.style.display = "none";
+    AutomatisationComponent.current.style.display = "none";
+    DivDevWeb.classList.add('accueilActivitéContnerFocus');
+    DivAuto.classList.remove('accueilActivitéContnerFocus');
+    DivForma.classList.remove('accueilActivitéContnerFocus');
+  }
+});
+
+DivForma?.addEventListener('mouseover', () => {
+  if (ServiceComponent.current && FormationComponent.current && AutomatisationComponent.current && DivDevWeb && DivAuto) {
+    ServiceComponent.current.style.display = "none";
+    FormationComponent.current.style.display = "flex";
+    AutomatisationComponent.current.style.display = "none";
+    DivDevWeb.classList.remove('accueilActivitéContnerFocus');
+    DivForma.classList.add('accueilActivitéContnerFocus');
+    DivAuto.classList.remove('accueilActivitéContnerFocus'); 
+  }
+});
+
+DivAuto?.addEventListener('mouseover', () => {
+  if (ServiceComponent.current && FormationComponent.current && AutomatisationComponent.current && DivForma && DivDevWeb) {
+    ServiceComponent.current.style.display = "none";
+    FormationComponent.current.style.display = "none";
+    AutomatisationComponent.current.style.display = "flex";
+    DivDevWeb.classList.remove('accueilActivitéContnerFocus');
+    DivForma.classList.remove('accueilActivitéContnerFocus');
+    DivAuto.classList.add('accueilActivitéContnerFocus');
+  }
+});
+
+  },[]);
+
+
+
   return (
     <div>
       <div className="AccueilContenerInfo">
@@ -17,7 +72,7 @@ export default function Main() {
           </h2>
           <div className="accueilContenerActivité">
             {/**************La div Site web ***********/}
-            <div className="accueilActivitéContner">
+            <div className="accueilActivitéContner accueilActivitéContnerDevWeb">
               <Image
                 priority={true}
                 className="acceuilContenerImg acceuilImgSiteweb"
@@ -30,61 +85,16 @@ export default function Main() {
                 alt="ImgSiteWeb"
               />
               <div className="acceuilTitreDescription">
-                <span className="acceuilActivitéDetail">Site web</span>
+                <span className="acceuilActivitéDetail">Développement web</span>
                 {/*Nous créeons bien plus que des sites web. Nous créeons votre
                   site web. */}
                 <p className="acceuilActivitéDescription">
-                  Nous créons bien plus que des sites web. Nous créons votre
-                  site web.
-                </p>
-              </div>
-            </div>
-            {/****************La div Application web ************/}
-            <div className="accueilActivitéContner">
-              <Image
-                priority={true}
-                className="acceuilContenerImg acceuilImgAppweb"
-                width={700}
-                height={700}
-                /*fill={true}*/
-                src={
-                  "https://drive.google.com/uc?id=1alALXupE3-O5PsQYZybZVYz2NR42eDGX"
-                }
-                alt="ImgSiteWeb"
-              />
-              <div className="acceuilTitreDescription">
-                <span className="acceuilActivitéDetail">Application web</span>
-                <p className="acceuilActivitéDescription">
-                  Une application web est un site web optimisé pour les
-                  tablettes et les portables, encapsculé dans une application.
-                </p>
-              </div>
-            </div>
-            {/**************La div Application Mobile ************/}
-            <div className="accueilActivitéContner">
-              <Image
-                priority={true}
-                className="acceuilContenerImg acceuilImgAppmobile"
-                width={700}
-                height={700}
-                /*fill={true}*/
-                src={
-                  "https://drive.google.com/uc?id=1V1Jqi-NNUh-rFgkywJxKTymCAF2EUm-G"
-                }
-                alt="ImgSiteWeb"
-              />
-              <div className="acceuilTitreDescription">
-                <span className="acceuilActivitéDetail">
-                  Application mobile
-                </span>
-                <p className="acceuilActivitéDescription">
-                  Un outil optimisé pour les mobiles et les tablettes. Le code
-                  s&apos;intègre parfaitement à la logique mobile.
+                  Grace à la modularité du code, nous pouvons donnez vie à tous vos projets.
                 </p>
               </div>
             </div>
             {/**************La div Formation ******************/}
-            <div className="accueilActivitéContner">
+            <div className="accueilActivitéContner accueilActivitéContnerForm">
               <Image
                 priority={true}
                 className="acceuilContenerImg acceuilImgFormation"
@@ -104,7 +114,7 @@ export default function Main() {
               </div>
             </div>
             {/************************La div Application Automatisation **************/}
-            <div className="accueilActivitéContner">
+            <div className="accueilActivitéContner accueilActivitéContnerAuto">
               <Image
                 priority={true}
                 className="acceuilContenerImg acceuilImgAutomatisation"
@@ -125,6 +135,15 @@ export default function Main() {
                 </p>
               </div>
             </div>
+          </div>
+          <div className="accueilUseRefStandard" ref={ServiceComponent} >
+          <DetailService/>
+          </div>
+          <div className="accueilUseRefStandard" ref={FormationComponent} >
+          <DetailFormation/>
+          </div>
+          <div className="accueilUseRefStandard" ref={AutomatisationComponent} >
+          <DetailAuto/>
           </div>
         </div>
         {/* Partie sur mesure */}

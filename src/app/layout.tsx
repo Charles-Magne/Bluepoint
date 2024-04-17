@@ -7,7 +7,11 @@ import { Inter } from 'next/font/google';
 import  StoreProvider  from '../store/StoreProvider';
 //import logo from './favicon.ico';
 import logo from './Blue Point favicon transp.ico';
-import Script from 'next/script'
+import Script from 'next/script';
+/*FontAwesome */
+import { config } from '@fortawesome/fontawesome-svg-core';
+import '@fortawesome/fontawesome-svg-core/styles.css';
+config.autoAddCss = false;
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -25,6 +29,7 @@ export default function RootLayout({
   return (
 	  <>
       <Head>
+      <meta charSet="utf-8" />
       <Link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       <Link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet" /> 

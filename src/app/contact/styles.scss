@@ -59,6 +59,8 @@
 // le span des titres
 .contactTitleLabel {
     margin: 0 0 0.5rem 0;
+    color: $color0;
+    font-size: 1.3rem;
 }
 
 //le champs des input
@@ -117,17 +119,17 @@
 .contactButtonsend {
     display: flex;
     margin: 2rem 1rem 1rem 0;
-    padding: 0.5rem;
-    width: 5.8rem;
+    width: 6rem;
+    justify-content: center;
+    align-items: center;
     height: 2rem;
-    text-align: center;
     font-family: 'Anonymous Pro', monospace;
     font-size: 1.1rem;
     font-weight: bold;
     border-radius: 0.2rem;
     border: 1px solid gray;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-    background-color: $color4;
+    background-color: $color0;
     color: white;
 }
 
