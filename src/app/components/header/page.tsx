@@ -10,10 +10,11 @@ import LogoSmall from "./Blue Point Small.png";
 import LogoSend from "./enveloppe.png";
 import { Action } from "redux";
 import { checkRouteHeader } from '../../../store/actions';
-import { selectPage } from '../../../store/reducer/pageReducer'; 
+import { PageState, selectPage } from '../../../store/reducer/pageReducer'; 
 import Link from "next/link";
 import { log } from "console";
 import { current } from "@reduxjs/toolkit";
+import { pages } from "next/dist/build/templates/app-page";
 
 
 
@@ -23,15 +24,44 @@ const Header: React.FC = () => {
   type currentPage = {
     page: string;
   }
-
   const dispatch = useDispatch();
   const goodRoute = usePathname();
  const currentPage = useSelector(selectPage);
 
-//console.log('le bonne route', currentPage.page);
 
   // Le use Effect qui nous sert a mettre à jour le state lorsqu'on change de page
   useEffect (() => {
+
+    const accueiltRoute = document.querySelector('.headerLinkacceuil');
+    const bluepointRoute = document.querySelector('.headerLinkbluepoint');
+    const serviceRoute = document.querySelector('.headerLinkservices');
+
+// On verifie si on est sur la page contact
+if (goodRoute == '/contact') {
+// Si on est sur la page contact On modifie le style
+const buttonContact = document.querySelector('.headerButtonDevis');
+buttonContact?.classList.add('ButtonContactNonColor');
+}
+
+if (goodRoute == '/') {
+  accueiltRoute?.classList.add('headerLinkSelct');
+bluepointRoute?.classList.remove('headerLinkSelct');
+serviceRoute?.classList.remove('headerLinkSelct');
+}
+
+if (goodRoute == '/bluepoint') {
+  accueiltRoute?.classList.remove('headerLinkSelct');
+bluepointRoute?.classList.add('headerLinkSelct');
+serviceRoute?.classList.remove('headerLinkSelct');
+}
+
+if (goodRoute == '/services') {
+  accueiltRoute?.classList.remove('headerLinkSelct');
+bluepointRoute?.classList.remove('headerLinkSelct');
+serviceRoute?.classList.add('headerLinkSelct');
+}
+
+
     // On fait un dispatch avec le nom de la page
     dispatch<Action>(checkRouteHeader(goodRoute));
   }, [dispatch, goodRoute]);
@@ -39,6 +69,9 @@ const Header: React.FC = () => {
 
   // On check le state pour savoir sur quelle page on est et on adapte le scss en fonction
  useEffect (() => {
+
+  
+  
 
 /*  const currentPage: currentPage = { page: "/services" };
 const pageValue = currentPage.page; // Accéder à la valeur de la propriété page
@@ -88,7 +121,6 @@ function addStyleClassToCurrentPage(currentPage: string, pageSelectors: PageSele
         }
     }
 }
-
   }, [currentPage]);
 
   return (
@@ -110,13 +142,13 @@ function addStyleClassToCurrentPage(currentPage: string, pageSelectors: PageSele
           <a className="headerLink headerLinkservices" href="/services">
             Services
           </a>
-          <a className="headerLink headerLinkrealisation" href="/realisation">
+          {/*<a className="headerLink headerLinkrealisation" href="/realisation">
             Nos réalisations
-          </a>
+  </a>*/}
         </div>
         <div className="headerContenerDevis" >
           <a className="headerButtonA" href="/contact" >
-            <div className="headerButtonDevis" >Contact</div>
+            <div className="headerButtonDevis" >Contact</div> 
           <Image className="HeaderIconeLetter" sizes="(max-width: 1rem) 1vw" src={LogoSend} alt="iconeSend" />
           </a>
         </div>

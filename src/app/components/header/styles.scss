@@ -54,6 +54,12 @@
     border-bottom: $color0 1px solid;
 }
 
+//Le header quand il est selectionner
+.headerLinkSelct{
+border-bottom: 1px solid $color0;
+font-size: 1rem;
+}
+
 .headerContenerDevis {
     display: flex;
     align-self: center;
@@ -68,15 +74,22 @@
     text-decoration: none;
     font-weight: bold;
     height: 2rem;
-    width: 10rem;
+    width: 6rem;
     font-size: 1rem;
-    border-radius: 0.7rem;
+    border-radius: 0.4rem;
     background-color: #020887;
     color: white;
     cursor: pointer;
     border: none;
     padding: 0.4rem 0;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.ButtonContactNonColor{
+    background-color: white;
+    color: black;
+    box-shadow: none;
+    font-weight: 200;
 }
 
 // lorsque on passe sur le bouton de contact

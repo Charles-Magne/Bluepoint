@@ -12,9 +12,12 @@
 
 //La div en couleur juste sous le header
 .accueilContenerColor {
+.accueilContenerColor {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  width: 100vw;
+  height: auto;
   width: 100vw;
   height: auto;
 }
@@ -28,6 +31,17 @@
   margin: 0 auto 0 auto;
 }
 
+//La div qui encadre le titre
+.accueiltitreContener {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto 0 auto;
+}
+
+// la phrase d'accueil
+.accueiPhrasePersona {
 // la phrase d'accueil
 .accueiPhrasePersona {
   display: flex;
@@ -47,9 +61,25 @@
   color: $color4;
   margin: 0 0 0 1rem;
   width: auto;
+  flex-wrap:wrap;
+  margin: 8rem auto 6rem auto;
+  text-align: center;
+  font-size: 3rem;
+  color: $color0;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+//Les mots en couleur dans le titre
+.accueiPhrasePersonaColor {
+  display: flex;
+  color: $color4;
+  margin: 0 0 0 1rem;
+  width: auto;
 }
 
 // le contener des exemples de sites
+.accueilContenerImgSite {
 .accueilContenerImgSite {
   display: flex;
   flex-direction: row;
@@ -64,22 +94,49 @@
     transform: translateX(0);
   }
   100% {
+  100% {
     transform: translateX(-50%);
   }
 }
 
 // la classe commune aux img de site exemple
 .accueilImgCarouselle {
+.accueilImgCarouselle {
   height: 28rem;
   width: auto;
   border-radius: 0.5rem;
   box-shadow: 10px 12px 20px gray;
+  box-shadow: 10px 12px 20px gray;
+}
+
+//Le titre principal de la page
+.acceuilTitreMain {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 50rem;
+  top: 21rem;
+  left: 7rem;
+  font-size: 3rem;
+  z-index: -1;
+  font-family: "Anonymous Pro", monospace;
+  color: $color3;
+  background-color: rgba(0, 0, 0, 0.2);
+  /* Couleur noire semi-transparente */
+  padding: 0.5rem;
+  border-radius: 0.7rem;
+  //text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  //text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+  /*text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);*/
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
 //Les deux mots qui sont en gras
 .accueilTitleStrong {
   display: flex;
   color: $color4;
+  //change just for commit
   //change just for commit
 }
 
@@ -185,6 +242,7 @@
   }
 
   .headerMain {
+  .headerMain {
     position: fixed;
     top: 90vh;
     height: 3rem;
@@ -209,6 +267,8 @@
 
 @media screen and (max-width: 290px) {
 
+  // Le contener qui gere le fond de la div dans laquel on place la fleche
+  .acceuilContenerArrow {
   // Le contener qui gere le fond de la div dans laquel on place la fleche
   .acceuilContenerArrow {
     display: flex;

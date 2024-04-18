@@ -1,0 +1,73 @@
+@import '../main/reset';
+@import '../main/variables';
+
+//le contener de tout le composant
+.contenerMainDetailService{
+    display: flex;
+    margin: 0 auto;
+    padding: 2rem 0;
+height: auto;
+width: 85vw;
+flex-wrap: wrap;
+justify-content: space-around;
+border: 1px solid $color1;
+border-radius: 1rem;
+font-family: "Anonymous Pro", monospace;
+text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+box-shadow: 2px 2px 20px $color1;
+}
+
+//Le titre de la page
+.DetailServiceTitleMain{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: white;
+    font-size: 2.5rem;
+    padding: 0 0 1.7rem 0;
+}
+
+// la div qui englobe l'icone et le texte
+.DetailServiceIconeAndTexte{
+    display: flex;
+    flex-direction: row;
+    width: 35%;
+    margin: 0.7rem 0;
+}
+
+//les icones de fontawesome
+.DetailServiceIconeSuper{
+    display: flex;
+color: white;
+font-weight: lighter;
+width: 2rem;
+height: auto;
+margin: 0 2rem;
+}
+
+// le texte 
+.DetailServiceTextDev{
+    display: flex;
+    color: white;
+    justify-content: left;
+    font-size: 1.7rem;
+}
+
+//Le contener du button
+.DetailServiceContnerButton{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1.3rem;
+}
+
+//Le bouton pour les contact
+.DetailServiceButtonContact{
+    font-size: 1.8rem;
+    color: $color0;
+    border-radius: 0.3rem;
+    border: 1px solid $color1;
+    box-shadow: 2px 2px 20px $color1;
+    font-weight: 600;
+}
+
