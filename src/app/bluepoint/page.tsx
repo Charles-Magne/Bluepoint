@@ -9,6 +9,7 @@ import Personalisation from "./personalisation.jpg";
 import Header from "../components/header/page";
 import Footer from "../components/footer/page";
 import scroll from "./scroll.png";
+import ContenerBessan from "./contenerBessan/page";
 
 const Bluepoint = () => {
   useEffect(() => {
@@ -49,35 +50,12 @@ const Bluepoint = () => {
     );
   };
 
-    // On fait referance à element cible sur le quel il faut arriver
-    const mainComposant = useRef<HTMLDivElement>(null);
-
-  const clicArrowDown = () => {
-    mainComposant.current?.scrollIntoView({ behavior:'smooth'});
-  };
-
   return (
     <div>
       <Header />
       <div className="bluepointContenerMain">
-      <h2 className="acceuilTitreMain">
-          Bluepoint, votre agence de{" "}
-          <strong className="accueilTitleStrong">
-            développement numérique
-          </strong>{" "}
-          basée au coeur de l&apos;Occitanie.
-        </h2>
-               <Image  priority={true}
-              className="acceuilContenerBezier"
-              width={1600}
-              height={900}
-              src={"https://drive.google.com/uc?id=10xJF2rs0YX2CbkyBTQ1DHwWVTPVMHzx9"}
-              alt="ImgOccitanie"></Image> 
-              <div className="acceuilContenerArrow">
-          <div onClick={clicArrowDown} className="acceuilPngArrow"></div>
-        </div>
-        <div ref={mainComposant} ></div>
-        <h1 className="bluepointTitleMain">Nos engagements pour vous</h1>
+      <h1 className="bluepointTitleMain">Notre histoire, Nos valeurs, Nos engagements</h1>
+      <ContenerBessan/>     
         <div className="bluepointContenerResume">
           {/*Satisfaction*/}
           <div className="bluepointcartoucheSatisfaction bluepointCartoucheResume">

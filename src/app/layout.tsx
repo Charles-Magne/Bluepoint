@@ -8,6 +8,10 @@ import  StoreProvider  from '../store/StoreProvider';
 //import logo from './favicon.ico';
 import logo from './Blue Point favicon transp.ico';
 import Script from 'next/script'
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
+
 
 const inter = Inter({ subsets: ['latin'] })
 
