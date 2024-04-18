@@ -12,7 +12,6 @@
 
 //La div en couleur juste sous le header
 .accueilContenerColor {
-.accueilContenerColor {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -40,8 +39,6 @@
   margin: 0 auto 0 auto;
 }
 
-// la phrase d'accueil
-.accueiPhrasePersona {
 // la phrase d'accueil
 .accueiPhrasePersona {
   display: flex;
@@ -80,7 +77,6 @@
 
 // le contener des exemples de sites
 .accueilContenerImgSite {
-.accueilContenerImgSite {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -94,13 +90,11 @@
     transform: translateX(0);
   }
   100% {
-  100% {
     transform: translateX(-50%);
   }
 }
 
 // la classe commune aux img de site exemple
-.accueilImgCarouselle {
 .accueilImgCarouselle {
   height: 28rem;
   width: auto;
@@ -242,7 +236,6 @@
   }
 
   .headerMain {
-  .headerMain {
     position: fixed;
     top: 90vh;
     height: 3rem;
@@ -267,8 +260,6 @@
 
 @media screen and (max-width: 290px) {
 
-  // Le contener qui gere le fond de la div dans laquel on place la fleche
-  .acceuilContenerArrow {
   // Le contener qui gere le fond de la div dans laquel on place la fleche
   .acceuilContenerArrow {
     display: flex;

@@ -8,13 +8,12 @@ import Sav from "./sav.jpg";
 import Personalisation from "./personalisation.jpg";
 import Header from "../components/header/page";
 import Footer from "../components/footer/page";
-import scroll from "./scroll.png";
 import ContenerBessan from "./contenerBessan/page";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShieldHalved } from '@fortawesome/free-solid-svg-icons';
 
 const Bluepoint = () => {
-  useEffect(() => {
+  /*useEffect(() => {
     const checkScroll = () => {
       const bluepointSati = document.querySelector<HTMLDivElement>(
         ".bluepointSatisfactionMain"
@@ -41,16 +40,16 @@ const Bluepoint = () => {
     return () => {
       window.addEventListener("scroll", checkScroll);
     };
-  }, []);
+  }, []);*/
 
-  const isInView = (elem: HTMLDivElement) => {
+  /*const isInView = (elem: HTMLDivElement) => {
     const bouding = elem.getBoundingClientRect();
     return (
       bouding.top >= 0 &&
       bouding.bottom <=
         (window.innerHeight || document.documentElement.clientHeight)
     );
-  };
+  };*/
 
     // On fait referance à element cible sur le quel il faut arriver
     const mainComposant = useRef<HTMLDivElement>(null);
@@ -58,8 +57,7 @@ const Bluepoint = () => {
   const clicArrowDown = () => {
     mainComposant.current?.scrollIntoView({ behavior:'smooth'});
   };
-  /*Notre histoire: c'est au coeur de l'herault que Bluepoint à vu le jour. Situé à Bessan, à mi-chemin entre Agde et Pezenas, nous créeons pour vous un site personalisé.
-  Passioné par le developpement web,       
+  /*    
   Notre mission: notre but est avant tout de propulser les petites et moyenne entitées commerciale sur le web. Car si aujourd'hui 
   la majorité des choix se font avec un telephone dans les mains, il est vitale d'être present sur internet. en effet, le choix d'un restauant, d'un artisant ou
   d'une sortie en general se prends en quelques minutes et donc il est vital d'etre present sur le web pour proposer au chalant numerique votre offre. 
@@ -72,45 +70,9 @@ const Bluepoint = () => {
       <h1 className="bluepointTitleMain">Notre histoire, Nos valeurs, Nos engagements</h1>
       <ContenerBessan/>     
         <div className="bluepointContenerResume">
-          {/*Satisfaction*/}
-          {/*<FontAwesomeIcon icon={faShieldHalved} />*/}
-          <div className="bluepointcartoucheSatisfaction bluepointCartoucheResume">
-            <Image className="bluepointImgCartoucheGenrique" alt="logo_Qualité" width={1000} height={570} src={Satisfaction} />
-            <h2 className="bluepointTitleCartouche">Votre satisfaction est notre priorité</h2>
-            <span className="bluepointTextCartouche">
-              Votre satisfaction est notre priorité.
-            </span>
-          </div>
-          {/*Personalisation*/}
-          <div className="bluepointcartouchePerson bluepointCartoucheResume">
-              <Image className="bluepointImgCartoucheGenrique"
-                alt="logo_Personalisation"
-                width={7356} height={3678}
-                src={Personalisation}
-              />
-            <h2 className="bluepointTitleCartouche">Vous etes unique et vos projets le sont tout autant
-</h2>
-            <span className="bluepointTextCartouche">
-              Vous etes unique et vos projets le sont tout autant.
-            </span>
-          </div>
-          {/*SAV*/}
-          <div className="bluepointcartoucheSav bluepointCartoucheResume">
-            <Image className="bluepointImgCartoucheGenrique" alt="logo_SAV" width={1254} height={836} src={Sav} />
-            <h2 className="bluepointTitleCartouche">Nous vous accompagnons après la fin de la mission.
-</h2>
-            <span className="bluepointTextCartouche">
-              Nous vous accompagnons apres la fin de la mission.
-            </span>
-          </div>
-        </div>
-        <div className="bluepointContenerScroll">
-        <Image
-          alt="logo_Scroll"
-          width={100}
-          className="bluepointIconeScroll"
-          src={scroll}
-        />
+          {/*Satisfaction votre satisfactions est notre priorité*/}
+          {/*Personalisation nous ne creons pas des sites, nous creeons votre site*/}
+          {/*SAV Nous vous accompagnons après la fin de la mission.*/}
         </div>
         {/*contener de tous les articles */}
         <div className="bluepointContenerArticles">

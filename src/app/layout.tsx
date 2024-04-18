@@ -10,9 +10,6 @@ import logo from './Blue Point favicon transp.ico';
 import Script from 'next/script'
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-
-
-import Script from 'next/script';
 /*FontAwesome */
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';

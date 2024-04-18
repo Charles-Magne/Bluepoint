@@ -33,61 +33,15 @@
 // le contener qui englobe les cartouches
 .bluepointContenerResume{
     display: flex;
-    background-color: $color1T;
-    opacity: 0.9;
+    background: linear-gradient(135deg, rgb(90, 95, 153) , rgb(51, 55, 100) , rgba(22, 24, 46), rgb(16, 18, 34)); 
     flex-direction: row;
     justify-content: space-around;
-    margin: 2rem 5rem 10rem 5rem;
+    margin: 2rem 0 10rem 0;
     padding: 2rem 0 ;
     border-radius: 0.7rem;
-    width: 90w;
+    width: 100vw;
     height: 26rem;
 
-}
-
-//Class generique pour chaque cartouche
-.bluepointCartoucheResume{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    width: 25rem;
-    text-align: center;
-    border-radius: 0.7rem;
-    padding: 1rem;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
-
-
-// les trois cartouche generique 
-.bluepointCartoucheResume:hover{
-    position: relative;
-    bottom: 4px;
-    right: 2px;
-}
-
-//l'img de chaque cartouche
-.bluepointImgCartoucheGenrique{
-    border-radius: 0.5rem 0.5rem 0 0;
-    width: 100%;
-    height: 87%;
-}
-
-// le titre des chaques cartouche
-.bluepointTitleCartouche{
-text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
-color: white;
-background-color: $color1T;
-font-size: 1.3rem;
-padding: 1rem;
-}
-
-//class du texte du cartouche
-.bluepointTextCartouche{
-    color: darkslategray;
-    font-size: 1.1rem;
-    display: none;
 }
 
 // le contener de l'icone scroll
@@ -264,12 +218,6 @@ text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 
 @media screen and (max-width: 1450px) {
 
-    //Class generique pour chaque cartouche
-    .bluepointCartoucheResume{
-    width: 20rem;
-    padding: 1rem;
-    }
-
 
 //gere le style des articles
 .bluepointArticleMain{
@@ -288,16 +236,6 @@ text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 
 @media screen and (max-width: 1150px) {
-
-    .bluepointCartoucheResume{
-        display: flex;
-        flex-direction: column;
-    width: 15rem;
-    height: 17rem;
-    padding: 1rem;
-    justify-content: space-around;
-    align-items: center;
-    }
 
     // le contener qui englobe les cartouches
 .bluepointContenerResume{
@@ -335,16 +273,6 @@ text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
     width: 60vw;
     height: 70rem;
 }
-
-    .bluepointCartoucheResume{
-        display: flex;
-        flex-direction: column;
-    width: 15rem;
-    //height: 17rem;
-    padding: 1rem;
-    justify-content: space-around;
-    align-items: center;
-    }
 
 //gere le style des articles
 .bluepointArticleMain{
