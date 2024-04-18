@@ -57,11 +57,12 @@ const Bluepoint = () => {
   const clicArrowDown = () => {
     mainComposant.current?.scrollIntoView({ behavior:'smooth'});
   };
-  /*Notre histoire: c'est au coeur de l'herault que Bluepoint à vu le jour. Fondé par Laurent, un developpeur full-Stack 
-  armé d'un esprit imaginatif et amoureux de la tech. 
+  /*Notre histoire: c'est au coeur de l'herault que Bluepoint à vu le jour. Situé à Bessan, à mi-chemin entre Agde et Pezenas, nous créeons pour vous un site personalisé.
+  Passioné par le developpement web,       
   Notre mission: notre but est avant tout de propulser les petites et moyenne entitées commerciale sur le web. Car si aujourd'hui 
   la majorité des choix se font avec un telephone dans les mains, il est vitale d'être present sur internet. en effet, le choix d'un restauant, d'un artisant ou
-  d'une sortie en general se prends en quelques minutes et donc il est vital d'etre present sur le web pour proposer au chalant numerique votre offre.    */
+  d'une sortie en general se prends en quelques minutes et donc il est vital d'etre present sur le web pour proposer au chalant numerique votre offre. 
+  Nos valeurs: Local, Satisfaction, Accompagnement, Personalisation   */
 
   return (
     <div>
