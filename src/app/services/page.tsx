@@ -56,6 +56,7 @@ const isInViewport = (elem: HTMLDivElement) => {
     <div>
       <Header />
       <div className="serviceContenerMain">
+        {/*Faire une ligne de metro avec des stations qui represente les etape de creations du site */}
         <h1 className="serviceTitleMain">Nos solutions</h1>
         <div className="serviceContenerResume">
           {/* Creation de site */}

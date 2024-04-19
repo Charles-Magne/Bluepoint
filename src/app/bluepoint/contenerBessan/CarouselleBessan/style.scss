@@ -10,7 +10,6 @@
 //Le contener de chaque img
 .carouselBessanWrapper {
   display: flex;
-  width: 100vw;
   justify-content: center;
 }
 
@@ -38,7 +37,7 @@
       justify-content: center;
       align-self: center;
       margin: 0 auto;
-      background-color: $color4;
+      //background-color: ;
       width: 3rem;
       height: 1rem;
       border-radius: 0.5rem;
@@ -49,7 +48,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-      color: $color4;
+      color: white;
       width: 3rem;
       height: 1rem;
     }
@@ -57,7 +56,7 @@
         display: flex;
         justify-content: center;
         width: 3rem;
-        border: 1px solid #bd592b;
+        border: 2px solid $color0;
         color: grey;
       }
   }

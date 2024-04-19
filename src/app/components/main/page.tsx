@@ -6,9 +6,9 @@ import Footer from "../footer/page";
 import "./styles.scss";
 import { Provider } from "react-redux";
 import Image from "next/image";
-import DetailService from '../detailService';
-import DetailFormation from '../detailFormation';
-import DetailAuto from '../detailAuto';
+import DetailService from './detailService';
+import DetailFormation from './detailFormation';
+import DetailAuto from './detailAuto';
 
 export default function Main() {
 //les useRef qui encapsule les componements
@@ -89,7 +89,7 @@ DivAuto?.addEventListener('mouseover', () => {
                 {/*Nous créeons bien plus que des sites web. Nous créeons votre
                   site web. */}
                 <p className="acceuilActivitéDescription">
-                  Grace à la modularité du code, nous pouvons donnez vie à tous vos projets.
+                  Grâce à la modularité du code, nous pouvons donnez vie à tous vos projets.
                 </p>
               </div>
             </div>
