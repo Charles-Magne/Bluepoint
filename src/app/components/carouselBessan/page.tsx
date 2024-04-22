@@ -7,7 +7,7 @@ interface CarouselProps {
   images: string[];
 }
 
-const CarouselBessan: React.FC<CarouselProps> = ({ images }) => {
+export const CarouselBessan: React.FC<CarouselProps> = ({ images }) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -40,4 +40,4 @@ const CarouselBessan: React.FC<CarouselProps> = ({ images }) => {
   );
 };
 
-export default CarouselBessan;
+//export default CarouselBessan;

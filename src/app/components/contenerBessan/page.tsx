@@ -2,7 +2,7 @@
 import React, { useEffect, useRef } from "react";
 import "./styles.scss";
 import Image from "next/image";
-import CarouselBessan from "../carouselBessan/page";
+import { CarouselBessan } from "../carouselBessan/page";
 
 const images = [
   "https://drive.google.com/uc?id=1hz4rQiEugj1vmpJZ357kpP-c-mVS9bCX",
@@ -12,7 +12,7 @@ const images = [
   "https://drive.google.com/uc?id=1fmjQ1ySZkQWjixaXHwTjtHK0X-rHq07E",
 ];
 
-const ContenerBessan: React.FC = () => {
+ const ContenerBessan: React.FC = () => {
   return (
     <div>
       {" "}
