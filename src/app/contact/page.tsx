@@ -1,8 +1,8 @@
 "use client";
 import React, { useEffect, useState, FormEvent } from "react";
 import "./styles.scss";
-import Header from "../components/header/page";
-import Footer from "../components/footer/page";
+import Header from "../components/header";
+import Footer from "../components/footer";
 import { POST } from "../api/send/route";
 import { useDispatch, useSelector } from "react-redux";
 import { EmailTemplate } from "../components/email/email-template";

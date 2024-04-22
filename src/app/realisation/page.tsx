@@ -1,8 +1,8 @@
 import React from "react";
 import "./styles.scss";
 import Image from "next/image";
-import Header from "../components/header/page";
-import Footer from "../components/footer/page";
+import Header from "../components/header";
+import Footer from "../components/footer";
 import cinetoile from "./Cinétoile24.png";
 import Pierre from "./Pierrefauilleciseau.png";
 

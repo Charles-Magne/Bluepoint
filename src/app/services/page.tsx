@@ -2,8 +2,8 @@
 import React, { useEffect, useRef } from "react";
 import "./styles.scss";
 import Image from "next/image";
-import Header from "../components/header/page";
-import Footer from "../components/footer/page";
+import Header from "../components/header";
+import Footer from "../components/footer";
 import code from "./code-informatiqueBlue.png";
 import SiteCreation from "./site.jpg";
 //import SiteCreation from "https://drive.google.com/file/d/1r7SjDoUiYQ4PK6OZZIu5hI-4lxFIFw_G/uc?export=view"; https://drive.google.com/file/d/1r7SjDoUiYQ4PK6OZZIu5hI-4lxFIFw_G/view?usp=sharing

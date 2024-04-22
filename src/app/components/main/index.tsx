@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useRef, useEffect } from "react";
-import Header from "../header/page";
-import Footer from "../footer/page";
+import Header from "../header";
+import Footer from "../footer";
 import "./styles.scss";
 import { Provider } from "react-redux";
 import Image from "next/image";

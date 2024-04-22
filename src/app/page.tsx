@@ -1,8 +1,8 @@
 "use client";
 
-import Header from "./components/header/page";
-import Main from "./components/main/page";
-import Footer from "./components/footer/page";
+import Header from "./components/header";
+import Main from "./components/main";
+import Footer from "./components/footer";
 import "./styles.scss";
 import { useRef } from "react";
 import Image from "next/image";

@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.scss";
-import Header from "../components/header/page";
-import Footer from "../components/footer/page";
+import Header from "../components/header";
+import Footer from "../components/footer";
 
 const Plandusite = () => {
   return (

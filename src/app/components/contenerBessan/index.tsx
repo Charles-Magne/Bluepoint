@@ -2,7 +2,7 @@
 import React, { useEffect, useRef } from "react";
 import "./styles.scss";
 import Image from "next/image";
-import { CarouselBessan } from "../carouselBessan/page";
+import { CarouselBessan } from "../carouselBessan";
 
 const images = [
   "https://drive.google.com/uc?id=1hz4rQiEugj1vmpJZ357kpP-c-mVS9bCX",
