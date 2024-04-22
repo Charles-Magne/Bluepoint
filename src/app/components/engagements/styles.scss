@@ -1,0 +1,21 @@
+
+@import '../main/variables';
+@import '../main/reset';
+
+
+.ContenerBessanCarousellePhotoMairie{
+    width: 10rem;
+    height: auto;
+}
+
+.ContnerBessanTitre{
+    font-size: 1.5rem;
+    color: $color0;
+    width: 80vw;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.ContenerBessanCarouselle{
+    margin-left: 5rem;
+}

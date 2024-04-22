@@ -1,337 +1,303 @@
-@import '../components/main/variables';
-@import '../components/main/reset';
-
+@import "../components/main/variables";
+@import "../components/main/reset";
 
 // Le contner qui englobe toute la page
-.bluepointContenerMain{
-    display: flex;
-    width: 100vw;
-    margin: 10rem 0 0 0rem;
-    flex-direction: column;
-    justify-items: center;
-    font-family: 'Anonymous Pro', monospace;
+.bluepointContenerMain {
+  display: flex;
+  width: 100vw;
+  margin: 10rem 0 0 0rem;
+  flex-direction: column;
+  justify-items: center;
+  font-family: "Anonymous Pro", monospace;
 }
 
-
-
-
 //Le titre principale
-.bluepointTitleMain{
-    text-align: center;
-    text-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-    color: $color0;
-    font-size: 2rem;
-    font-weight: 600;
+.bluepointTitleMain {
+  text-align: center;
+  text-shadow: 
+    rgba(0, 0, 0, 0.22) 5px 7px 10px;
+  color: $color0;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 // le contener background bleu
-.bluepointContenerResume{
-    display: flex;
-    background: linear-gradient(135deg, rgb(90, 95, 153) , rgb(51, 55, 100) , rgba(22, 24, 46), rgb(16, 18, 34)); 
-    flex-direction: row;
-    margin:  3rem 0 0 0;
-    justify-content: space-around;
-    padding: 2rem 0 ;
-    width: 100vw;
-    height: 26rem;
+.bluepointContenerResume {
+  display: flex;
+  background: linear-gradient(
+    135deg,
+    rgb(90, 95, 153),
+    rgb(51, 55, 100),
+    rgba(22, 24, 46),
+    rgb(16, 18, 34)
+  );
+  flex-direction: row;
+  margin: 3rem 0 0 0;
+  justify-content: space-around;
+  padding: 2rem 0;
+  width: 100vw;
+  height: 26rem;
 }
 
 // Le titre nos valeurs dans le cartouche bleu
-.bluepointTitreSmallValeur{
-    color: white;
-    font-size: 2.2rem;
-    font-weight: 600;
+.bluepointTitreSmallValeur {
+  color: white;
+  font-size: 2.2rem;
+  font-weight: 600;
 }
 
 // le contener de l'icone scroll
-.bluepointContenerScroll{
-    display: flex;
-    width: 100vw;
-    justify-content: center;
+.bluepointContenerScroll {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
 }
-
-// L'animation de l'icone
-@keyframes animationIconeScroll{
-    0%{
-        transform: translateY(0);
-    }
-    50%{
-        transform: translateY(-1rem);
-    }
-    100%{
-        transform: translateY(0);
-    }
-}
-
-// l'icone qui indique aux utilisateurs de scroll
-.bluepointIconeScroll{
-    display: flex;
-    animation: animationIconeScroll 1.2s infinite;
-}
-                         
 
 /***************************les articles ********************************************/
 
 //div qui encadre tous les articles
-.bluepointContenerArticles{
-    width: 100vw;
+.bluepointContenerArticles {
+  width: 100vw;
+  margin-top: 4rem;
+  font-size: 2.2rem;
+  color: $color0;
 }
 
-// La div qui anime les div partant de la droite
-.bluepointAnimD {
-    opacity: 0;
-    transform: translateX(100rem); /* Animation de translation vers le haut */
-    transition: opacity 0.5s ease, transform 2s ease; /* Animation de transition pour l'opacité et la transformation */
-  }
-
-  // La div qui anime les div partant de la gauche
-  .bluepointAnimG {
-    opacity: 0;
-    transform: translateX(-100rem); /* Animation de translation vers le haut */
-    transition: opacity 0.5s ease, transform 2s ease; /* Animation de transition pour l'opacité et la transformation */
-  }
-  
-  //ON fait apparaitre les div
-  .show {
-    opacity: 1;
-    transform: translateY(0); /* Réinitialisation de la translation pour afficher le contenu à sa position normale */
-  }
+// Le titre nos engagements
+.bluepointTitreEngagements{
+display: flex;
+justify-content: center;
+font-weight: 600;
+}
 
 //gere le style des articles
-.bluepointArticleMain{
-    display: flex;
-    width: 100vw;
-    height: 25rem;
-    flex-direction: column;
-    margin: 0 0 4rem 0;
-    padding: 1rem;
+.bluepointArticleMain {
+  display: flex;
+  width: 100vw;
+  height: auto;
+  flex-direction: column;
+  margin: 0 0rem 4rem 0;
+  padding: 1rem;
 }
 /***********satisfaction */
 //Gere le fond de la div satisfaction
-.bluepointSatisfactionMain{
-    display: flex;
-    flex-direction: row;
-    background: linear-gradient(to bottom, $color4, $color45);
-    color: white;
+.bluepointSatisfactionMain {
+  display: flex;
+  flex-direction: row;
+  color: $color0;
+  margin-top: 2rem;
+  height: auto;
+
 }
 
 //le contener du titre et de l'img
-.bluepointSatisfactionLeft{
-    width: 70rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.bluepointSatisfactionLeft {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 //le titre satisafction
-.bluepointSatisfactionTitle{
-    text-align: center;
+.bluepointSatisfactionTitle {
+  text-align: center;
 }
 
-// La class qui gere les img
-.bluepointArticleImg{
-    border-radius: 0.7rem;
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: flex;
-    margin: 3rem 0 0 0 ;
+//La div qui encadre la photo
+.bluepointContnerImgSatisfaction{
+    margin: 3rem 0 5rem 0;
+background-color: $color0;
+width: 30rem;
+height: auto;
+border-radius: 0.5rem;
 }
 
-// le contener de l'img satisfaction
-.bluepointEtoileBlue{
-    background-image: url(./satisfactionClient.jpg);
-    width: 21rem;
-    height: 12rem;
+//L'img de satisfaction
+.bluepointImgSatisfaction{
+    border-radius: 0.5rem;
+    position: relative;
+    top: 5rem;
+    left: 5rem;
+    width: 30rem;
+    height: auto;
+}
+
+//La div de l'img de l'autre coté
+.bluepointImgPersonalisation{
+    position: relative;
+    top: 5rem;
+    right: 5rem;
+    width: 30rem;
+    height: auto;
+    border-radius: 0.5rem;
 }
 
 //Contient le texte des article (sous-titre, texte)
-.bluepointContenertext{
-    width: 70rem;
-    display: flex;
-    align-self: center;
-    flex-direction: column;
+.bluepointContenertext {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 //gere le font de la div personalisation
-.bluepointPersonaMain{
-    display: flex;
-    flex-direction: row-reverse;
-    color: $color0;
+.bluepointPersonaMain {
+  display: flex;
+  flex-direction: row-reverse;
+  color: $color0;
+  height: auto;
 }
 
 // gere la place des div pour la personalisation
-.bluepointPersonaRight{
-    width: 70rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-// le contener de l'img personalisation
-.bluepointPersonaImg{
-    background-image: url(./personalisation.jpg);
-    width: 24rem;
-    height: 12rem;
+.bluepointPersonaRight {
+  width: 70rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 //Gere le fond de la div SAV
-.bluepointSavMain{
-    display: flex;
-    flex-direction: row;
-    background: linear-gradient(to bottom, $color4, $color45);
-    color: white;
+.bluepointSavMain {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-//le contener de l'img sav
-.bluepointSavImg{
-    background-image: url(./sav.jpg);
-    width: 19rem;
-    height: 12.8rem;
-}
 
 //class generique pour tout les titres d'articles
-.bluepointTitreArticle{
-    display: flex;
-    text-align: center;
-margin: 2rem auto 1rem auto;
-font-size: 2rem;
-text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+.bluepointTitreArticle {
+  display: flex;
+  text-align: center;
+  margin: 2rem auto 1rem auto;
+  font-size: 1.7rem;
+  text-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
+font-weight: 600;
 }
 
 //Class general pour tout le texte dans les articles
-.bluepointArticleText{
-    font-size: 1.2rem;
-    margin: 1rem 0 0 0;
+.bluepointArticleText {
+    display: flex;
+    width: 35vw;
+  font-size: 1.2rem;
+  margin: 2rem 0 0 0;
 }
 
 // La toute derniere class qui gere le marging pour ne pas passer sous le footer
-.bluepointSavMain{
-    margin: 0 0 6rem 0;
+.bluepointSavMain {
+  margin: 0 0 6rem 0;
 }
-
-
 
 //////////////////////////////////////////////////////////////
 /// Le responsive
 /// //////////////////////////////////////////////////////////////
 
 @media screen and (max-width: 1450px) {
-
-
-//gere le style des articles
-.bluepointArticleMain{
+  //gere le style des articles
+  .bluepointArticleMain {
     display: flex;
     width: 100vw;
     height: 30rem;
     margin: 0 0 4rem 0;
     padding: 1rem;
-}
+  }
 
-//Contient le texte des article (sous-titre, texte)
-.bluepointContenertext{
+  //Contient le texte des article (sous-titre, texte)
+  .bluepointContenertext {
     font-size: 1.2rem;
-}
-
+  }
 }
 
 @media screen and (max-width: 1150px) {
-
-    // le contener qui englobe les cartouches
-.bluepointContenerResume{
+  // le contener qui englobe les cartouches
+  .bluepointContenerResume {
     margin: 2rem auto 7rem auto;
-    padding: 2rem 0 ;
+    padding: 2rem 0;
     border-radius: 0.7rem;
     width: 90vw;
-}
+  }
 
-//Contient le texte des article (sous-titre, texte)
-.bluepointContenertext{
+  //Contient le texte des article (sous-titre, texte)
+  .bluepointContenertext {
     font-size: 1.4rem;
-}
+  }
 
-//Class general pour tout le texte dans les articles
-.bluepointArticleText{
+  //Class general pour tout le texte dans les articles
+  .bluepointArticleText {
     font-size: 1.2rem;
     margin: 2rem 0 0 0;
-}
+  }
 }
 
 @media screen and (max-width: 900px) {
-
-
-
-        // le contener qui englobe les cartouches
-.bluepointContenerResume{
+  // le contener qui englobe les cartouches
+  .bluepointContenerResume {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     margin: 2rem auto 7rem auto;
-    padding: 2rem 0 ;
+    padding: 2rem 0;
     border-radius: 0.7rem;
     width: 60vw;
     height: 70rem;
-}
+  }
 
-//gere le style des articles
-.bluepointArticleMain{
+  //gere le style des articles
+  .bluepointArticleMain {
     display: flex;
     flex-direction: column;
     width: 100vw;
     height: auto;
     margin: 0 0 4rem 0;
     padding: 1rem;
-}
+  }
 
-// gere la place des div pour la personalisation
-.bluepointPersonaRight{
+  // gere la place des div pour la personalisation
+  .bluepointPersonaRight {
     width: 100vw;
     display: flex;
     flex-direction: column;
-    align-items: center;}
+    align-items: center;
+  }
 
-    //class generique pour tout les titres d'articles
-.bluepointTitreArticle{
+  //class generique pour tout les titres d'articles
+  .bluepointTitreArticle {
     display: flex;
     width: 80vw;
-font-size: 2rem;
-}
+    font-size: 2rem;
+  }
 
-//le contener du titre et de l'img
-.bluepointSatisfactionLeft{
+  //le contener du titre et de l'img
+  .bluepointSatisfactionLeft {
     width: 40rem;
-    margin: 0 auto ;
-}
+    margin: 0 auto;
+  }
 
-//Contient le texte des article (sous-titre, texte)
-.bluepointContenertext{
+  //Contient le texte des article (sous-titre, texte)
+  .bluepointContenertext {
     font-size: 1.4rem;
     width: 90vw;
     text-align: center;
-}
-
+  }
 }
 
 @media screen and (max-width: 700px) {
-    .bluepointSatisfactionLeft{
-        width: 80vw;
-    }
-
+  .bluepointSatisfactionLeft {
+    width: 80vw;
+  }
 }
 
 @media screen and (max-width: 480px) {
-// le contener qui englobe les cartouches
-.bluepointContenerResume{
+  // le contener qui englobe les cartouches
+  .bluepointContenerResume {
     width: 90vw;
     margin: 2rem auto 5rem auto;
-}
-
-
+  }
 }
 
 @media screen and (max-width: 400px) {
-    .bluepointArticleImg{
-        width: 15rem;
-    }
-
+  .bluepointArticleImg {
+    width: 15rem;
+  }
 }
