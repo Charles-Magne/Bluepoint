@@ -12,12 +12,12 @@ import Sav from "./sav.jpg";
 import Personalisation from "./personalisation.jpg";
 import Header from "../components/header/page";
 import Footer from "../components/footer/page";
-import ContenerBessan from "./contenerBessan/page";
+import ContenerBessan from "../components/contenerBessan/page";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShieldHalved } from '@fortawesome/free-solid-svg-icons';
-import DetailPME from "./detailPME";
-import DetailPersonalisation from "./detailPersonalisation";
-import DetailLongTerme from "./detailLongTerme";
+import DetailPME from "../components/detailPME";
+import DetailPersonalisation from "../components/detailPersonalisation";
+import DetailLongTerme from "../components/detailLongTerme";
 
 
 
