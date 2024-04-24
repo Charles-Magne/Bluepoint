@@ -35,8 +35,11 @@ export default function RootLayout({
       <Link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       <Link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet" /> 
+      <meta name='viewport' content='width=device-width, initial-scale=1' />
+      <meta name="robots" content="index, follow" />
       <link rel="shortcut icon" type='image/ico' href={logo.src} />
       <title>Bluepoint, votre agence de développement numérique basée au coeur de l&apos;Occitanie.</title>
+      <meta name="description" content='Agence web spécialisée dans la création de sites internet sur mesure dans l&apos;Hérault (34). Nous proposons des solutions adaptées à vos besoins pour développer votre présence en ligne et améliorer votre visibilité sur les moteurs de recherche. Contactez-nous pour obtenir un devis gratuit'/>
       </Head>
       
       {/* Google Tag Manager */}
