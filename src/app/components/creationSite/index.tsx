@@ -37,22 +37,22 @@ export default function CreationSite() {
               Définition de votre charte graphique
             </span>
             <span className="serviceEtapeNameSite">
-              Developpement d&apos;une version test
+              Développement d&apos;une version test
             </span>
             <span className="serviceEtapeNameSite">
               Validation du prototype
             </span>
             <span className="serviceEtapeNameSite">
-              Modification eventuelles du prototype
+              Modification éventuelle du prototype
             </span>
             <span className="serviceEtapeNameSite">
               Présentation de l&apos;outil Web final
             </span>
             <span className="serviceEtapeNameSite">
-              Deployment de votre site web
+              Déploiement de votre site web
             </span>
             <span className="serviceEtapeNameSite">
-              Optimisation du réferancement
+              Optimisation du référencement
             </span>
           </div>
         </div>
