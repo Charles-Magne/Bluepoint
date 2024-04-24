@@ -4,19 +4,13 @@
 .serviceContenerMain {
     display: flex;
     width: 99.2vw;
-    margin: 10rem 0 0 -0.5rem;
+    margin: 10rem 0 0 0;
     flex-direction: column;
     justify-items: center;
     font-family: 'Anonymous Pro', monospace;
 }
 
-// Le titre principal
-.serviceTitleMain {
-    text-align: center;
-    color: $color0;
-    font-size: 1.3rem;
-    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
-}
+
 
 // La div qui englobe les trois cartouches
 .serviceContenerResume {
@@ -171,7 +165,6 @@ width: 100vw;
 
 // Le contener de l'img Automatisation
 .serviceImgAuto {
-    background-image: url('./automatisation1.jpeg');
     width: 25rem;
     height: 15rem;
     background-size: cover;
@@ -181,7 +174,6 @@ width: 100vw;
 
 // Le contener de l'img Formation
 .serviceImgForm {
-    background-image: url('./formation.jpeg');
     width: 25rem;
     height: 15rem;
     background-size: cover;

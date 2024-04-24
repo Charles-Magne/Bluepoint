@@ -189,7 +189,7 @@ const Contact: React.FC = () => {
                   </label>
                   <input
                     className="contactInputField"
-                    placeholder="juste.leblanc@bluepoint.ovh"
+                    placeholder="Juste.leblanc@bluepoint.ovh"
                     onChange={inputMail}
                     value={trueMail}
                     type="text"
@@ -202,7 +202,7 @@ const Contact: React.FC = () => {
                   </label>
                   <input
                     className="contactInputField"
-                    placeholder="compagny"
+                    placeholder="Compagny"
                     onChange={inputConpany}
                     value={trueCompany}
                     type="text"

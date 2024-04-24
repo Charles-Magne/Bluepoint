@@ -1,0 +1,43 @@
+@import '../../components/main/reset';
+@import '../../components/main/variables';
+
+//Le contener de la creation du site
+.serviceContenerCreationSite{
+display: flex;
+flex-direction: column;
+}
+
+//Le titre de la page
+.serviceTitleAutomatisation {
+    text-align: center;
+    color: $color0;
+    text-shadow: 5px 7px 10px rgba(0, 0, 0, 0.3);
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 10rem 0 5rem 0;
+}
+
+//La phrase d'intro
+.serviceExplicationSiteWeb{
+text-align: center;
+    margin: 0 auto 2rem auto;
+    width: 60vw;
+    color: $color0;
+    font-size: 1.2rem;
+}
+
+//la div qui entoure les icones
+.serviceContenerIconeExemple{
+    display: flex;
+    justify-content: space-between;
+width: 40vw;
+height: auto;
+margin: 0 auto 1rem auto;
+}
+
+//Les icones formations
+.serviceIconeFormation{
+    width: 2rem;
+    height: auto;
+    color: $color0;
+}

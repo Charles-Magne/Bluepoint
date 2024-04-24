@@ -15,6 +15,9 @@ import Link from "next/link";
 import { log } from "console";
 import { current } from "@reduxjs/toolkit";
 import { pages } from "next/dist/build/templates/app-page";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+
 
 
 
@@ -128,8 +131,8 @@ function addStyleClassToCurrentPage(currentPage: string, pageSelectors: PageSele
       <div className="headerMain">
         <div  className="headerContenerLogo">
           <Link href="/" >
-          <Image className="headerLogoMain"  sizes="(max-width: 3000px) 15vw, (max-width: 2000px) 10vw 33vw, (max-width: 1520px) 2vw" priority={true} src={Logo} alt="logoBluepoint" />
-          <Image className="headerLogoSmall"  sizes="(max-width: 900px) 5vw" priority={true} src={LogoSmall} alt="logoBluepoint" />
+          <Image className="headerLogoMain"  width={4922} height={1760} priority={true} src={"https://drive.google.com/uc?id=1sqI4H8IwEiJXFrDzGnrPVys2cMvz_LiW"} alt="logoBluepoint" />
+          <Image className="headerLogoSmall"  width={231} height={256} priority={true} src={"https://drive.google.com/uc?id=1gGC0NYE43kKqymz9RsgOpZKtqDjPXV9_"} alt="logoBluepoint" />
           </Link>
         </div>
         <div className="headerListLink">
@@ -149,7 +152,7 @@ function addStyleClassToCurrentPage(currentPage: string, pageSelectors: PageSele
         <div className="headerContenerDevis" >
           <a className="headerButtonA" href="/contact" >
             <div className="headerButtonDevis" >Contact</div> 
-          <Image className="HeaderIconeLetter" sizes="(max-width: 1rem) 1vw" src={LogoSend} alt="iconeSend" />
+            <FontAwesomeIcon className="HeaderIconeLetter" icon={faEnvelope} />
           </a>
         </div>
       </div>

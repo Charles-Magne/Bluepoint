@@ -17,7 +17,7 @@ import Image from "next/image";
                 Votre satisfaction, notre priorité.
               </h3>
               <div className="bluepointContnerImgSatisfaction" >
-              <Image className="bluepointImgSatisfaction" loading="lazy" width={1000} height={570} alt="ImgSatisfaction"  src={"https://drive.google.com/uc?id=17lbQJF-4EQfZC30dNuP8Sf5mQr4KQQmw"} />
+              <Image className="bluepointImgSatisfaction" loading="lazy" width={1000} height={570} alt="ImgSatisfaction"  src={"https://drive.google.com/uc?id=17lbQJF-4EQfZC30dNuP8Sf5mQr4KQQmw"} /> 
               </div>
             </div>
             <div className="bluepointContenertext">
@@ -45,7 +45,7 @@ import Image from "next/image";
                 Vous êtes unique et votre projet l&apos;est tout autant.
               </h3>
               <div className="bluepointContnerImgSatisfaction" >
-              <Image className="bluepointImgPersonalisation" loading="lazy" width={7356} height={3678} alt="ImgSatisfaction"  src={"https://drive.google.com/uc?id=1AfJ6XB4VzIdhAyyYljqKba39GiS8A_72"} />
+              <Image className="bluepointImgPersonalisation" loading="lazy" width={7356} height={3678} alt="ImgPersonalisation" src={"https://drive.google.com/uc?id=1AfJ6XB4VzIdhAyyYljqKba39GiS8A_72"} />
               </div>
             </div>
             <div className="bluepointContenertext">

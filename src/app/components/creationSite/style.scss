@@ -1,0 +1,85 @@
+@import '../../components/main/reset';
+@import '../../components/main/variables';
+
+//Le contener de la creation du site
+.serviceContenerCreationSite{
+display: flex;
+flex-direction: column;
+}
+
+//Le titre de la page
+.serviceTitleMain {
+    text-align: center;
+    color: $color0;
+    text-shadow: 5px 7px 10px rgba(0, 0, 0, 0.3);
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0 0 5rem 0;
+}
+
+//La phrase d'intro
+.serviceExplicationSiteWeb{
+text-align: center;
+    margin: 0 auto 2rem auto;
+    width: 60vw;
+    color: $color0;
+    font-size: 1.2rem;
+}
+
+//Le contner qui englobe les arrets et la ligne
+.serviceContenerLignMetroEtArret{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 70vw;
+    margin: 0 auto;
+    align-content: space-around;
+}
+
+//Le cntener de la ligne de metro et des ronds
+.serviceContenerLigneMetro{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 1.5rem;
+    justify-content: space-around;
+    height: 80rem;
+}
+
+//La ligne de metro qui descent en suivant le scroll
+.serviceLigneMetro{
+    position: absolute;
+    top: 0;
+    right: 0.4rem;
+    width: 0.8rem;
+    height: 80rem;
+    border: 3px solid $color0;
+    border-radius: 0.5rem;
+    margin: 0 0 0 0;
+}
+
+//Les rond qui symbolise les arret du metro
+.serviceRondArretMetro{
+    display: flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 1rem;
+    border: 3px solid $color0;
+    background-color: white;
+    z-index: 1;
+}
+
+//Le contner qui englobe les nom d'arrets
+.serviceArretMetro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 2rem;
+    width: 60vw;
+}
+
+//les differantes etapes de la creation de site
+.serviceEtapeNameSite{
+    color: $color0;
+    font-size: 1.5rem;
+}

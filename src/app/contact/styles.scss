@@ -31,13 +31,13 @@
 .contactContenerBackground {
     display: flex;
     flex-direction: column;
-    //background-color: $color1;
     padding: 1rem;
     width: 50rem;
     margin: 1rem auto 0 auto;
     flex-wrap: wrap;
-    border: solid $color0 1px;
-    border-radius: 0.7rem;
+    border: solid $color0 0px;
+    border-radius: 0.3rem;
+    background-color: rgb(247, 241, 241);
 }
 
 // la div qui entoure les deux form nom et prenom
@@ -60,14 +60,16 @@
 .contactTitleLabel {
     margin: 0 0 0.5rem 0;
     color: $color0;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 //le champs des input
 .contactInputField {
-    padding: 0.2rem 0 0.2rem 0.2rem;
+    padding: 0.2rem 0 0.2rem 0.4rem;
     border-radius: 0.2rem;
-    border: 1px solid gray;
+    border: 0px solid gray;
+    background-color: rgb(212, 208, 208);
+    color: black;
 }
 
 // la div dans laquelle sont present l'entreprise et l'adresse mail
@@ -80,19 +82,24 @@
 
 // la div qui gere le menu deroulant 
 .ContactFormProject {
-    margin: 0 0 2rem 3rem;
+    margin: 0 0 2rem 5rem;
     width: 22rem;
 }
 
 //Gere les options du menu deroulant
 .contactOptionMenu {
     font-family: 'Anonymous Pro', monospace;
+    background-color:rgb(212, 208, 208) ;
+    border: 0px solid black;
+    border-radius: 0.2rem;
+    height: 1.5rem;
+    padding: 0 0 0 0.2rem;
 }
 
 //La div specifique au label Message
 .contactLabelMessage {
     width: 30rem;
-    margin: 0 0 0.5rem 3rem;
+    margin: 0 0 0.5rem 4rem;
 }
 
 //Le contener de l'input du message
@@ -107,6 +114,9 @@
     height: 10rem;
     width: 40rem;
     padding: 1rem;
+    background-color: rgb(212, 208, 208) ;
+    border: 0px solid black;
+    border-radius: 0.5rem;
 }
 
 // le contener qui sert a flex le button
