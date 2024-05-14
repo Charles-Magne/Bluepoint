@@ -1,4 +1,4 @@
-"use client";
+/*"use client";
 import React, { useEffect, useRef } from "react";
 import "./styles.scss";
 import Image from "next/image";
@@ -26,4 +26,4 @@ import { CarouselStack } from "../carouselStack";
     </div>
   );
 };
-export default ContenerStack;
+export default ContenerStack;*/
