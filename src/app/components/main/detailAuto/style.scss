@@ -17,7 +17,7 @@ text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 box-shadow: 2px 2px 20px $color1;
 }
 
-//Le titre de la page
+//Le titre de la page -- La class commun
 .DetailServiceTitleMain{
     display: flex;
     width: 100%;
@@ -25,6 +25,8 @@ box-shadow: 2px 2px 20px $color1;
     color: white;
     font-size: 2.5rem;
     padding: 0 0 1.7rem 0;
+    text-align: center;
+
 }
 
 // la div qui englobe l'icone et le texte
@@ -71,4 +73,27 @@ margin: 0 2rem;
     box-shadow: 2px 2px 20px $color1;
     font-weight: 600;
 }
+
+@media screen and (max-width: 900px) {
+
+    .DetailServiceTitleMain{
+        font-size: 2rem;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .DetailServiceTitleMain{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    .DetailServiceTitleMain{
+        font-size: 1.1rem;
+    }
+}
+
 

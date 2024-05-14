@@ -78,11 +78,6 @@ DivAuto?.addEventListener('mouseover', () => {
   const clicArrowDown = () => {
     mainComposant.current?.scrollIntoView({ behavior:'smooth'});
   };
-  /*    
-  Notre mission: notre but est avant tout de propulser les petites et moyenne entitées commerciale sur le web. Car si aujourd'hui 
-  la majorité des choix se font avec un telephone dans les mains, il est vitale d'être present sur internet. en effet, le choix d'un restauant, d'un artisant ou
-  d'une sortie en general se prends en quelques minutes et donc il est vital d'etre present sur le web pour proposer au chalant numerique votre offre. 
-  Nos valeurs: Local, Satisfaction, Accompagnement, Personalisation   */
 
   return (
     <div>

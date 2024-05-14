@@ -23,7 +23,7 @@ box-shadow: 2px 2px 20px $color1;
     width: 100%;
     justify-content: center;
     color: white;
-    font-size: 2.5rem;
+    //font-size: 2.5rem;
     padding: 0 0 1.7rem 0;
 }
 
@@ -78,6 +78,11 @@ margin: 0 2rem;
     }
   }
 
+  @media screen and (max-width: 860px) {
+  .DetailServiceIconeAndTexte{
+    width: 48%;
+  }
+}
   @media screen and (max-width: 700px) {
   //Le bouton pour les contact
 .DetailServiceButtonContact{
@@ -93,3 +98,22 @@ margin: 0 2rem;
 }
   }
 
+  @media screen and (max-width: 500px) {
+    //Le bouton pour les contact
+  .DetailServiceButtonContact{
+      font-size: 1.3rem;
+  }
+
+  .DetailServiceIconeAndTexte{
+    width: 48%;
+  }
+  
+  .DetailServiceIconeSuper{
+      width: 1.2rem;
+      margin: 0.5rem;
+  }
+  
+  .DetailServiceTextDev{
+      font-size: 0.7rem;
+  }
+    }

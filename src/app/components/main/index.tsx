@@ -9,6 +9,7 @@ import Image from "next/image";
 import DetailService from './detailService';
 import DetailFormation from './detailFormation';
 import DetailAuto from './detailAuto';
+import { CarouselStack } from "../Accueil/carouselStack";
 
 export default function Main() {
 //les useRef qui encapsule les componements
@@ -149,6 +150,7 @@ DivAuto?.addEventListener('mouseover', () => {
         {/* Partie sur mesure */}
         <div className="accueilContenersStackTeck">
           <h2 className="accueilTitleStackTeck">Notre stack technique</h2>
+          {/*<CarouselStack/>*/}
           <div className="accueilContenerStack">
             <div className="accueilContenairewrapperTech accueilContenairewrapperTechToLeft">
               {/**************HTML ***********/}

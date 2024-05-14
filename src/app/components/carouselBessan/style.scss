@@ -1,7 +1,6 @@
 @import "../main/variables";
 @import "../main/reset";
 
-
 //Le contener du carousel
 .carouselBessanMain {
   display: flex;
@@ -12,6 +11,12 @@
 .carouselBessanWrapper {
   display: flex;
   justify-content: center;
+}
+
+//Les photos du carousel
+.carouselleBessanImage {
+  height: 30rem;
+  width: auto;
 }
 
 // la div qui gere l'img du carousel
@@ -46,19 +51,66 @@
       /* Styles pour les boutons eux-mêmes */
     }
     button::before {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       color: white;
       width: 3rem;
       height: 1rem;
     }
     &.slick-active button {
-        display: flex;
-        justify-content: center;
-        width: 3rem;
-        border: 2px solid $color0;
-        color: grey;
-      }
+      display: flex;
+      justify-content: center;
+      width: 3rem;
+      border: 2px solid $color0;
+      color: grey;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .carouselleBessanImage {
+    height: 25rem;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .carouselleBessanImage {
+    height: 20rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .carouselleBessanImage {
+    height: 15rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .carouselleBessanImage {
+    height: 12rem;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .carouselleBessanImage {
+    height: 10rem;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .carouselleBessanImage {
+    height: 7rem;
+  }
+
+  .carouselBessanBouton li button{
+    width: 2rem;
+    height: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .carouselleBessanImage {
+    height: 5rem;
   }
 }

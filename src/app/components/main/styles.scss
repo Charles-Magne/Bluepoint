@@ -283,6 +283,11 @@ width: auto;
   .accueilTitleTransformation {
     font-size: 1.3rem;
   }
+
+  .accueilTitleStackTeck{
+font-size: 1.8rem;
+width: 28rem;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -303,6 +308,13 @@ width: auto;
     height: auto;
   }
 }
+
+@media screen and (max-width: 350px) {
+.accueilTitleStackTeck{
+  font-size: 1.5rem;
+  width: 28rem;
+    }
+  }
 
 @media screen and (max-width: 330px) {
   .accueilTitleTransformation {

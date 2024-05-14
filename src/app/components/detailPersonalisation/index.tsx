@@ -52,7 +52,7 @@ export default function DetailPersonalisation() {
         </div>
         <div className="DetailServiceIconeAndTexte" >
           <FontAwesomeIcon className="DetailServiceIconeSuper" icon={faCode} />
-          <div className="DetailServiceTextDev">Integration de fonctionnalités spécifiques </div>
+          <div className="DetailServiceTextDev">Fonctionnalités avancées </div>
         </div>
         <div className="DetailServiceIconeAndTexte" >
           <FontAwesomeIcon

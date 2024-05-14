@@ -52,7 +52,7 @@ export default function DetailPME() {
         </div>
         <div className="DetailServiceIconeAndTexte" >
           <FontAwesomeIcon className="DetailServiceIconeSuper" icon={faEarthAmericas} />
-          <div className="DetailServiceTextDev">National/International</div>
+          <div className="DetailServiceTextDev">National</div>
         </div>
         <div className="DetailServiceIconeAndTexte" >
           <FontAwesomeIcon

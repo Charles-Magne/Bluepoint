@@ -32,12 +32,10 @@ export const CarouselBessan: React.FC<CarouselProps> = ({ images }) => {
           <Image className='carouselleBessanImage' priority={true} src={image} alt={`Slide ${index}`}  width={0}
   height={0}
   sizes="100vw"
-  style={{ width: 'auto', height: '30rem' }}  />
+  />
   </div>
         </div>
       ))}
     </Slider>
   );
 };
-
-//export default CarouselBessan;

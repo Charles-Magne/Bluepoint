@@ -285,6 +285,14 @@ font-weight: 600;
 @media screen and (max-width: 700px) {
   .bluepointSatisfactionLeft {
     width: 80vw;
+    
+  }
+  .bluepointTitleMain{
+    font-size: 1rem;
+  }
+
+  .bluepointTitreArticle{
+    font-size: 1.5rem;
   }
 }
 
@@ -293,6 +301,10 @@ font-weight: 600;
   .bluepointContenerResume {
     width: 90vw;
     margin: 2rem auto 5rem auto;
+  }
+
+  .bluepointTitreEngagements{
+    font-size: 1.6rem;
   }
 }
 
