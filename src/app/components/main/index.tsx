@@ -9,7 +9,7 @@ import Image from "next/image";
 import DetailService from './detailService';
 import DetailFormation from './detailFormation';
 import DetailAuto from './detailAuto';
-import { CarouselStack } from "../Accueil/carouselStack";
+//import { CarouselStack } from "../Accueil/carouselStack";
 
 export default function Main() {
 //les useRef qui encapsule les componements
