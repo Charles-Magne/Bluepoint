@@ -115,10 +115,25 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  overflow-x: auto;
+  overflow-x: hidden;
   width: 160%;
   margin: 1.8rem 0 0 0;
 }
+
+/*.accueilContenairewrapperTech::before,
+.accueilContenairewrapperTech::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+ // background: linear-gradient(to right, transparent, #fff);
+}
+
+.accueilContenairewrapperTech::before {
+  left: 0;
+  clip: rect(0, 10px, 100%, 0);
+}*/
 
 //La div qui defile vers la droite
 .accueilContenairewrapperTechToLeft {
@@ -248,45 +263,68 @@ width: auto;
 }
 
 /////////////////////////////////// Le responsive
-@media screen and (max-width: 900px) {
-  // la div qui englobe chaque technos
+
+@media screen and (max-width: 1700px) {
+  .acceuilContenerImgTech {
+    height: 2rem;
+  }
   .accueilActivitéTech {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    height: 5rem;
-    width: 20rem;
-    border: solid 1px black;
-    border-radius: 0.8rem;
-    padding: 0.4rem;
-    margin: 0 1rem;
+    height: 4rem;
+    width: 15rem;
+  }
+}
+
+
+@media screen and (max-width: 1280px) {
+  .acceuilContenerImgTech {
+    height: 1.5rem;
+  }
+  .accueilActivitéTech {
+    height: 3rem;
+    width: 12rem;
+  }
+}
+
+
+@media screen and (max-width: 1000px) {
+  .acceuilContenerImgTech {
+    height: 1rem;
+  }
+  .accueilActivitéTech {
+    height: 2.8rem;
+    width: 12rem;
   }
 }
 
 @media screen and (max-width: 700px) {
-  .accueilTitleTransformation {
-    width: 30rem;
-  }
-
   .acceuilContenerImgTech {
-    height: 2rem;
+    height: 1.5rem;
   }
-}
-
-@media screen and (max-width: 520px) {
-  .accueilTitleTransformation {
-    width: 20rem;
+  .accueilActivitéTech {
+    height: 3.5rem;
+    width: 40rem;
+    border-radius: 0.3rem;
   }
 }
 
 @media screen and (max-width: 520px) {
   .accueilTitleTransformation {
     font-size: 1.3rem;
+    width: 20rem;
   }
 
   .accueilTitleStackTeck{
 font-size: 1.8rem;
 width: 28rem;
+  }
+
+  .acceuilContenerImgTech {
+    height: 1rem;
+  }
+  .accueilActivitéTech {
+    height: 3rem;
+    width: 20rem;
+    border-radius: 0.3rem;
   }
 }
 

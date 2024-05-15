@@ -88,12 +88,44 @@
 }
 
 @media screen and (max-width: 1300px) {
-
   // la div qui gere l'img du carousel
  .carouselleAccueilImage {
    height: 20rem;
  }
- 
- 
+ }
+
+ @media screen and (max-width: 800px) {
+  // la div qui gere l'img du carousel
+ .carouselleAccueilImage {
+   height: 18rem;
+ }
+ }
+
+ @media screen and (max-width: 800px) {
+  // la div qui gere l'img du carousel
+ .carouselleAccueilImage {
+   height: 15rem;
+ }
+ }
+
+ @media screen and (max-width: 670px) {
+  // la div qui gere l'img du carousel
+ .carouselleAccueilImage {
+   height: 12rem;
+ }
+ }
+
+ @media screen and (max-width: 570px) {
+  // la div qui gere l'img du carousel
+ .carouselleAccueilImage {
+   height: 9rem;
+ }
+ }
+
+ @media screen and (max-width: 380px) {
+  // la div qui gere l'img du carousel
+ .carouselleAccueilImage {
+   height: 6rem;
+ }
  }
 
