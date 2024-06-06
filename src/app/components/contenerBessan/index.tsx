@@ -5,11 +5,11 @@ import Image from "next/image";
 import { CarouselBessan } from "../carouselBessan";
 
 const images = [
-  "https://drive.google.com/uc?id=1hz4rQiEugj1vmpJZ357kpP-c-mVS9bCX",
-  "https://drive.google.com/uc?id=1o94Ui0Od9-DN0TUmA9DYmG_IBvznwS0k",
-  "https://drive.google.com/uc?id=1DysxWnuv4GXTEBPU_g9JncMvD8qnnaf1",
-  "https://drive.google.com/uc?id=1sWaKILdfzGsAsHQaLhqOfOeILqrA3NUV",
-  "https://drive.google.com/uc?id=1fmjQ1ySZkQWjixaXHwTjtHK0X-rHq07E",
+  "https://drive.google.com/uc?id=17FhQJl7J_cRHsj3360zS4An6UDTcZ_bf", //Tiny
+  "https://drive.google.com/uc?id=198sDqVoL0bRwKFip7c-8jxppVZuOGDod",//Tiny
+  "https://drive.google.com/uc?id=1iVHfNLejN8HaIDjrCO7JQ06xO6m9Izf3",//Tiny
+  "https://drive.google.com/uc?id=179stj3O2pWgtV0EGd9dVPf2JPyjmf2mL", //Tiny
+  "https://drive.google.com/uc?id=1AS5CeJ4XwsDTRsZNgp8CwUp6zRjFGlji", //Tiny
 ];
 
  const ContenerBessan: React.FC = () => {
