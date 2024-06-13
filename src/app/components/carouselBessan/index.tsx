@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { lazy } from 'react';
 import Slider from 'react-slick';
 import Image from 'next/image';
 import './style.scss';
@@ -29,7 +29,7 @@ export const CarouselBessan: React.FC<CarouselProps> = ({ images }) => {
       {images.map((image, index) => (
         <div  key={index}>
             <div className='carouselBessanWrapper'>
-          <Image className='carouselleBessanImage' priority={true} src={image} alt={`Slide ${index}`}  width={0}
+          <Image className='carouselleBessanImage' priority={false} src={image} alt={`Slide ${index}`}  width={0}
   height={0}
   sizes="100vw"
   />
