@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: /admin/
+Disallow: /nogooglebot/
 
-Sitemap: https://www.bluepoint.ovh/sitemap.xml
+Sitemap: https://www.bluepoint.ovh/sitemap.xml 
