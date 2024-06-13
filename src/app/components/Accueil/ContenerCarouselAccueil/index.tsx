@@ -5,10 +5,10 @@ import Image from "next/image";
 import { CarouselAccueil } from "../carouselAccueil";
 
 const images = [
-  "https://drive.google.com/uc?id=1HYQiJOUKMyzVEzhDvENnNOXDV1BfmA9Z", // Tiny
-  "https://drive.google.com/uc?id=1Az4jJOfquGWzYi3GX43xWQMCPCVVzlEf", // Tiny
-  "https://drive.google.com/uc?id=1hE1PWg97IsO9GvQIsHA2IgDZInQj9sjr", // tiny
-  "https://drive.google.com/uc?id=1V4Jg7x1IvK8nC-GC6PkwZ-Q_I2g6UT1y", // Tiny
+  "https://drive.google.com/uc?id=1bgI8V7wQW__AvOh9NBDjMTf_j1pHrDuy", //webp
+ "https://drive.google.com/uc?id=1i17i-gYupkPgfl8NuYTxuveywyrzU8AO", //webp
+ "https://drive.google.com/uc?id=1TJazaWb7I49A9l9_mNmr2D1csv0b3VlD", //webp
+ "https://drive.google.com/uc?id=1IPFYdlFt30Wa7RU_rY3XKeZ-mBa8FNzY", //webp
 ];
 
  const ContenerAccueil: React.FC = () => {
