@@ -37,7 +37,7 @@ export const CarouselBessan: React.FC<CarouselProps> = ({ images }) => {
               alt={`Slide ${index}`}
               width={0}
               height={0}
-              sizes="100vw"
+              sizes="90vw"
             />
           </div>
         </div>
