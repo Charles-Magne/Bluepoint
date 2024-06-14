@@ -1,7 +1,8 @@
-import React, { lazy } from 'react';
-import Slider from 'react-slick';
-import Image from 'next/image';
-import './style.scss';
+import React, { lazy } from "react";
+import Slider from "react-slick";
+import Image from "next/image";
+import "./style.scss";
+
 
 interface CarouselProps {
   images: string[];
@@ -18,22 +19,27 @@ export const CarouselBessan: React.FC<CarouselProps> = ({ images }) => {
     autoplaySpeed: 8000,
     //dotsClass: 'carouselBessanBouton',
     appendDots: (dots: any) => (
-        <div className="carouselBessanWrapper">
-          <ul className='carouselBessanBouton'>{dots}</ul>
-        </div>
-      ),
+      <div className="carouselBessanWrapper">
+        <ul className="carouselBessanBouton">{dots}</ul>
+      </div>
+    ),
   };
 
   return (
-    <Slider className='carouselBessanMain' {...settings}>
+    <Slider className="carouselBessanMain" {...settings}>
       {images.map((image, index) => (
-        <div  key={index}>
-            <div className='carouselBessanWrapper'>
-          <Image className='carouselleBessanImage' priority={false} src={image} alt={`Slide ${index}`}  width={0}
-  height={0}
-  sizes="100vw"
-  />
-  </div>
+        <div key={index}>
+          <div className="carouselBessanWrapper">
+            <Image
+              className="carouselleBessanImage"
+              priority={false}
+              src={image}
+              alt={`Slide ${index}`}
+              width={0}
+              height={0}
+              sizes="100vw"
+            />
+          </div>
         </div>
       ))}
     </Slider>

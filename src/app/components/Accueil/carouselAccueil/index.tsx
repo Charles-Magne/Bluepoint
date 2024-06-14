@@ -3,8 +3,9 @@ import Slider from 'react-slick';
 import Image from 'next/image';
 import './style.scss';
 import { dot } from 'node:test/reporters';
-//import 'slick-carousel/slick/slick.css';
-//import 'slick-carousel/slick/slick-theme.css';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
 
 
 interface CarouselProps {
