@@ -1,0 +1,27 @@
+# Active le module de réécriture d'URL
+RewriteEngine On
+
+# Définit la racine du site web
+RewriteBase /
+
+# Redirige les requêtes HTTP vers HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Redirige les requêtes vers www
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Désactive l'affichage des fichiers cachés
+Options -Indexes
+
+# Restreint l'accès au fichier .htaccess
+<Files .htaccess>
+  order allow,deny
+  deny from all
+</Files>
+
+# Ajoute des en-têtes HTTP personnalisés
+Header set X-Content-Type-Options "nosniff"
+Header set X-Frame-Options "SAMEORIGIN"
+Header set X-XSS-Protection "1; mode=block"
