@@ -11,5 +11,5 @@ export default async function sitemap() {
     lastModified: new Date().toISOString(),
   }))
 
-  return [...routes, ...posts]
+  return [...routes]
 }
