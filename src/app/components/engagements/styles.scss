@@ -1,134 +1,74 @@
+@import "../main/variables";
+@import "../main/reset";
 
-@import '../main/variables';
-@import '../main/reset';
-
-
-.ContenerBessanCarousellePhotoMairie{
-    width: 10rem;
-    height: auto;
+.ContenerBessanCarousellePhotoMairie {
+  width: 10rem;
+  height: auto;
 }
 
-.ContnerBessanTitre{
-    font-size: 1.5rem;
-    color: $color0;
-    width: 80vw;
-    text-align: center;
-    margin: 0 auto;
+.ContnerBessanTitre {
+  font-size: 1.5rem;
+  color: $color0;
+  width: 80vw;
+  text-align: center;
+  margin: 0 auto;
 }
 
-    //Class general pour tout le texte dans les articles
-    .bluepointArticleText {
-        font-size: 1.2rem;
-        margin: 2rem 0 0 0;
-    }
+//Class general pour tout le texte dans les articles
+.bluepointArticleText {
+  font-size: 1.2rem;
+  margin: 2rem 0 0 0;
+}
 
+// contener des img et des carré bleu
+.bluepointContnerImgAndBlueCarré {
+  background-color: white;
+}
 
+// Le contener bleu de toutes les img
+.bluepointContnerImgSatisfaction {
+  width: 25vw;
+}
+
+//La class commun a toutes les photos
+.bluepointImgSatisfaction {
+  width: 25vw;
+  box-shadow: 0.5rem 0.5rem 1rem rgb(61, 61, 61);
+}
+
+// l'img personalisation
+.bluepointImgPersonalisation {
+  width: 25vw;
+  box-shadow: 0.5rem 0.5rem 1rem rgb(61, 61, 61);
+}
+
+//La class commun a toutes les photos
+.bluepointImgCommunResponsive {
+  width: 25vw;
+}
 
 /**************************Responsive ***********************/
 
-@media screen and (max-width: 1450px) {
 
-    //La class commun a toutes les photos
-    .bluepointImgSatisfaction{
-        width: 30rem;
-    }
-    // Le contener bleu de toutes les img
-    .bluepointContnerImgSatisfaction{
-        width: 30rem;
-    }
-    // l'img personalisation
-    .bluepointImgPersonalisation{
-        width: 30rem;
-        
-    }
-
-}
-
-@media screen and (max-width: 1300px) {
-
-    //La class commun a toutes les photos
-    .bluepointImgCommunResponsive{
-        width: 20rem;
-    }
-
-    //La div qui encadre la photo
-.bluepointContnerImgSatisfaction{
-width: 20rem;
-}
-
-
-    //La class commun a toutes les photos
-    .bluepointImgSatisfaction{
-        width: 20rem;
-        height: auto;
-        top: 2rem;
-        left: 2rem;
-    }
-    // Le contener bleu de toutes les img
-    .bluepointContnerImgSatisfaction{
-        width: 20rem;
-    }
-    // l'img personalisation
-    .bluepointImgPersonalisation{
-        width: 20rem;
-        top: 2rem;
-        right: 2rem;
-    }
-}
 @media screen and (max-width: 900px) {
-
-    //Class general pour tout le texte dans les articles
-    .bluepointArticleText {
-        font-size: 1.2rem;
-        margin: 2rem 0 0 0;
-        width: 90vw;
-    }
+  //Class general pour tout le texte dans les articles
+  .bluepointArticleText {
+    font-size: 1.2rem;
+    margin: 2rem 0 0 0;
+    width: 90vw;
+  }
 }
 
 @media screen and (max-width: 530px) {
-        //La class commun a toutes les photos
-        .bluepointImgSatisfaction{
-            width: 15rem;
-            height: auto;
-            top: 2rem;
-            left: 2rem;
-        }
-        // Le contener bleu de toutes les img
-        .bluepointContnerImgSatisfaction{
-            width: 15rem;
-        }
-        // l'img personalisation
-        .bluepointImgPersonalisation{
-            width: 15rem;
-            top: 2rem;
-            right: 2rem;
-        }
-         //Class general pour tout le texte dans les articles
-    .bluepointArticleText {
-        font-size: 1rem;
-    }
 
-    .ContnerBessanTitre{
-        font-size: 1rem;
-    }
+  //Class general pour tout le texte dans les articles
+  .bluepointArticleText {
+    font-size: 1rem;
+  }
+
+  .ContnerBessanTitre {
+    font-size: 1rem;
+  }
 }
 
-@media screen and (max-width: 330px) {
-    //La class commun a toutes les photos
-    .bluepointImgSatisfaction{
-        width: 12rem;
-        height: auto;
-        top: 1rem;
-        left: 1rem;
-    }
-    // Le contener bleu de toutes les img
-    .bluepointContnerImgSatisfaction{
-        width: 12rem;
-    }
-    // l'img personalisation
-    .bluepointImgPersonalisation{
-        width: 12rem;
-        top: 1rem;
-        right: 1rem;
-    }
-}
+
