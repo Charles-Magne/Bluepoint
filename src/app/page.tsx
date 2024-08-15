@@ -7,6 +7,7 @@ import "./styles.scss";
 import { useRef } from "react";
 import Image from "next/image";
 import ContenerAccueil from "./components/Accueil/ContenerCarouselAccueil";
+import PhotosMainAccueil from "./components/Accueil/PhotoMainAccueil";
 
 
 export default function Home() {
@@ -26,7 +27,7 @@ export default function Home() {
 <div className="accueiltitreContener">
         <h1 className="accueiPhrasePersona" >Vous êtes à un clic de votre site <span className="accueiPhrasePersonaColor">Personnalisé,</span><span className="accueiPhrasePersonaColor"> Performant et</span> <span className="accueiPhrasePersonaColor"> Responsive.</span> </h1>
         </div>
-        <ContenerAccueil/>
+        <PhotosMainAccueil/>
           
       </div>
        <div ref={mainComposant} ></div>

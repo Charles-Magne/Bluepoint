@@ -1,0 +1,72 @@
+@import "../../../components/main/variables";
+@import "../../../components/main/reset";
+
+//la div parent qui contient touotes les photos
+.PhotosMainAccueilContenerMain {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+// La classe commune a toutes les img
+.PhotosMainAccueilImage {
+  display: flex;
+  border-radius: 1rem;
+}
+// la premiere div avec les deux img
+.PhotosMainAccueilLigne1 {
+  display: flex;
+}
+
+// l'image de Sushi
+.PhotosMainAccueilImageSushi {
+  display: flex;
+  width: 57vw;
+  height: auto;
+  z-index: 2;
+  box-shadow: 0.5rem 0.5rem 1rem rgb(61, 61, 61);
+}
+
+// l'image de Voyage
+.PhotosMainAccueilImageVoyage {
+  display: flex;
+  width: 40vw;
+  height: auto;
+  z-index: 1;
+  position: relative;
+  right: 2vw;
+  margin: auto 0;
+  box-shadow: 0.5rem 0.5rem 1rem rgb(61, 61, 61);
+}
+
+// la deuxieme div avec les deux img
+.PhotosMainAccueilLigne2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+// l'image de Chaussure
+.PhotosMainAccueilImageChaussure {
+  display: flex;
+  width: 25vw;
+  height: auto;
+  z-index: 3;
+  position: relative;
+  bottom: 2vw;
+  box-shadow: 0.5rem 0.5rem 1rem rgb(61, 61, 61);
+}
+
+// l'image de location
+.PhotosMainAccueilImageLocation {
+  display: flex;
+  width: 50vw;
+  height: auto;
+  z-index: 3;
+  position: relative;
+  bottom: 5vw;
+  right: 5vw;
+  box-shadow: 0.5rem 0.5rem 1rem rgb(61, 61, 61);
+}
+
