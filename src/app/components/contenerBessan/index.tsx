@@ -29,9 +29,9 @@ const ContenerBessan: React.FC = () => {
         </div>
         <p className="ContnerBessanTitre">
           Bluepoint est une agence de développement web située à Bessan, dans
-          l&apos;Hérault. Nous sommes passionnés par notre travail et nous
+          l&apos;Hérault. Nous
           mettons notre expertise au service des petites et moyennes
-          entreprises. Notre objectif est de créer des sites web performants et
+          entreprises. Nous créerons des sites web performants et
           attractifs, répondant aux besoins spécifiques de chaque client
         </p>
       </div>

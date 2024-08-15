@@ -1,0 +1,38 @@
+@import "../main/variables";
+@import "../main/reset";
+
+.BessanIntroMain{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+// le titre  de texte
+.BessanIntroTextTitre{
+    color: white;
+    font-size: 2vw;
+}
+
+//la div qui contient le texte
+.ContnerBessanContenerText{
+    position: absolute;
+    z-index: 2;
+    width: 50vw;
+    margin-top: 1vw;
+}
+
+// le texte au dessus de l'img
+.BessanIntroTextFirst{
+    margin-top: 35vw;
+    color: white;
+    display: none;
+}
+
+// l'image de bessan
+.BessanIntroImage{
+    width: 60vw;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0.5rem 0.5rem 1rem rgb(61, 61, 61);
+    z-index: 1;
+}
